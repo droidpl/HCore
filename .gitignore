@@ -1,0 +1,46 @@
+#
+# Windows and Mac OS X Temp Cache Files
+#
+[Tt]humbs.db
+*.DS_Store
+
+#
+# Visual Studio files
+#
+*.[Oo]bj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.[Cc]ache
+*.suo
+*.sln.docstates
+*.vcproj.*.user
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.sdf
+*.lib
+*.sbr
+*.vssscc
+$tf*/
+[Oo]bj/
+[Bb]in/
+[Dd]ebug*/
+[Rr]elease*/
+Win32*/
+ipch/
+
+#
+# Tooling
+#
+_ReSharper*/
+[Tt]est[Rr]esult*

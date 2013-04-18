@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B320B4D-A1D0-480B-BAFB-42B81AE28B4D}</ProjectGuid>
+    <RootNamespace>HCore</RootNamespace>
+    <ProjectName>HCore</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Build\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\Build\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\include\tinyxml2;$(BOOST);$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include;$(OBULLET_HOME)\Dynamics\include;$(OBULLET_HOME)\Collisions\include;$(BULLET_ROOT)\src;$(OGRE_SOUND)\include;$(OPEN_AL)\include;$(HOGRE)\HOgre\include;$(H3D_ROOT)\HAPI\include;$(H3D_ROOT)\H3DUtil\include;$(H3D_ROOT)\External\include\pthread;$(SolutionDir)\tinyxml2;$(LEAKS)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(BOOST)\lib;$(OGRE_HOME)\lib\$(Configuration);$(OBULLET_HOME)\lib\$(Configuration);$(BULLET_ROOT)\lib;$(OGRE_SOUND)\lib;$(HOGRE)\lib\$(Configuration);$(H3D_ROOT)\lib;$(LEAKS)\lib\Win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;OgreBulletCollisions_d.lib;OgreBulletDynamics_d.lib;BulletCollision_vs2010_debug.lib;BulletDynamics_vs2010_debug.lib;ConvexDecomposition_vs2010_debug.lib;LinearMath_vs2010_debug.lib;OgreOggSound_d.lib;HAPI_vc10_d.lib;H3DUtil_vc10_d.lib;vld.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;$(ProjectDir)\include\tinyxml2;$(BOOST);$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include;$(OBULLET_HOME)\Dynamics\include;$(OBULLET_HOME)\Collisions\include;$(BULLET_ROOT)\src;$(OGRE_SOUND)\include;$(OPEN_AL)\include;$(HOGRE)\HOgre\include;$(H3D_ROOT)\HAPI\include;$(H3D_ROOT)\H3DUtil\include;$(H3D_ROOT)\External\include\pthread;$(SolutionDir)\tinyxml2;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libboost_thread-vc100-mt-1_53.lib;OgreMain.lib;OIS.lib;OgreBulletCollisions.lib;OgreBulletDynamics.lib;BulletCollision_vs2010.lib;BulletDynamics_vs2010.lib;ConvexDecomposition_vs2010.lib;LinearMath_vs2010.lib;OgreOggSound.lib;HOgre.lib;HAPI_vc10.lib;H3DUtil_vc10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST)\lib;$(OGRE_HOME)\lib\$(Configuration);$(OBULLET_HOME)\lib\$(Configuration);$(BULLET_ROOT)\lib;$(OGRE_SOUND)\lib;$(HOGRE)\lib\$(Configuration);$(H3D_ROOT)\lib;</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(BOOST)\lib;$(OGRE_HOME)\lib\$(Configuration);$(OBULLET_HOME)\lib\$(Configuration);$(BULLET_ROOT)\lib;$(OGRE_SOUND)\lib;$(HOGRE)\lib\$(Configuration);$(H3D_ROOT)\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;OgreBulletCollisions.lib;OgreBulletDynamics.lib;BulletCollision_vs2010.lib;BulletDynamics_vs2010.lib;ConvexDecomposition_vs2010.lib;LinearMath_vs2010.lib;OgreOggSound.lib;HAPI_vc10.lib;H3DUtil_vc10.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AbstractOgreNegotiator.cpp" />
+    <ClCompile Include="src\DefaultMouse.cpp" />
+    <ClCompile Include="src\InverseMouse.cpp" />
+    <ClCompile Include="src\ManageKeyboardCameraCommand.cpp" />
+    <ClCompile Include="src\ManageMouseCameraCommand.cpp" />
+    <ClCompile Include="src\OgreInputSystem.cpp" />
+    <ClCompile Include="src\DefaultKeyboard.cpp" />
+    <ClCompile Include="src\KeyboardManager.cpp" />
+    <ClCompile Include="src\ManageRenderListenerCommand.cpp" />
+    <ClCompile Include="src\AddToViewportCommand.cpp" />
+    <ClCompile Include="src\Loader.cpp" />
+    <ClCompile Include="src\LogAPI.cpp" />
+    <ClCompile Include="src\MouseManager.cpp" />
+    <ClCompile Include="src\NegotiatorEvent.cpp" />
+    <ClCompile Include="src\OgreEngine.cpp" />
+    <ClCompile Include="src\OgreMediator.cpp" />
+    <ClCompile Include="src\OgreRenderObserver.cpp" />
+    <ClCompile Include="src\OgreRenderObserverRegistry.cpp" />
+    <ClCompile Include="src\OgreStandardCamera.cpp" />
+    <ClCompile Include="src\PropertyLoader.cpp" />
+    <ClCompile Include="src\OgreSceneCreator.cpp" />
+    <ClCompile Include="src\OgreResourceManager.cpp" />
+    <ClCompile Include="src\RenderEvent.cpp" />
+    <ClCompile Include="src\SimulatorAPI.cpp" />
+    <ClCompile Include="src\SimulatorUtils.cpp" />
+    <ClCompile Include="src\tinyxml2\tinyxml2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AbstractSimulator.h" />
+    <ClInclude Include="include\InverseMouse.h" />
+    <ClInclude Include="include\InputTypes.h" />
+    <ClInclude Include="include\DefaultKeyboard.h" />
+    <ClInclude Include="include\DefaultMouse.h" />
+    <ClInclude Include="include\ManageKeyboardCameraCommand.h" />
+    <ClInclude Include="include\ManageMouseCameraCommand.h" />
+    <ClInclude Include="include\OgreInputSystem.h" />
+    <ClInclude Include="include\KeyboardManager.h" />
+    <ClInclude Include="include\ManageRenderListenerCommand.h" />
+    <ClInclude Include="include\AddToViewportCommand.h" />
+    <ClInclude Include="include\IOgreCommand.h" />
+    <ClInclude Include="include\IOgreMediator.h" />
+    <ClInclude Include="include\LogAPI.h" />
+    <ClInclude Include="include\MouseManager.h" />
+    <ClInclude Include="include\NegotiatorEvent.h" />
+    <ClInclude Include="include\OgreCameraManager.h" />
+    <ClInclude Include="include\OgreEngine.h" />
+    <ClInclude Include="include\Loader.h" />
+    <ClInclude Include="include\OgreMediator.h" />
+    <ClInclude Include="include\AbstractOgreNegotiator.h" />
+    <ClInclude Include="include\OgreRenderObserver.h" />
+    <ClInclude Include="include\OgreRenderObserverRegistry.h" />
+    <ClInclude Include="include\OgreStandardCamera.h" />
+    <ClInclude Include="include\PropertyLoader.h" />
+    <ClInclude Include="include\OgreSceneCreator.h" />
+    <ClInclude Include="include\OgreResourceManager.h" />
+    <ClInclude Include="include\RenderEvent.h" />
+    <ClInclude Include="include\RenderListener.h" />
+    <ClInclude Include="include\SimulatorAPI.h" />
+    <ClInclude Include="include\SimulatorUtils.h" />
+    <ClInclude Include="include\tinyxml2\tinyxml2.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
