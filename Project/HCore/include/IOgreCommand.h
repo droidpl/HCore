@@ -29,7 +29,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 class IOgreCommand {
 public:
+	/**
+	 * @brief Destructor that allows the commands to be destroyed. Needed to avoid some memory
+	 * leaks when destroying.
+	 */
 	virtual ~IOgreCommand(){};
+	/**
+	 * @brief Executes the command performing all needed operations.
+	 */
 	virtual void execute() = 0;
 };
 

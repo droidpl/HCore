@@ -31,7 +31,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <KeyboardManager.h>
 
 class DefaultKeyboard : public KeyboardManager {
-private:
 public:
 	DefaultKeyboard(OgreMediator* mediator, OIS::Keyboard* keyboard);
 	~DefaultKeyboard();

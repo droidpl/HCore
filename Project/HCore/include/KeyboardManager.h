@@ -41,13 +41,16 @@ class KeyboardManager : public RenderListener, protected AbstractOgreNegotiator,
 protected:
 	OIS::Keyboard*				mKeyboard;
 	bool						mStarted;
-	list<OIS::KeyCode>	mRenderObservers;
+	list<OIS::KeyCode>			mKeyCodes;
 public:
 	void startKeyboard();
 	void stopKeyboard();
+	list<OIS::KeyCode>* getListOfKeys();
+	void releaseAllPressedKeys();
+	void releasePressedKey(OIS::KeyCode& keyCode);
 	void onUpdate (RenderEvent& renderEvent) = 0;
-	virtual bool keyPressed(const OIS::KeyEvent &arg) = 0;
-    virtual bool keyReleased(const OIS::KeyEvent &arg) = 0;
+	virtual bool keyPressed(const OIS::KeyEvent &evt) = 0;
+    virtual bool keyReleased(const OIS::KeyEvent &evt) = 0;
 };
 
 #endif

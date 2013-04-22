@@ -34,6 +34,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 class OgreInputSystem {
 private:
 	OIS::InputManager*		mInputManager;
+	OgreInputSystem(Ogre::RenderWindow* window);
 public:
 	/**
 	 * @brief Returns the instance of the singleton.
@@ -43,7 +44,6 @@ public:
 		static OgreInputSystem instance(window);
 		return instance;
 	}
-	OgreInputSystem(Ogre::RenderWindow* window);
 	OIS::Object* createInputObject(OIS::Type type, bool bufferMode = true);
 	void destroyInputObject(OIS::Object* inputObject);
 };

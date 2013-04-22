@@ -74,7 +74,5 @@ public:
 	 * from the simulator because you can get a Null reference.
 	 */
 	virtual void stopSimulator() = 0;
-
-	virtual void onUpdate (RenderEvent& renderEvent) = 0;
 };
 #endif

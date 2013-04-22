@@ -58,7 +58,7 @@ private:
 public:
 	OgreMediator();
 	~OgreMediator();
-	virtual void onOgreChanged(AbstractOgreNegotiator* negotiator, NegotiatorEvent& negotiatorEvent);
+	void onOgreChanged(AbstractOgreNegotiator* negotiator, NegotiatorEvent& negotiatorEvent);
 	bool initFramework();
 	void startRendering();
 	void addRenderListener(RenderListener* renderListener);

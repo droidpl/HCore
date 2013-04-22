@@ -91,9 +91,9 @@ public:
 
 	void setAmbientLight(Ogre::ColourValue const color = Ogre::ColourValue(0.7f, 0.7f, 0.7f));
 
-	void OgreSceneCreator::setSkyBox(string material, float distance = 5000, bool enabled = true, bool drawFirst = false);
+	void setSkyBox(string material, float distance = 5000, bool enabled = true, bool drawFirst = false);
 
-	Ogre::Light* OgreSceneCreator::createLight(string name, Ogre::Vector3 position = Ogre::Vector3(0,0,0));
+	Ogre::Light* createLight(string name, Ogre::Vector3 position = Ogre::Vector3(0,0,0));
 	/**
 	 * @brief Attaches one scene node into another.
 	 * 
