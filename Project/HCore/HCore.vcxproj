@@ -103,6 +103,7 @@
     <ClCompile Include="src\Mediator\OgreMediator.cpp" />
     <ClCompile Include="src\OgreEngine.cpp" />
     <ClCompile Include="src\OgreSceneCreator.cpp" />
+    <ClCompile Include="src\Parser\SceneParser.cpp" />
     <ClCompile Include="src\Resources\OgreResourceManager.cpp" />
     <ClCompile Include="src\SimulatorAPI.cpp" />
     <ClCompile Include="src\tinyxml2\tinyxml2.cpp" />
@@ -138,6 +139,7 @@
     <ClInclude Include="include\OgreEngine.h" />
     <ClInclude Include="include\Loader.h" />
     <ClInclude Include="include\OgreSceneCreator.h" />
+    <ClInclude Include="include\Parser\SceneParser.h" />
     <ClInclude Include="include\Resources\OgreResourceManager.h" />
     <ClInclude Include="include\SimulatorAPI.h" />
     <ClInclude Include="include\tinyxml2\tinyxml2.h" />
