@@ -54,7 +54,7 @@
       <AdditionalDependencies>libboost_thread-vc100-mt-gd-1_53.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(OutDir)\$(TargetFileName)" "$(SolutionDir)\Dist\$(Configuration)"</Command>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "$(SolutionDir)\Dist\$(Configuration)-dist"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -73,7 +73,7 @@
       <AdditionalDependencies>libboost_thread-vc100-mt-1_53.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(OutDir)\$(TargetFileName)" "$(SolutionDir)\Dist\$(Configuration)"</Command>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "$(SolutionDir)\Dist\$(Configuration)-dist"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

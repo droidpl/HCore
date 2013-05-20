@@ -1,9 +1,9 @@
 #include <Parser/SceneParser.h>
+#include <OgreSceneCreator.h>
 
-
-SceneParser::SceneParser(const OgreSceneCreator* sceneCreator){
-	//mSceneCreator = sceneCreator;
-	mUriFile = PropertyLoader::getInstance().getProperty("sceneLocation");
+SceneParser::SceneParser(OgreSceneCreator* sceneCreator){
+	mSceneCreator = sceneCreator;
+	mUriFile = PropertyLoader::getInstance().getPropertyValue("sceneLocation");
 }
 
 

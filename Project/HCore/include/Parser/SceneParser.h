@@ -27,29 +27,19 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef _SceneParser_H_
 #define _SceneParser_H_
 
+#include <tinyxml2/tinyxml2.h>
+#include <string>
+class OgreSceneCreator;
 
-#include <OgreSceneCreator.h>
-#include <Utils/PropertyLoader.h>
-#include <tinyxml2.h>
-
-/**
- * @brief Creates all the elements on the scene including it's physics and haptics.
- * 
- * Use this class to create all the elements, do not create them one by one because this will
- * free the memory when they are not needed.
- */
+/* NAMESPACE */
+using namespace std;
 
 class SceneParser {
-
 private:
 	string mUriFile;
-	const OgreSceneCreator* mSceneCreator;
-
+	OgreSceneCreator* mSceneCreator;
 public:
-
-	SceneParser(const OgreSceneCreator* sceneCreator);
-
+	SceneParser(OgreSceneCreator* sceneCreator);
 	void parseScene();
-
 };
 #endif
