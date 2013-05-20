@@ -115,3 +115,8 @@ Ogre::Camera* OgreSceneCreator::createCamera(string cameraId){
 	camera->setNearClipDistance(5);
 	return camera;
 }
+
+void OgreSceneCreator::parseScene(){
+	SceneParser parser(this);
+	parser.parseScene();
+}

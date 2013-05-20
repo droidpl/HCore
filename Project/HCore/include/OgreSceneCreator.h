@@ -37,6 +37,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <OgreString.h>
 #include <OgreColourValue.h>
 #include <OgreLight.h>
+#include <Parser/SceneParser.h>
 
 #include <Mediator/AbstractOgreNegotiator.h>
 class OgreMediator;
@@ -115,5 +116,7 @@ public:
 	 * @return The camera node of the scene.
 	 */
 	Ogre::Camera* createCamera(string cameraId);
+
+	void parseScene();
 };
 #endif

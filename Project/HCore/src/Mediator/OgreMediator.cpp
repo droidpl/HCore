@@ -59,9 +59,10 @@ bool OgreMediator::initFramework(){
 	mMouseManager->startMouse();
 	mKeyboardManager = new DefaultKeyboard(this, static_cast<OIS::Keyboard*> (inputSystem.createInputObject(OIS::OISKeyboard)));
 	mKeyboardManager->startKeyboard();
+	//Parsing scene
+	mSceneCreator->parseScene();
 	//Print initialized
 	LogAPI::getInstance().logMessage("****************\nSimulator framework initialized\n****************", typeid(this).name());
-	mSceneCreator->addEntityToRootNode(mSceneCreator->createEntity("cosaw","ogrehead.mesh"));
 	mSceneCreator->setSkyBox("Global/sky");
 	return result;
 }
