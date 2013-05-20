@@ -1,5 +1,5 @@
 /*
-Copyright (c) <2012> <Simulator Production Center>
+Copyright (c) <2013> <Simulator Production Center>
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
@@ -24,23 +24,37 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _OgreLoader_H_
-#define _OgreLoader_H_
+#ifndef _CameraManager_H_
+#define _CameraManager_H_
 
-/* INCLUDE */
-#include <memory>
-#include <CataractSimulator.h>
-#include <Loader.h>
+/* INCLUDES */
+#include <OgreCamera.h>
+#include <string>
+#include <Mediator/AbstractOgreNegotiator.h>
+#include <Utils/LogAPI.h>
+class OgreMediator;
 
-/* NAMESPACES */
+/* NAMESPACE */
 using namespace std;
 
-class CataractLoader : Loader {
-private:
-	typedef Loader super;
-	shared_ptr<AbstractSimulator>			mSimulator;
+class OgreCameraManager : protected AbstractOgreNegotiator {
+protected:
+	Ogre::Camera* mCamera;
 public:
-	CataractLoader() : mSimulator((AbstractSimulator*) new CataractSimulator()){}
-	virtual bool go(void);
+	static const string ID_CAMERA;
+	virtual void setPosition (float x, float y, float z) = 0;
+	virtual Ogre::Vector3 getPosition () = 0;
+	virtual Ogre::Vector3 getDirection() = 0;
+	virtual Ogre::Vector3 getRight () = 0;
+	virtual Ogre::Vector3 getUp() = 0;
+	virtual void move(Ogre::Vector3 direction) = 0;
+	virtual void goFordward (float units) = 0;
+	virtual void goBackward (float units) = 0;
+	virtual void yaw (float degrees) = 0;
+	virtual void pitch (float degrees) = 0;
+	virtual void addToViewport () = 0;
+	inline Ogre::Camera* getCamera () { return mCamera; }
+	inline void setCamera(Ogre::Camera* camera) { mCamera = camera; }
 };
+
 #endif

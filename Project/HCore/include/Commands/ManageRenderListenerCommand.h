@@ -24,23 +24,25 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _OgreLoader_H_
-#define _OgreLoader_H_
+#ifndef _AddRenderListenerCommand_H_
+#define _AddRenderListenerCommand_H_
 
 /* INCLUDE */
-#include <memory>
-#include <CataractSimulator.h>
-#include <Loader.h>
+#include <Commands/IOgreCommand.h>
+#include <OgreEngine.h>
+#include <Listener/OgreRenderObserverRegistry.h>
+#include <string>
 
-/* NAMESPACES */
+/* NAMESPACE */
 using namespace std;
 
-class CataractLoader : Loader {
+class ManageRenderListenerCommand : public IOgreCommand{
 private:
-	typedef Loader super;
-	shared_ptr<AbstractSimulator>			mSimulator;
+	OgreRenderObserverRegistry*			mObserverRegistry;
+	OgreEngine*							mEngine;
+	string								mAction;
 public:
-	CataractLoader() : mSimulator((AbstractSimulator*) new CataractSimulator()){}
-	virtual bool go(void);
+	ManageRenderListenerCommand(OgreRenderObserverRegistry* observerRegistry, OgreEngine* engine, string action="");
+	void execute();
 };
 #endif

@@ -1,5 +1,5 @@
 /*
-Copyright (c) <2012> <Simulator Production Center>
+Copyright (c) <2013> <Simulator Production Center>
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
@@ -24,23 +24,22 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _OgreLoader_H_
-#define _OgreLoader_H_
+#ifndef _AddToViewportCommand_H_
+#define _AddToViewportCommand_H_
 
-/* INCLUDE */
-#include <memory>
-#include <CataractSimulator.h>
-#include <Loader.h>
+/* INCLUDES */
+#include <Commands/IOgreCommand.h>
+#include <Camera/OgreCameraManager.h>
+#include <OgreSceneCreator.h>
+#include <OgreEngine.h>
 
-/* NAMESPACES */
-using namespace std;
-
-class CataractLoader : Loader {
+class AddToViewportCommand: public IOgreCommand {
 private:
-	typedef Loader super;
-	shared_ptr<AbstractSimulator>			mSimulator;
+	OgreCameraManager*		mCameraManager;
+	OgreSceneCreator*		mSceneCreator;
+	OgreEngine*				mEngine;
 public:
-	CataractLoader() : mSimulator((AbstractSimulator*) new CataractSimulator()){}
-	virtual bool go(void);
+	AddToViewportCommand(OgreCameraManager* cameraManager, OgreSceneCreator* sceneCreator, OgreEngine* engine);
+	void execute();
 };
 #endif

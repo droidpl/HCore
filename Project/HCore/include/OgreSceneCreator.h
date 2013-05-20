@@ -28,7 +28,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define _SceneCreator_H_
 
 /* INCLUDE */
-#include <PropertyLoader.h>
+#include <Utils/PropertyLoader.h>
 #include <string>
 #include <OgreSceneManager.h>
 #include <OgreBulletDynamicsRigidBody.h>
@@ -38,7 +38,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <OgreColourValue.h>
 #include <OgreLight.h>
 
-#include <AbstractOgreNegotiator.h>
+#include <Mediator/AbstractOgreNegotiator.h>
 class OgreMediator;
 
 /**

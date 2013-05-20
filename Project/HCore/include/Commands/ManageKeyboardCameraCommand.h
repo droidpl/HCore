@@ -1,5 +1,5 @@
 /*
-Copyright (c) <2012> <Simulator Production Center>
+Copyright (c) <2013> <Simulator Production Center>
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
@@ -24,23 +24,21 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _OgreLoader_H_
-#define _OgreLoader_H_
+#ifndef _ManageKeyboardCameraCommand_H_
+#define _ManageKeyboardCameraCommand_H_
 
-/* INCLUDE */
-#include <memory>
-#include <CataractSimulator.h>
-#include <Loader.h>
+/* INCLUDES */
+#include <Camera/OgreCameraManager.h>
+#include <Commands/IOgreCommand.h>
+#include <Input/Keyboard/KeyboardManager.h>
 
-/* NAMESPACES */
-using namespace std;
-
-class CataractLoader : Loader {
+class ManageKeyboardCameraCommand : public IOgreCommand{
 private:
-	typedef Loader super;
-	shared_ptr<AbstractSimulator>			mSimulator;
+	OgreCameraManager*		mCameraManager;
+	KeyboardManager*		mKeyboardManager;
+	static const int		MAX_SPEED = 250;
 public:
-	CataractLoader() : mSimulator((AbstractSimulator*) new CataractSimulator()){}
-	virtual bool go(void);
+	ManageKeyboardCameraCommand(OgreCameraManager* camera, KeyboardManager* keyboardManager);
+	void execute();
 };
 #endif

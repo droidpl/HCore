@@ -1,7 +1,7 @@
 #include <SimulatorAPI.h>
 
 /* FACADE INCLUDES */
-#include <OgreMediator.h>
+#include <Mediator/OgreMediator.h>
 
 //PRIVATE
 /**

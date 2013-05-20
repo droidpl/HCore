@@ -24,23 +24,21 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _OgreLoader_H_
-#define _OgreLoader_H_
+#ifndef _ResourceManager_H_
+#define _ResourceManager_H_
 
-/* INCLUDE */
-#include <memory>
-#include <CataractSimulator.h>
-#include <Loader.h>
+/* INCLUDES */
+#include <OgreString.h>
+#include <OgreConfigFile.h>
+#include <OgreResourceGroupManager.h>
+#include <Mediator/AbstractOgreNegotiator.h>
+class OgreMediator;
 
-/* NAMESPACES */
-using namespace std;
-
-class CataractLoader : Loader {
+class OgreResouceManager : protected AbstractOgreNegotiator {
 private:
-	typedef Loader super;
-	shared_ptr<AbstractSimulator>			mSimulator;
+	Ogre::String				mResourcesCfg; /**< String containing the name of the resources.cfg file. This file contains all the resources location information */
 public:
-	CataractLoader() : mSimulator((AbstractSimulator*) new CataractSimulator()){}
-	virtual bool go(void);
+	OgreResouceManager(OgreMediator* mediator);
 };
+
 #endif

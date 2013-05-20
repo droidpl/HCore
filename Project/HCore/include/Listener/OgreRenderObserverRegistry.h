@@ -1,5 +1,5 @@
 /*
-Copyright (c) <2012> <Simulator Production Center>
+Copyright (c) <2013> <Simulator Production Center>
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
@@ -24,23 +24,34 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _OgreLoader_H_
-#define _OgreLoader_H_
+#ifndef _OgreRenderObserverRegistry_H_
+#define _OgreRenderObserverRegistry_H_
 
 /* INCLUDE */
-#include <memory>
-#include <CataractSimulator.h>
-#include <Loader.h>
+#include <iostream>
+#include <list>
+#include <Listener/RenderListener.h>
+#include <Listener/OgreRenderObserver.h>
+#include <Utils/LogAPI.h>
 
-/* NAMESPACES */
+#include <Mediator/AbstractOgreNegotiator.h>
+class OgreMediator;
+
+/* NAMESPACE */
 using namespace std;
 
-class CataractLoader : Loader {
+class OgreRenderObserverRegistry : protected AbstractOgreNegotiator{
 private:
-	typedef Loader super;
-	shared_ptr<AbstractSimulator>			mSimulator;
+	list<OgreRenderObserver*>	mRenderObservers;
+	OgreRenderObserver*			mCacheLastObserver;
+
+	bool deleteRenderObserver(OgreRenderObserver* renderObserver);
 public:
-	CataractLoader() : mSimulator((AbstractSimulator*) new CataractSimulator()){}
-	virtual bool go(void);
+	OgreRenderObserverRegistry(OgreMediator* mediator);
+	~OgreRenderObserverRegistry();
+	void addListener(RenderListener* renderListener);
+	void detachListener(RenderListener* renderListener);
+	inline void flushCache(){ mCacheLastObserver = NULL; }
+	inline OgreRenderObserver* getCachedObserver() {return mCacheLastObserver; }
 };
 #endif

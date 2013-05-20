@@ -1,5 +1,5 @@
 /*
-Copyright (c) <2012> <Simulator Production Center>
+Copyright (c) <2013> <Simulator Production Center>
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
@@ -24,23 +24,27 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _OgreLoader_H_
-#define _OgreLoader_H_
+#ifndef _InputTypes_H_
+#define _InputTypes_H_
 
-/* INCLUDE */
-#include <memory>
-#include <CataractSimulator.h>
-#include <Loader.h>
-
-/* NAMESPACES */
-using namespace std;
-
-class CataractLoader : Loader {
-private:
-	typedef Loader super;
-	shared_ptr<AbstractSimulator>			mSimulator;
+class InputTypes {
 public:
-	CataractLoader() : mSimulator((AbstractSimulator*) new CataractSimulator()){}
-	virtual bool go(void);
+	struct KeyboardTypes {
+		enum types{
+			DEFAULT,
+			INVERSE
+		};
+	};
+	struct MouseTypes {
+		enum types{
+			DEFAULT,
+			INVERSE
+		};
+	};
+	struct HapticTypes {
+		enum types{
+			DEFAULT
+		};
+	};
 };
 #endif

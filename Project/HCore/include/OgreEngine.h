@@ -28,15 +28,15 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define _Engine_H_
 
 /* INCLUDE */
-#include <PropertyLoader.h>
+#include <Utils/PropertyLoader.h>
 #include <OgreRenderWindow.h>
 #include <OgreRoot.h>
 #include <OgreString.h>
 #include <OgreFrameListener.h>
-#include <OgreRenderObserver.h>
-#include <LogAPI.h>
+#include <Listener/OgreRenderObserver.h>
+#include <Utils/LogAPI.h>
 
-#include <AbstractOgreNegotiator.h>
+#include <Mediator/AbstractOgreNegotiator.h>
 class OgreMediator;
 
 /**

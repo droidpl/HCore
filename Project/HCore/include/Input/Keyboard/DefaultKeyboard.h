@@ -1,5 +1,5 @@
 /*
-Copyright (c) <2012> <Simulator Production Center>
+Copyright (c) <2013> <Simulator Production Center>
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
@@ -24,23 +24,19 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _OgreLoader_H_
-#define _OgreLoader_H_
+#ifndef _DefaultKeyboard_H_
+#define _DefaultKeyboard_H_
 
-/* INCLUDE */
-#include <memory>
-#include <CataractSimulator.h>
-#include <Loader.h>
+/* INCLUDES */
+#include <Input/Keyboard/KeyboardManager.h>
 
-/* NAMESPACES */
-using namespace std;
-
-class CataractLoader : Loader {
-private:
-	typedef Loader super;
-	shared_ptr<AbstractSimulator>			mSimulator;
+class DefaultKeyboard : public KeyboardManager {
 public:
-	CataractLoader() : mSimulator((AbstractSimulator*) new CataractSimulator()){}
-	virtual bool go(void);
+	DefaultKeyboard(OgreMediator* mediator, OIS::Keyboard* keyboard);
+	void onUpdate (RenderEvent& renderEvent);
+	bool keyPressed(const OIS::KeyEvent &keyPressed);
+    bool keyReleased(const OIS::KeyEvent &keyReleased);
+	bool isCommandKey(const OIS::KeyCode &keyCode);
 };
+
 #endif

@@ -28,9 +28,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define _CataractSimulator_H_
 
 /* INCLUDE */
-#include "AbstractSimulator.h"
-#include "SimulatorAPI.h"
-#include "LogAPI.h"
+#include <AbstractSimulator.h>
+#include <SimulatorAPI.h>
+#include <Utils/LogAPI.h>
 
 class CataractSimulator : public AbstractSimulator {
 public:

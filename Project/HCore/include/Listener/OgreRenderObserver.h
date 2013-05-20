@@ -1,5 +1,5 @@
 /*
-Copyright (c) <2012> <Simulator Production Center>
+Copyright (c) <2013> <Simulator Production Center>
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
@@ -24,23 +24,26 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef _OgreLoader_H_
-#define _OgreLoader_H_
+#ifndef _OgreRenderObserver_H_
+#define _OgreRenderObserver_H_
 
 /* INCLUDE */
 #include <memory>
-#include <CataractSimulator.h>
-#include <Loader.h>
+#include <Listener/RenderListener.h>
+#include <OgreFrameListener.h>
 
-/* NAMESPACES */
+/* NAMESPACE */
 using namespace std;
 
-class CataractLoader : Loader {
+class OgreRenderObserver : protected Ogre::FrameListener {
 private:
-	typedef Loader super;
-	shared_ptr<AbstractSimulator>			mSimulator;
+	RenderListener*		mRenderListener;
+	RenderEvent			mLastRenderEvent;
 public:
-	CataractLoader() : mSimulator((AbstractSimulator*) new CataractSimulator()){}
-	virtual bool go(void);
+	OgreRenderObserver(RenderListener* renderListener);
+	~OgreRenderObserver();
+	bool matchListener(RenderListener* renderListener);
+	void notify();
+	bool frameRenderingQueued (const Ogre::FrameEvent &evt);
 };
 #endif
