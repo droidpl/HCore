@@ -117,6 +117,6 @@ Ogre::Camera* OgreSceneCreator::createCamera(string cameraId){
 }
 
 void OgreSceneCreator::parseScene(){
-	SceneParser parser(this);
-	parser.parseScene();
+//	SceneParser parser(this);
+	//parser.parseScene();
 }
