@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE simulator-scene SYSTEM "scene.dtd">
+
+<ogre:simulator-scene xmlns:ogre="http://niebla.unileon.es/hcore/simulator-scene">
+	<ogre:scene-node id="Eye">
+		<ogre:position x="0.0" y="0.0" z="0.0"/>
+		<ogre:direction x="0.0" y="0.0" z="0.0"/>
+    
+		<ogre:scene-node id="nConj">
+			<ogre:position x=" -8.7" y="2.5" z="0.8"/>
+		  
+			<ogre:entity id="eConj" resource="sighConj.mesh">
+				<ogre:visibility value="true"/>
+			</ogre:entity>
+		</ogre:scene-node>
+			
+		<ogre:scene-node id="nCorn">
+			<ogre:position x="0.5" y="0.0" z="0.0"/>
+
+			<ogre:entity id="eCorn" resource="sighCorn.mesh">
+				<ogre:visibility value="true"/>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nEsc">
+			<ogre:position x="-49.6" y="0.0" z="0.0"/>
+
+			<ogre:entity id="eEsc" resource="sighEsc.mesh">
+				<ogre:visibility value="true"/>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nCris">
+			<ogre:position x="-6.7" y="0.0" z="0.0"/>
+
+			<ogre:entity id="eCris" resource="sighCris2.mesh">
+				<ogre:visibility value="true"/>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nPupi">
+			<ogre:position x="1.8" y="0.0" z="0.1"/>
+
+			<ogre:entity id="ePupi" resource="sighPupi.mesh">
+				<ogre:visibility value="true"/>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nCoro">
+			<ogre:position x="-43.3" y="-0.6" z="11.0"/>
+
+			<ogre:entity id="eCoro" resource="sighCoro.mesh">
+				<ogre:visibility value="true"/>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nReti">
+			<ogre:position x="-32.0" y="-1.3" z="0.0"/>
+
+			<ogre:entity id="eReti" resource="sighReti.mesh">
+				<ogre:visibility value="true"/>
+			</ogre:entity>
+		</ogre:scene-node>
+	</ogre:scene-node>
+</ogre:simulator-scene>

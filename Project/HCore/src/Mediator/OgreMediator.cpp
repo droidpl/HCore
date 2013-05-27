@@ -63,6 +63,8 @@ bool OgreMediator::initFramework(){
 	mSceneCreator->parseScene();
 	//Print initialized
 	LogAPI::getInstance().logMessage("****************\nSimulator framework initialized\n****************", typeid(this).name());
+	//Parse the scene
+	mSceneCreator->parseScene();
 	mSceneCreator->setSkyBox("Global/sky");
 	return result;
 }
