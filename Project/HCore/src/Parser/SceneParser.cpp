@@ -9,4 +9,5 @@ SceneParser::SceneParser(OgreSceneCreator* sceneCreator){
 
 void SceneParser::parseScene(){
 
+
 }
