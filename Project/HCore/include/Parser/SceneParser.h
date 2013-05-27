@@ -48,7 +48,7 @@ private:
 	/* ATTRIBUTES */
 	#define ID "id"
 	#define X "x"
-	#define Y "y
+	#define Y "y"
 	#define Z "z"
 	#define RESOURCE "resource"
 	#define VALUE "value"

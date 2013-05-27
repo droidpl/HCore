@@ -19,8 +19,28 @@ void SceneParser::parseScene(){
 }
 
 Ogre::SceneNode* SceneParser::parseSceneNode(tinyxml2::XMLElement* node){
+	Ogre::SceneNode* returnNode = mSceneCreator->createSceneNode(node->Attribute(ID),false,false);
 
-	return NULL;
+	tinyxml2::XMLElement* position = node->FirstChildElement(NODE_POSITION);
+	returnNode->setPosition(Ogre::Vector3(position->FloatAttribute(X), position->FloatAttribute(Y), position->FloatAttribute(Z)));
+	tinyxml2::XMLElement* direction = node->FirstChildElement(NODE_DIRECTION);
+	if(direction){
+		returnNode->setDirection(Ogre::Vector3(position->FloatAttribute(X), position->FloatAttribute(Y), position->FloatAttribute(Z)));
+	}
+
+	tinyxml2::XMLElement* entity = node->FirstChildElement(ENTITY_NODE);
+	while(entity){
+		returnNode->attachObject(parseEntityNode(entity));
+		entity = entity->NextSiblingElement(ENTITY_NODE);
+	}
+
+	tinyxml2::XMLElement* sceneNode = node->FirstChildElement(SCENE_NODE);
+	while(sceneNode){
+		returnNode->addChild(parseSceneNode(sceneNode));
+		sceneNode = sceneNode->NextSiblingElement(SCENE_NODE);
+	}
+
+	return returnNode;
 }
 
 Ogre::Entity* SceneParser::parseEntityNode(tinyxml2::XMLElement* node){
