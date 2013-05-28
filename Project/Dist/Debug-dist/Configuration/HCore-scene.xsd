@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+  targetNamespace="http://niebla.unileon.es/hcore/scene"
+  xmlns="http://niebla.unileon.es/hcore/scene"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  elementFormDefault="qualified">
+	<xs:element name="simulator-scene">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="scene-node" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="scene-node">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="entity"/>
+				<xs:element ref="position"/>
+				<xs:element ref="direction"/>
+				<xs:element ref="scene-node"/>
+			</xs:choice>
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+	</xs:element>
+	<xs:element name="position">
+		<xs:complexType>
+			<xs:attribute name="x" type="xs:float" use="required"/>
+			<xs:attribute name="y" type="xs:float" use="required"/>
+			<xs:attribute name="z" type="xs:float" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="direction">
+		<xs:complexType>
+			<xs:attribute name="x" type="xs:float" use="required"/>
+			<xs:attribute name="y" type="xs:float" use="required"/>
+			<xs:attribute name="z" type="xs:float" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="entity">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="visibility"/>
+			</xs:all>
+		<xs:attribute name="haptics" type="xs:boolean" use="required"/>
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+		<xs:attribute name="physics" type="xs:boolean" use="required"/>
+		<xs:attribute name="resource" type="xs:string" use="required"/>
+    </xs:complexType>
+	</xs:element>
+	<xs:element name="visibility">
+		<xs:complexType>
+			<xs:attribute name="value" type="xs:boolean" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
