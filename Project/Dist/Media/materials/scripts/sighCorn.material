@@ -1,0 +1,19 @@
+material Cornea
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0.188235 0.670588 1
+			diffuse 0 0.188235 0.670588 1
+			specular 1 1 1 1 80
+
+			texture_unit
+			{
+				texture SIGHIRIT.JPG
+			}
+		}
+
+	}
+
+}

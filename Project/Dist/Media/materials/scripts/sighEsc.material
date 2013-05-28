@@ -1,0 +1,20 @@
+material Esclerot
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 95
+
+			texture_unit
+			{
+				texture LAKEREM.JPG
+				colour_op_ex add src_texture src_current
+				colour_op_multipass_fallback one one
+				env_map cubic_reflection
+			}
+		}
+
+	}
+
+}

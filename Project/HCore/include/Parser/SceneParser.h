@@ -39,19 +39,19 @@ using namespace std;
 class SceneParser {
 private:
 	/* ELEMENTS */
-	#define GLOBAL_NODE "ogre:simulator-scene"
-	#define SCENE_NODE "ogre:scene-node"
-	#define NODE_POSITION "ogre:position"
-	#define NODE_DIRECTION "ogre:direction"
-	#define ENTITY_NODE "ogre:entity"
-	#define ENTITY_VISIBILITY "ogre:visibility"
+	#define HCORE_GLOBAL_NODE "ogre:simulator-scene"
+	#define HCORE_SCENE_NODE "ogre:scene-node"
+	#define HCORE_NODE_POSITION "ogre:position"
+	#define HCORE_NODE_DIRECTION "ogre:direction"
+	#define HCORE_ENTITY_NODE "ogre:entity"
+	#define HCORE_ENTITY_VISIBILITY "ogre:visibility"
 	/* ATTRIBUTES */
-	#define ID "id"
-	#define X "x"
-	#define Y "y"
-	#define Z "z"
-	#define RESOURCE "resource"
-	#define VALUE "value"
+	#define HCORE_ID "id"
+	#define HCORE_X "x"
+	#define HCORE_Y "y"
+	#define HCORE_Z "z"
+	#define HCORE_RESOURCE "resource"
+	#define HCORE_VALUE "value"
 
 	string							mUriFile; /**Uri where the scene must be parsed */
 	OgreSceneCreator*				mSceneCreator; /**The scene creator that helps to build the scene */

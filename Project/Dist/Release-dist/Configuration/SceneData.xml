@@ -9,7 +9,7 @@
 		<ogre:scene-node id="nConj">
 			<ogre:position x=" -8.7" y="2.5" z="0.8"/>
 		  
-			<ogre:entity id="eConj" resource="sighConj.mesh" physics="false" haptics="false">
+			<ogre:entity id="eConj" resource="sighConj.mesh">
 				<ogre:visibility value="true"/>
 			</ogre:entity>
 		</ogre:scene-node>
@@ -17,7 +17,7 @@
 		<ogre:scene-node id="nCorn">
 			<ogre:position x="0.5" y="0.0" z="0.0"/>
 
-			<ogre:entity id="eCorn" resource="sighCorn.mesh" physics="false" haptics="false">
+			<ogre:entity id="eCorn" resource="sighCorn.mesh">
 				<ogre:visibility value="true"/>
 			</ogre:entity>
 		</ogre:scene-node>
@@ -25,7 +25,7 @@
 		<ogre:scene-node id="nEsc">
 			<ogre:position x="-49.6" y="0.0" z="0.0"/>
 
-			<ogre:entity id="eEsc" resource="sighEsc.mesh" physics="false" haptics="false">
+			<ogre:entity id="eEsc" resource="sighEsc.mesh">
 				<ogre:visibility value="true"/>
 			</ogre:entity>
 		</ogre:scene-node>
@@ -33,7 +33,7 @@
 		<ogre:scene-node id="nCris">
 			<ogre:position x="-6.7" y="0.0" z="0.0"/>
 
-			<ogre:entity id="eCris" resource="sighCris2.mesh" physics="false" haptics="false">
+			<ogre:entity id="eCris" resource="sighCris2.mesh">
 				<ogre:visibility value="true"/>
 			</ogre:entity>
 		</ogre:scene-node>
@@ -41,7 +41,7 @@
 		<ogre:scene-node id="nPupi">
 			<ogre:position x="1.8" y="0.0" z="0.1"/>
 
-			<ogre:entity id="ePupi" resource="sighPupi.mesh" physics="false" haptics="false">
+			<ogre:entity id="ePupi" resource="sighPupi.mesh">
 				<ogre:visibility value="true"/>
 			</ogre:entity>
 		</ogre:scene-node>
@@ -49,7 +49,7 @@
 		<ogre:scene-node id="nCoro">
 			<ogre:position x="-43.3" y="-0.6" z="11.0"/>
 
-			<ogre:entity id="eCoro" resource="sighCoro.mesh" physics="false" haptics="false">
+			<ogre:entity id="eCoro" resource="sighCoro.mesh">
 				<ogre:visibility value="true"/>
 			</ogre:entity>
 		</ogre:scene-node>
@@ -57,13 +57,7 @@
 		<ogre:scene-node id="nReti">
 			<ogre:position x="-32.0" y="-1.3" z="0.0"/>
 
-			<ogre:entity id="eReti" resource="sighReti.mesh" physics="false" haptics="false">
-				<ogre:visibility value="true"/>
-			</ogre:entity>
-		</ogre:scene-node>
-		<ogre:scene-node id="ogrehead">
-			<ogre:position x="25" y="10" z="0"/>
-			<ogre:entity id="ogreheadent" resource="ogrehead.mesh" physics="false" haptics="false">
+			<ogre:entity id="eReti" resource="sighReti.mesh">
 				<ogre:visibility value="true"/>
 			</ogre:entity>
 		</ogre:scene-node>
