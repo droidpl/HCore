@@ -63,7 +63,7 @@ private:
 	/**
 	 * Parse an entity of the scene.
 	 */
-	Ogre::Entity* parseEntityNode(tinyxml2::XMLElement* node);
+	Ogre::Entity* parseEntityNode(tinyxml2::XMLElement* entity);
 public:
 	/**
 	 * Initializes the parser of the scene.
