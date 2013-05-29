@@ -1,0 +1,41 @@
+material cortar-azul
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 1
+			diffuse 0.588235 0.588235 0.588235 1
+			specular 0 0 0 1 10
+
+			texture_unit
+			{
+				texture texturaPrueba.png
+			}
+		}
+
+	}
+
+}
+
+
+
+material cortar-verdoso
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 1
+			diffuse 0.588235 0.588235 0.588235 1
+			specular 0 0 0 1 10
+
+			texture_unit
+			{
+				texture textura6.png
+			}
+		}
+
+	}
+
+}

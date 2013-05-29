@@ -64,6 +64,7 @@ bool OgreMediator::initFramework(){
 	//Print initialized
 	LogAPI::getInstance().logMessage("****************\nSimulator framework initialized\n****************", typeid(this).name());
 	mSceneCreator->setSkyBox("Global/sky");
+	mSceneCreator->addPointer("pinzas_de_capsulorrexis.mesh");
 	return result;
 }
 

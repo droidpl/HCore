@@ -67,6 +67,8 @@ public:
 	~OgreSceneCreator();
 	 
 	Ogre::Entity* createEntity(string id, string resource);
+
+	void addPointer(string resource);
 	
 	void addEntityToRootNode(Ogre::Entity* entity);
 
