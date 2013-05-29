@@ -33,6 +33,10 @@ void OgreSceneCreator::addEntityToRootNode(string idEntity, string resource){
 	addEntityToRootNode(createEntity(idEntity, resource));
 }
 
+void OgreSceneCreator::addNodeToRootNode(Ogre::SceneNode* node){
+	mOpticWorld->getRootSceneNode()->addChild(node);
+}
+
 void OgreSceneCreator::addEntityToNode(Ogre::Entity* entity, string idNode){
 	mOpticWorld->getSceneNode(idNode)->attachObject(entity);
 }
@@ -124,6 +128,6 @@ Ogre::Camera* OgreSceneCreator::createCamera(string cameraId){
 }
 
 void OgreSceneCreator::parseScene(){
-//	SceneParser parser(this);
-	//parser.parseScene();
+	SceneParser parser(this);
+	parser.parseScene();
 }

@@ -29,6 +29,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include <tinyxml2/tinyxml2.h>
 #include <string>
+#include <OgreSceneNode.h>
+#include <OgreEntity.h>
 class OgreSceneCreator;
 
 /* NAMESPACE */
@@ -36,10 +38,40 @@ using namespace std;
 
 class SceneParser {
 private:
-	string mUriFile;
-	OgreSceneCreator* mSceneCreator;
+	/* ELEMENTS */
+	#define HCORE_GLOBAL_NODE "ogre:simulator-scene"
+	#define HCORE_SCENE_NODE "ogre:scene-node"
+	#define HCORE_NODE_POSITION "ogre:position"
+	#define HCORE_NODE_DIRECTION "ogre:direction"
+	#define HCORE_ENTITY_NODE "ogre:entity"
+	#define HCORE_ENTITY_VISIBILITY "ogre:visibility"
+	/* ATTRIBUTES */
+	#define HCORE_ID "id"
+	#define HCORE_X "x"
+	#define HCORE_Y "y"
+	#define HCORE_Z "z"
+	#define HCORE_RESOURCE "resource"
+	#define HCORE_VALUE "value"
+
+	string							mUriFile; /**Uri where the scene must be parsed */
+	OgreSceneCreator*				mSceneCreator; /**The scene creator that helps to build the scene */
+	tinyxml2::XMLDocument			mDoc; /** The document that parses elements as tinyxml2 */
+	/**
+	 * Parses a scene xml node with all its related attributes.
+	 */
+	Ogre::SceneNode* parseSceneNode(tinyxml2::XMLElement* node);
+	/**
+	 * Parse an entity of the scene.
+	 */
+	Ogre::Entity* parseEntityNode(tinyxml2::XMLElement* entity);
 public:
+	/**
+	 * Initializes the parser of the scene.
+	 */
 	SceneParser(OgreSceneCreator* sceneCreator);
+	/**
+	 * Parses the scene into a real scene.
+	 */
 	void parseScene();
 };
 #endif

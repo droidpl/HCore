@@ -74,6 +74,8 @@ public:
 
 	void addEntityToRootNode(string idEntity, string resource);
 
+	void addNodeToRootNode(Ogre::SceneNode* node);
+
 	void addEntityToNode(Ogre::Entity* entity, string idNode);
 
 	void addEntityToNode(string idEntity, string resource, string idNode);

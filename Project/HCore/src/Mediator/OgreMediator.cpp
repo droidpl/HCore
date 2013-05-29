@@ -59,10 +59,10 @@ bool OgreMediator::initFramework(){
 	mMouseManager->startMouse();
 	mKeyboardManager = new DefaultKeyboard(this, static_cast<OIS::Keyboard*> (inputSystem.createInputObject(OIS::OISKeyboard)));
 	mKeyboardManager->startKeyboard();
-	//Parsing scene
-	mSceneCreator->parseScene();
 	//Print initialized
 	LogAPI::getInstance().logMessage("****************\nSimulator framework initialized\n****************", typeid(this).name());
+	//Parse the scene
+	mSceneCreator->parseScene();
 	mSceneCreator->setSkyBox("Global/sky");
 	mSceneCreator->addPointer("pinzas_de_capsulorrexis.mesh");
 	return result;

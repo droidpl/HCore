@@ -1,0 +1,49 @@
+material Material#71
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.603922 0.239216 0.254902 1
+			diffuse 0.603922 0.239216 0.254902 1
+			specular 0.898039 0.898039 0.898039 1 95
+			emissive 0.1 0.1 0.1 1
+
+			texture_unit
+			{
+				texture LAKEREM.JPG
+				colour_op_ex add src_texture src_current
+				colour_op_multipass_fallback one one
+				env_map cubic_reflection
+			}
+		}
+
+	}
+
+}
+
+
+
+material Material#72
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 1 1 1 1 100
+			emissive 0.1 0.1 0.1 1
+
+			texture_unit
+			{
+				texture LAKEREM.JPG
+				colour_op_ex add src_texture src_current
+				colour_op_multipass_fallback one one
+				env_map cubic_reflection
+			}
+		}
+
+	}
+
+}

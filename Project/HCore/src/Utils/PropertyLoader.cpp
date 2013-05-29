@@ -20,7 +20,6 @@ public:
 
 PropertyLoader::PropertyLoader():
 	pImpl(new Facade()){
-	
 }
 
 PropertyLoader::~PropertyLoader(){}

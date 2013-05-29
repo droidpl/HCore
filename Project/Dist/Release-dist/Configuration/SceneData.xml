@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" ?>
+
+<ogre:simulator-scene 
+  xmlns:ogre="http://niebla.unileon.es/hcore/scene"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://niebla.unileon.es/hcore/scene HCore-scene.xsd">
+	<ogre:scene-node id="eye">
+		<ogre:position x="0.0" y="0.0" z="0.0"></ogre:position>
+		<ogre:direction x="0.0" y="0.0" z="0.0"></ogre:direction>
+    
+		<ogre:scene-node id="nConj">
+			<ogre:position x=" -8.7" y="2.5" z="0.8"></ogre:position>
+		  
+			<ogre:entity id="eConj" resource="sighConj.mesh" physics="false" haptics="false">
+				<ogre:visibility value="true"></ogre:visibility>
+			</ogre:entity>
+		</ogre:scene-node>
+			
+		<ogre:scene-node id="nCorn">
+			<ogre:position x="0.5" y="0.0" z="0.0"></ogre:position>
+
+			<ogre:entity id="eCorn" resource="sighCorn.mesh" physics="false" haptics="false">
+				<ogre:visibility value="true"></ogre:visibility>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nEsc">
+			<ogre:position x="-49.6" y="0.0" z="0.0"></ogre:position>
+
+			<ogre:entity id="eEsc" resource="sighEsc.mesh" physics="false" haptics="false">
+				<ogre:visibility value="true"></ogre:visibility>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nCris">
+			<ogre:position x="-6.7" y="0.0" z="0.0"></ogre:position>
+
+			<ogre:entity id="eCris" resource="sighCris2.mesh" physics="false" haptics="false">
+				<ogre:visibility value="true"></ogre:visibility>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nPupi">
+			<ogre:position x="1.8" y="0.0" z="0.1"></ogre:position>
+
+			<ogre:entity id="ePupi" resource="sighPupi.mesh" physics="false" haptics="false">
+				<ogre:visibility value="true"></ogre:visibility>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nCoro">
+			<ogre:position x="-43.3" y="-0.6" z="11.0"></ogre:position>
+
+			<ogre:entity id="eCoro" resource="sighCoro.mesh" physics="false" haptics="false">
+				<ogre:visibility value="true"></ogre:visibility>
+			</ogre:entity>
+		</ogre:scene-node>
+
+		<ogre:scene-node id="nReti">
+			<ogre:position x="-32.0" y="-1.3" z="0.0"></ogre:position>
+
+			<ogre:entity id="eReti" resource="sighReti.mesh" physics="false" haptics="false">
+				<ogre:visibility value="true"></ogre:visibility>
+			</ogre:entity>
+		</ogre:scene-node>
+		<ogre:scene-node id="ogrehead">
+			<ogre:position x="25" y="10" z="0"></ogre:position>
+			<ogre:entity id="ogreheadent" resource="ogrehead.mesh" physics="false" haptics="false">
+				<ogre:visibility value="true"></ogre:visibility>
+			</ogre:entity>
+		</ogre:scene-node>
+	</ogre:scene-node>
+</ogre:simulator-scene>
