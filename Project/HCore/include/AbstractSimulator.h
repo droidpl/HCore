@@ -40,7 +40,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  * - Resume : resumes the simulator after being paused.
  * - Stop : releases the resources reserved on the simulator and stops the simulation.
  * @author    Javier de Pedro Lopez
- * @version   0.1
+ * @version   1.0
  * @date      2013
  */
 class AbstractSimulator : public RenderListener {

@@ -34,10 +34,21 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Mediator/AbstractOgreNegotiator.h>
 class OgreMediator;
 
+/**
+ * @brief This class manages the resource loading to get loaded only those that are needed.
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class OgreResouceManager : protected AbstractOgreNegotiator {
 private:
 	Ogre::String				mResourcesCfg; /**< String containing the name of the resources.cfg file. This file contains all the resources location information */
 public:
+	/**
+	 * @brief Constructor that (right now, that must be changed) loads all the existing resources of the application.
+	 * @param mediator The mediator of the message protocol of HCore.
+	 */
 	OgreResouceManager(OgreMediator* mediator);
 };
 

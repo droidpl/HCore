@@ -38,9 +38,15 @@ using namespace std;
  * @brief This service provide the needed information to manage the scene and all it's objects.
  *
  * Provides the functions needed to manage the scene, it's objects and the mayor operations you can perform with them.
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
  */
 class LogAPI {
 private:
+	/**
+	 * Facade that encapsulates Ogre inside.
+	 */
 	class Facade;
 	shared_ptr<Facade>			pImpl; /**< Private implementation of the Facade. */
 	/**
@@ -56,6 +62,11 @@ public:
 		static LogAPI instance;
 		return instance;
 	}
+	/**
+	 * @brief Logs a message using the defaul log output. (Console or ogre log file).
+	 * @param message The message to log.
+	 * @param className The name of the class that produces this log.
+	 */
 	void logMessage(const string message, const string className);
 };
 #endif

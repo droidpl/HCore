@@ -45,7 +45,7 @@ class OgreMediator;
  * This is an Ogre specific class so DO NOT USE IT ON YOUR IMPLEMENTATIONS or it will be never independent. You
  * can manage every action performed by using the SceneServices.
  * @author    Javier de Pedro Lopez
- * @version   0.1
+ * @version   1.0
  * @date      2013
  */
 class OgreEngine : private Ogre::FrameListener, protected AbstractOgreNegotiator{
@@ -116,8 +116,23 @@ public:
 	 * @param camera The camera to add on the scene.
 	 */
 	void addViewport(Ogre::Camera* camera);
+	/**
+	 * @brief Allows to get the current window displayed.
+	 * @return The current window.
+	 */
 	inline Ogre::RenderWindow* getWindow(){return mWindow;}
+	/**
+	 * @brief Attaches a render listener to HCore.
+	 * 
+	 * Attaching a listener is the unique way to perform actions on the render loop. This actions are called
+	 * everytime the render engine renders an object.
+	 * @param renderListener The listener to attach.
+	 */
 	void addRenderListener(OgreRenderObserver* renderListener);
+	/**
+	 * @brief Removes a render listener from the render list.
+	 * @param renderListener The listener to remove from the render list.
+	 */
 	void detachRenderListener(OgreRenderObserver* renderListener);
 };
 #endif

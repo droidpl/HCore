@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
    &#160;<span id="projectnumber">0.5</span>
@@ -112,6 +111,11 @@ $(document).ready(function(){initNavTree('class_ogre_resouce_manager.html','');}
 <div class="title">OgreResouceManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class manages the resource loading to get loaded only those that are needed.  
+ <a href="class_ogre_resouce_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_ogre_resource_manager_8h_source.html">OgreResourceManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OgreResouceManager:</div>
 <div class="dyncontent">
@@ -124,8 +128,8 @@ Inheritance diagram for OgreResouceManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a895c18097dc9cc6954725f7d0b29d4f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a895c18097dc9cc6954725f7d0b29d4f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>OgreResouceManager</b> (<a class="el" href="class_ogre_mediator.html">OgreMediator</a> *mediator)</td></tr>
+<tr class="memitem:a895c18097dc9cc6954725f7d0b29d4f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_resouce_manager.html#a895c18097dc9cc6954725f7d0b29d4f3">OgreResouceManager</a> (<a class="el" href="class_ogre_mediator.html">OgreMediator</a> *mediator)</td></tr>
+<tr class="memdesc:a895c18097dc9cc6954725f7d0b29d4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that (right now, that must be changed) loads all the existing resources of the application.  <a href="#a895c18097dc9cc6954725f7d0b29d4f3">More...</a><br/></td></tr>
 <tr class="separator:a895c18097dc9cc6954725f7d0b29d4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -135,9 +139,39 @@ Additional Inherited Members</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediator</b> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
 <tr class="separator:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class manages the resource loading to get loaded only those that are needed. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a895c18097dc9cc6954725f7d0b29d4f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OgreResouceManager::OgreResouceManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ogre_mediator.html">OgreMediator</a> *&#160;</td>
+          <td class="paramname"><em>mediator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor that (right now, that must be changed) loads all the existing resources of the application. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mediator</td><td>The mediator of the message protocol of HCore. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Project/HCore/include/<a class="el" href="_ogre_resource_manager_8h_source.html">OgreResourceManager.h</a></li>
-<li>Project/HCore/src/OgreResourceManager.cpp</li>
+<li>Project/HCore/include/Resources/<a class="el" href="_ogre_resource_manager_8h_source.html">OgreResourceManager.h</a></li>
+<li>Project/HCore/src/Resources/OgreResourceManager.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -145,7 +179,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediato
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_ogre_resouce_manager.html">OgreResouceManager</a></li>
-    <li class="footer">Generated on Thu Apr 18 2013 12:21:24 for HCore by
+    <li class="footer">Generated on Thu May 30 2013 13:01:43 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

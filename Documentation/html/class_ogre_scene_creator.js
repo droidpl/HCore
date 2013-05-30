@@ -8,6 +8,7 @@ var class_ogre_scene_creator =
     [ "addEntityToRootNode", "class_ogre_scene_creator.html#aece932b18a8f19c271c0978e4ecb54d8", null ],
     [ "addInteractionToNode", "class_ogre_scene_creator.html#ad50e2bf6e69927f9ad6ef85b7535136a", null ],
     [ "addInteractionToNode", "class_ogre_scene_creator.html#a5d4fcd3ea8c1e3545d61945883f770f2", null ],
+    [ "addNodeToRootNode", "class_ogre_scene_creator.html#aee4127529a8d62224ba2da8bd37197eb", null ],
     [ "attachToExistingNode", "class_ogre_scene_creator.html#a06daf1904556f48c3e2af479820c5744", null ],
     [ "createCamera", "class_ogre_scene_creator.html#aff35a7eb51869cfc8f5e8c65b990b394", null ],
     [ "createEntity", "class_ogre_scene_creator.html#a2854258890c198565c98bf6e79d892d0", null ],
@@ -17,6 +18,7 @@ var class_ogre_scene_creator =
     [ "createSceneNodeOnNode", "class_ogre_scene_creator.html#a2101395955a6b7398eab38401d5f3dfa", null ],
     [ "createSceneNodeOnNode", "class_ogre_scene_creator.html#a0323861414a6099bc75fe629db959cdf", null ],
     [ "createSceneNodeOnNode", "class_ogre_scene_creator.html#a1930fc213384218028e19ebedfcec3bd", null ],
+    [ "parseScene", "class_ogre_scene_creator.html#ae4ee7208b11c3661033c551b00c93abb", null ],
     [ "removeObject", "class_ogre_scene_creator.html#a8197fa6b03ae4df9f82666d3d3b82464", null ],
     [ "setAmbientLight", "class_ogre_scene_creator.html#a39cdce6ccd26b754efd3bdd88fa5f631", null ],
     [ "setSkyBox", "class_ogre_scene_creator.html#a79c975cca36746af96837eb4d7375cab", null ]

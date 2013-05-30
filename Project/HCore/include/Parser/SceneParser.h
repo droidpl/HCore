@@ -36,8 +36,24 @@ class OgreSceneCreator;
 /* NAMESPACE */
 using namespace std;
 
+/**
+ * @brief This class has to read all the data inside a configuration file and show it as an Ogre scene.
+ * 
+ * This class takes the file location (relative to the $(Configuration)-dist folder) from the property
+ * file. The name of the property is "sceneLocation". If the searched file does not exist it will produce
+ * unexpected behaviour.
+ * The XML located must follow the XML Schema standar provided on the configuration folder, so, before
+ * parsing a scene, you must be sure the XML created is valid.
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class SceneParser {
 private:
+	/******
+	 * Global elements of the simulator.
+	 * Be careful when changing those values because can interact with other predefined elements.
+	 ******/
 	/* ELEMENTS */
 	#define HCORE_GLOBAL_NODE "ogre:simulator-scene"
 	#define HCORE_SCENE_NODE "ogre:scene-node"
@@ -57,20 +73,25 @@ private:
 	OgreSceneCreator*				mSceneCreator; /**The scene creator that helps to build the scene */
 	tinyxml2::XMLDocument			mDoc; /** The document that parses elements as tinyxml2 */
 	/**
-	 * Parses a scene xml node with all its related attributes.
+	 * @brief Parses a scene xml node with all its related attributes.
+	 * @param node The XML element (from the scene file) of the scene that will be parsed as a Ogre node.
+	 * @return The Ogre scene node.
 	 */
 	Ogre::SceneNode* parseSceneNode(tinyxml2::XMLElement* node);
 	/**
-	 * Parse an entity of the scene.
+	 * @brief Parse an entity of the scene in the scene file configuration.
+	 * @param entity The XML element that represent an Ogre entity object.
+	 * @return The Ogre entity object.
 	 */
 	Ogre::Entity* parseEntityNode(tinyxml2::XMLElement* entity);
 public:
 	/**
-	 * Initializes the parser of the scene.
+	 * @brief Constructor that initializes the parser of the scene.
+	 * @param sceneCreator The scene creator negotiator that can create elements on the scene.
 	 */
 	SceneParser(OgreSceneCreator* sceneCreator);
 	/**
-	 * Parses the scene into a real scene.
+	 * @brief Parses the scene configuration file into a real scene.
 	 */
 	void parseScene();
 };

@@ -37,6 +37,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Mediator/AbstractOgreNegotiator.h>
 class OgreMediator;
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class MouseManager : public RenderListener, protected AbstractOgreNegotiator, public OIS::MouseListener{
 protected:
 	OIS::Mouse*			mMouse;

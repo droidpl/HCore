@@ -51,7 +51,7 @@ using namespace std;
  * - Checks the configuration in the default Ogre.cfg file.
  * - Creates the window and attach a FrameListener.
  * @author    Javier de Pedro Lopez
- * @version   0.1
+ * @version   1.0
  * @date      2013
  */
 class Loader {

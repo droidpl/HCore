@@ -34,6 +34,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /* NAMESPACE */
 using namespace std;
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class OgreStandardCamera : private OgreCameraManager {
 public:
 	static const string ID_CAMERA;

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>HCore: Project/HCore/include/LogAPI.h Source File</title>
+<title>HCore: Project/HCore/include/Utils/LogAPI.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
    &#160;<span id="projectnumber">0.5</span>
@@ -142,26 +141,26 @@ $(document).ready(function(){initNavTree('_log_a_p_i_8h_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/* NAMESPACE */</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_log_a_p_i.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_log_a_p_i.html" title="This service provide the needed information to manage the scene and all it&#39;s objects.">LogAPI</a> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">class </span><a class="code" href="class_log_a_p_i_1_1_facade.html">Facade</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    shared_ptr&lt;Facade&gt;          pImpl; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_log_a_p_i.html" title="This service provide the needed information to manage the scene and all it&#39;s objects.">LogAPI</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="class_log_a_p_i.html#a6d75c2596041d1ebd7b1de5738aba02d">   55</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_log_a_p_i.html" title="This service provide the needed information to manage the scene and all it&#39;s objects.">LogAPI</a>&amp; <a class="code" href="class_log_a_p_i.html#a6d75c2596041d1ebd7b1de5738aba02d" title="Returns the instance of the singleton.">getInstance</a>(){</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_log_a_p_i.html" title="This service provide the needed information to manage the scene and all it&#39;s objects.">LogAPI</a> instance;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> logMessage(<span class="keyword">const</span> <span class="keywordtype">string</span> message, <span class="keyword">const</span> <span class="keywordtype">string</span> className);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_log_a_p_i.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_log_a_p_i.html" title="This service provide the needed information to manage the scene and all it&#39;s objects.">LogAPI</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">class </span><a class="code" href="class_log_a_p_i_1_1_facade.html">Facade</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    shared_ptr&lt;Facade&gt;          pImpl; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_log_a_p_i.html" title="This service provide the needed information to manage the scene and all it&#39;s objects.">LogAPI</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_log_a_p_i.html#a6d75c2596041d1ebd7b1de5738aba02d">   61</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_log_a_p_i.html" title="This service provide the needed information to manage the scene and all it&#39;s objects.">LogAPI</a>&amp; <a class="code" href="class_log_a_p_i.html#a6d75c2596041d1ebd7b1de5738aba02d" title="Returns the instance of the singleton.">getInstance</a>(){</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">static</span> <a class="code" href="class_log_a_p_i.html" title="This service provide the needed information to manage the scene and all it&#39;s objects.">LogAPI</a> instance;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> logMessage(<span class="keyword">const</span> <span class="keywordtype">string</span> message, <span class="keyword">const</span> <span class="keywordtype">string</span> className);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><b>LogAPI.h</b></li>
-    <li class="footer">Generated on Thu Apr 18 2013 12:21:23 for HCore by
+    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><a class="el" href="dir_4f2f73ebf9a0c36a7f351e0434f463d2.html">Utils</a></li><li class="navelem"><b>LogAPI.h</b></li>
+    <li class="footer">Generated on Thu May 30 2013 13:01:43 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

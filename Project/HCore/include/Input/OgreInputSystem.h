@@ -31,6 +31,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <OISInputManager.h>
 #include <OgreRenderWindow.h>
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class OgreInputSystem {
 private:
 	OIS::InputManager*		mInputManager;

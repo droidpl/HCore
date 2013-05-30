@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
    &#160;<span id="projectnumber">0.5</span>
@@ -113,6 +112,8 @@ $(document).ready(function(){initNavTree('class_keyboard_manager.html','');});
 <div class="title">KeyboardManager Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_keyboard_manager_8h_source.html">KeyboardManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for KeyboardManager:</div>
 <div class="dyncontent">
@@ -121,7 +122,8 @@ Inheritance diagram for KeyboardManager:</div>
   <map id="KeyboardManager_map" name="KeyboardManager_map">
 <area href="class_render_listener.html" alt="RenderListener" shape="rect" coords="0,0,146,24"/>
 <area href="class_abstract_ogre_negotiator.html" alt="AbstractOgreNegotiator" shape="rect" coords="156,0,302,24"/>
-<area href="class_default_keyboard.html" alt="DefaultKeyboard" shape="rect" coords="156,112,302,136"/>
+<area href="class_default_keyboard.html" alt="DefaultKeyboard" shape="rect" coords="78,112,224,136"/>
+<area href="class_inverse_keyboard.html" alt="InverseKeyboard" shape="rect" coords="234,112,380,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -133,15 +135,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>startKeyboard</b> ()<
 <tr class="memitem:a85dc03d688f2af15b1a3284544dc4a8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85dc03d688f2af15b1a3284544dc4a8b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stopKeyboard</b> ()</td></tr>
 <tr class="separator:a85dc03d688f2af15b1a3284544dc4a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b40cb685d9c9452325d001544f9807"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7b40cb685d9c9452325d001544f9807"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>onUpdate</b> (<a class="el" href="class_render_event.html">RenderEvent</a> &amp;renderEvent)=0</td></tr>
-<tr class="separator:ae7b40cb685d9c9452325d001544f9807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c3f0f7e14f44ad31189abce309f623f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c3f0f7e14f44ad31189abce309f623f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressed</b> (const OIS::KeyEvent &amp;arg)=0</td></tr>
-<tr class="separator:a4c3f0f7e14f44ad31189abce309f623f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67b0a4566ef469b85fa1fd1edc5e3230"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67b0a4566ef469b85fa1fd1edc5e3230"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleased</b> (const OIS::KeyEvent &amp;arg)=0</td></tr>
-<tr class="separator:a67b0a4566ef469b85fa1fd1edc5e3230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4bbe67869c2d421731e1a859e2d2690"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4bbe67869c2d421731e1a859e2d2690"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseAllPressedKeys</b> ()</td></tr>
+<tr class="separator:ae4bbe67869c2d421731e1a859e2d2690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7cfb61c6f09c581be82242cd006b06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace7cfb61c6f09c581be82242cd006b06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>releasePressedKey</b> (const OIS::KeyCode &amp;keyCode)</td></tr>
+<tr class="separator:ace7cfb61c6f09c581be82242cd006b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249b7875fa5a89c9e128a586b9f56087"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a249b7875fa5a89c9e128a586b9f56087"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onUpdate</b> (<a class="el" href="class_render_event.html">RenderEvent</a> &amp;renderEvent)=0</td></tr>
+<tr class="separator:a249b7875fa5a89c9e128a586b9f56087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a04f7e88b65169d34599ac5f2e60b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56a04f7e88b65169d34599ac5f2e60b2"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressed</b> (const OIS::KeyEvent &amp;evt)=0</td></tr>
+<tr class="separator:a56a04f7e88b65169d34599ac5f2e60b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32dae39d0638ba2d7bf30c4b7fe7de9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32dae39d0638ba2d7bf30c4b7fe7de9f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleased</b> (const OIS::KeyEvent &amp;evt)=0</td></tr>
+<tr class="separator:a32dae39d0638ba2d7bf30c4b7fe7de9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8cb523f8d7cf5e1ab340f94cca7930"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c8cb523f8d7cf5e1ab340f94cca7930"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCommandKey</b> (const OIS::KeyCode &amp;keyCode)=0</td></tr>
+<tr class="separator:a5c8cb523f8d7cf5e1ab340f94cca7930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1198baa202f0aecbed9fe1d91d58d416"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1198baa202f0aecbed9fe1d91d58d416"></a>
+list&lt; const OIS::KeyCode &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>getListOfKeys</b> ()</td></tr>
+<tr class="separator:a1198baa202f0aecbed9fe1d91d58d416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4494d3e61885b5eac6bef894877f1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b4494d3e61885b5eac6bef894877f1b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>getTimeSinceLastFrame</b> ()</td></tr>
+<tr class="separator:a7b4494d3e61885b5eac6bef894877f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -151,9 +168,12 @@ OIS::Keyboard *&#160;</td><td class="memItemRight" valign="bottom"><b>mKeyboard<
 <tr class="memitem:ac71e40a15a2eb84aa2756154b0912206"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac71e40a15a2eb84aa2756154b0912206"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>mStarted</b></td></tr>
 <tr class="separator:ac71e40a15a2eb84aa2756154b0912206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988107219c9258421fbdd49260c7c7a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a988107219c9258421fbdd49260c7c7a4"></a>
-list&lt; OIS::KeyCode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mRenderObservers</b></td></tr>
-<tr class="separator:a988107219c9258421fbdd49260c7c7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca656a9183932c72a2fd8fc5690f18a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca656a9183932c72a2fd8fc5690f18a4"></a>
+list&lt; const OIS::KeyCode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mKeyCodes</b></td></tr>
+<tr class="separator:aca656a9183932c72a2fd8fc5690f18a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758456d16f08ba7ee6ab22663bf97f72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a758456d16f08ba7ee6ab22663bf97f72"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mTimeSinceLastFrame</b></td></tr>
+<tr class="separator:a758456d16f08ba7ee6ab22663bf97f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -162,9 +182,13 @@ Additional Inherited Members</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediator</b> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
 <tr class="separator:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>Project/HCore/include/<a class="el" href="_keyboard_manager_8h_source.html">KeyboardManager.h</a></li>
-<li>Project/HCore/src/KeyboardManager.cpp</li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>Project/HCore/include/Input/Keyboard/<a class="el" href="_keyboard_manager_8h_source.html">KeyboardManager.h</a></li>
+<li>Project/HCore/src/Input/Keyboard/KeyboardManager.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -172,7 +196,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediato
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_keyboard_manager.html">KeyboardManager</a></li>
-    <li class="footer">Generated on Thu Apr 18 2013 12:21:23 for HCore by
+    <li class="footer">Generated on Thu May 30 2013 13:01:43 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

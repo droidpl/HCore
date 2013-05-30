@@ -27,6 +27,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef _RenderEvent_H_
 #define _RenderEvent_H_
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class RenderEvent {
 private:
 	float mTimeSinceLastEvent;

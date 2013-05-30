@@ -31,6 +31,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Mediator/NegotiatorEvent.h>
 class OgreMediator;
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class AbstractOgreNegotiator {
 protected:
 	OgreMediator*			mMediator;

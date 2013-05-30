@@ -48,6 +48,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Input/InputTypes.h>
 #include <Utils/LogAPI.h>
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class OgreMediator: public IOgreMediator {
 private:
 	OgreEngine*						mEngine; /**< The engine of the framework. */

@@ -1,8 +1,8 @@
 var class_default_keyboard =
 [
     [ "DefaultKeyboard", "class_default_keyboard.html#a7b4f5ece32653de501c4983735172ed5", null ],
-    [ "~DefaultKeyboard", "class_default_keyboard.html#a4e92299479b44d7b3bb5a9a2b7764358", null ],
-    [ "keyPressed", "class_default_keyboard.html#a934c85a0cc36bc0c6fe30846d8a3b8ab", null ],
-    [ "keyReleased", "class_default_keyboard.html#af0829611e01363bfa2b0d0946126dfec", null ],
+    [ "isCommandKey", "class_default_keyboard.html#aa0706fb01d551d71d5a95a32ae8d756d", null ],
+    [ "keyPressed", "class_default_keyboard.html#a7be3659797e89517d785854a680ad8d5", null ],
+    [ "keyReleased", "class_default_keyboard.html#a73d94654aca539c6f5225bf77ceb8dac", null ],
     [ "onUpdate", "class_default_keyboard.html#af2fe08727958f346aa804c74f3f6f3b8", null ]
 ];

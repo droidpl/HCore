@@ -39,6 +39,13 @@ class OgreMediator;
 
 /* NAMESPACE */
 using namespace std;
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 
 class OgreRenderObserverRegistry : protected AbstractOgreNegotiator{
 private:

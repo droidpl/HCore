@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
    &#160;<span id="projectnumber">0.5</span>
@@ -150,14 +149,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22503a3347881645eadea1ec881593d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_engine.html#a22503a3347881645eadea1ec881593d8">addViewport</a> (Ogre::Camera *camera)</td></tr>
 <tr class="memdesc:a22503a3347881645eadea1ec881593d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new viewport to the scene, setting the aspect ratio of the camera to the value obtained by dividing the width and height of this viewport.  <a href="#a22503a3347881645eadea1ec881593d8">More...</a><br/></td></tr>
 <tr class="separator:a22503a3347881645eadea1ec881593d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a304142f13871b9fa2468a97f6300b810"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a304142f13871b9fa2468a97f6300b810"></a>
-Ogre::RenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>getWindow</b> ()</td></tr>
+<tr class="memitem:a304142f13871b9fa2468a97f6300b810"><td class="memItemLeft" align="right" valign="top">Ogre::RenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_engine.html#a304142f13871b9fa2468a97f6300b810">getWindow</a> ()</td></tr>
+<tr class="memdesc:a304142f13871b9fa2468a97f6300b810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to get the current window displayed.  <a href="#a304142f13871b9fa2468a97f6300b810">More...</a><br/></td></tr>
 <tr class="separator:a304142f13871b9fa2468a97f6300b810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a921d473be863ffb80c50e96bc8ef9eda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a921d473be863ffb80c50e96bc8ef9eda"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addRenderListener</b> (<a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a> *renderListener)</td></tr>
+<tr class="memitem:a921d473be863ffb80c50e96bc8ef9eda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_engine.html#a921d473be863ffb80c50e96bc8ef9eda">addRenderListener</a> (<a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a> *renderListener)</td></tr>
+<tr class="memdesc:a921d473be863ffb80c50e96bc8ef9eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a render listener to HCore.  <a href="#a921d473be863ffb80c50e96bc8ef9eda">More...</a><br/></td></tr>
 <tr class="separator:a921d473be863ffb80c50e96bc8ef9eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adae5ea6ec1eaa3809c867567ac98771f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adae5ea6ec1eaa3809c867567ac98771f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>detachRenderListener</b> (<a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a> *renderListener)</td></tr>
+<tr class="memitem:adae5ea6ec1eaa3809c867567ac98771f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_engine.html#adae5ea6ec1eaa3809c867567ac98771f">detachRenderListener</a> (<a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a> *renderListener)</td></tr>
+<tr class="memdesc:adae5ea6ec1eaa3809c867567ac98771f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a render listener from the render list.  <a href="#adae5ea6ec1eaa3809c867567ac98771f">More...</a><br/></td></tr>
 <tr class="separator:adae5ea6ec1eaa3809c867567ac98771f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -177,9 +176,34 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Engine of the application that manages the information related to Root and render. </p>
 <p>This is an Ogre specific class so DO NOT USE IT ON YOUR IMPLEMENTATIONS or it will be never independent. You can manage every action performed by using the SceneServices. </p>
 <dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a921d473be863ffb80c50e96bc8ef9eda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreEngine::addRenderListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attaches a render listener to HCore. </p>
+<p>Attaching a listener is the unique way to perform actions on the render loop. This actions are called everytime the render engine renders an object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>The listener to attach. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a22503a3347881645eadea1ec881593d8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -198,6 +222,30 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">camera</td><td>The camera to add on the scene. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adae5ea6ec1eaa3809c867567ac98771f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreEngine::detachRenderListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a render listener from the render list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>The listener to remove from the render list. </td></tr>
   </table>
   </dd>
 </dl>
@@ -263,6 +311,32 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a304142f13871b9fa2468a97f6300b810"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ogre::RenderWindow* OgreEngine::getWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allows to get the current window displayed. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current window. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a2ee82380507c2683098c0281b564f063"></a>
 <div class="memitem">
 <div class="memproto">
@@ -311,7 +385,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_ogre_engine.html">OgreEngine</a></li>
-    <li class="footer">Generated on Thu Apr 18 2013 12:21:24 for HCore by
+    <li class="footer">Generated on Thu May 30 2013 13:01:43 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

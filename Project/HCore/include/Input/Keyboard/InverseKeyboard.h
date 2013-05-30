@@ -30,6 +30,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /* INCLUDES */
 #include <Input/Keyboard/KeyboardManager.h>
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class InverseKeyboard : public KeyboardManager {
 public:
 	InverseKeyboard(OgreMediator* mediator, OIS::Keyboard* keyboard);

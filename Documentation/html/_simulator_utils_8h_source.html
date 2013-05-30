@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>HCore: Project/HCore/include/SimulatorUtils.h Source File</title>
+<title>HCore: Project/HCore/include/Utils/SimulatorUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
    &#160;<span id="projectnumber">0.5</span>
@@ -136,7 +135,7 @@ $(document).ready(function(){initNavTree('_simulator_utils_8h_source.html','');}
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _SimulatorUtils_H_</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* INCLUDE */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;Utils\OgreBulletCollisionsMeshToShapeConverter.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;Utils/OgreBulletCollisionsMeshToShapeConverter.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;OgreOggSoundManager.h&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;OgreOggISound.h&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
@@ -144,22 +143,22 @@ $(document).ready(function(){initNavTree('_simulator_utils_8h_source.html','');}
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* NAMESPACE */</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="class_simulator_utils.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_simulator_utils.html" title="Provides some useful options to perform activities like playing music or modifying the triangle const...">SimulatorUtils</a> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_simulator_utils.html" title="Provides some useful options to perform activities like playing music or modifying the triangle const...">SimulatorUtils</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> OgreBulletCollisions::ConvexHullCollisionShape* getConvex(Ogre::Entity* entity);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> OgreBulletCollisions::TriangleMeshCollisionShape* getTrimesh(Ogre::Entity* entity);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> playSound(<span class="keywordtype">string</span> soundId, <span class="keywordtype">string</span> soundResource, <span class="keywordtype">bool</span> loop = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_simulator_utils.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_simulator_utils.html" title="Provides some useful options to perform activities like playing music or modifying the triangle const...">SimulatorUtils</a> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_simulator_utils.html" title="Provides some useful options to perform activities like playing music or modifying the triangle const...">SimulatorUtils</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> OgreBulletCollisions::ConvexHullCollisionShape* getConvex(Ogre::Entity* entity);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> OgreBulletCollisions::TriangleMeshCollisionShape* getTrimesh(Ogre::Entity* entity);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> playSound(<span class="keywordtype">string</span> soundId, <span class="keywordtype">string</span> soundResource, <span class="keywordtype">bool</span> loop = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><b>SimulatorUtils.h</b></li>
-    <li class="footer">Generated on Thu Apr 18 2013 12:21:23 for HCore by
+    <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><a class="el" href="dir_4f2f73ebf9a0c36a7f351e0434f463d2.html">Utils</a></li><li class="navelem"><b>SimulatorUtils.h</b></li>
+    <li class="footer">Generated on Thu May 30 2013 13:01:43 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

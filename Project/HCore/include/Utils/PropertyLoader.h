@@ -45,6 +45,9 @@ using namespace std;
  * - PROPERTY_NAME: the name of the property that will be accessed.
  * - VALUE: the value to store.
  * Remember that the XML must be well formated and it will be parsed using the TinyXml2 library.
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
  */
 class PropertyLoader {
 private:

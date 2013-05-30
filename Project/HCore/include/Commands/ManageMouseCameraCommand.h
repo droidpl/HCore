@@ -32,6 +32,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Commands/IOgreCommand.h>
 #include <Input/Mouse/MouseManager.h>
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class ManageMouseCameraCommand : public IOgreCommand {
 private:
 	OgreCameraManager* mCameraManager;

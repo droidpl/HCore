@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
    &#160;<span id="projectnumber">0.5</span>
@@ -113,6 +112,8 @@ $(document).ready(function(){initNavTree('class_ogre_standard_camera.html','');}
 <div class="title">OgreStandardCamera Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_ogre_standard_camera_8h_source.html">OgreStandardCamera.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OgreStandardCamera:</div>
 <div class="dyncontent">
@@ -131,9 +132,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afec7a10266a1a439689a4f64e3ad24b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afec7a10266a1a439689a4f64e3ad24b8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (float x, float y, float z)</td></tr>
 <tr class="separator:afec7a10266a1a439689a4f64e3ad24b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b05839f8bf5a9a941a03ebf4bf652a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79b05839f8bf5a9a941a03ebf4bf652a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>toPosition</b> (float x, float y, float z)</td></tr>
-<tr class="separator:a79b05839f8bf5a9a941a03ebf4bf652a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad658fa8550885b8d60f34925f7202efc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad658fa8550885b8d60f34925f7202efc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (Ogre::Vector3 direction)</td></tr>
+<tr class="separator:ad658fa8550885b8d60f34925f7202efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ddfc5d4f1fcb65416f372c76c2de03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08ddfc5d4f1fcb65416f372c76c2de03"></a>
+Ogre::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> ()</td></tr>
+<tr class="separator:a08ddfc5d4f1fcb65416f372c76c2de03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701d8118bdbef7a372cf6225ab8ba806"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a701d8118bdbef7a372cf6225ab8ba806"></a>
+Ogre::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>getDirection</b> ()</td></tr>
+<tr class="separator:a701d8118bdbef7a372cf6225ab8ba806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea130561ae844ab8f69014f1c27a2228"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea130561ae844ab8f69014f1c27a2228"></a>
+Ogre::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>getRight</b> ()</td></tr>
+<tr class="separator:aea130561ae844ab8f69014f1c27a2228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f7e11e29e43718337a7d7802cabb9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61f7e11e29e43718337a7d7802cabb9f"></a>
+Ogre::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>getUp</b> ()</td></tr>
+<tr class="separator:a61f7e11e29e43718337a7d7802cabb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd485dd3d84a0847dc5c3e138897710f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd485dd3d84a0847dc5c3e138897710f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>goFordward</b> (float units)</td></tr>
 <tr class="separator:afd485dd3d84a0847dc5c3e138897710f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +183,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCamera</b> (Ogre::
 static const string&#160;</td><td class="memItemRight" valign="bottom"><b>ID_CAMERA</b></td></tr>
 <tr class="separator:a411f39dbdd6754db5c418047027e5ca7 inherit pub_static_attribs_class_ogre_camera_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>Project/HCore/include/<a class="el" href="_ogre_standard_camera_8h_source.html">OgreStandardCamera.h</a></li>
-<li>Project/HCore/src/OgreStandardCamera.cpp</li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>Project/HCore/include/Camera/<a class="el" href="_ogre_standard_camera_8h_source.html">OgreStandardCamera.h</a></li>
+<li>Project/HCore/src/Camera/OgreStandardCamera.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -180,7 +197,7 @@ static const string&#160;</td><td class="memItemRight" valign="bottom"><b>ID_CAM
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_ogre_standard_camera.html">OgreStandardCamera</a></li>
-    <li class="footer">Generated on Thu Apr 18 2013 12:21:24 for HCore by
+    <li class="footer">Generated on Thu May 30 2013 13:01:43 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

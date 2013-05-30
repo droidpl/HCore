@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
    &#160;<span id="projectnumber">0.5</span>
@@ -114,6 +113,8 @@ $(document).ready(function(){initNavTree('class_ogre_camera_manager.html','');})
 <div class="title">OgreCameraManager Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_ogre_camera_manager_8h_source.html">OgreCameraManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OgreCameraManager:</div>
 <div class="dyncontent">
@@ -130,9 +131,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acede0580bb4b6e0d72d83b9da414884f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acede0580bb4b6e0d72d83b9da414884f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (float x, float y, float z)=0</td></tr>
 <tr class="separator:acede0580bb4b6e0d72d83b9da414884f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a903ecbd5c1c6ac29a49fa43bf3c96699"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a903ecbd5c1c6ac29a49fa43bf3c96699"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>toPosition</b> (float x, float y, float z)=0</td></tr>
-<tr class="separator:a903ecbd5c1c6ac29a49fa43bf3c96699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abedd90f802be33442bad7a30686d0605"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abedd90f802be33442bad7a30686d0605"></a>
+virtual Ogre::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> ()=0</td></tr>
+<tr class="separator:abedd90f802be33442bad7a30686d0605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa6f04e43342e7221dd8a077ca55056"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fa6f04e43342e7221dd8a077ca55056"></a>
+virtual Ogre::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>getDirection</b> ()=0</td></tr>
+<tr class="separator:a7fa6f04e43342e7221dd8a077ca55056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1ef112f8ec4d1010a8073b37b81bb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c1ef112f8ec4d1010a8073b37b81bb8"></a>
+virtual Ogre::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>getRight</b> ()=0</td></tr>
+<tr class="separator:a1c1ef112f8ec4d1010a8073b37b81bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8205ca0c25390b1db0023cae8941d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c8205ca0c25390b1db0023cae8941d6"></a>
+virtual Ogre::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>getUp</b> ()=0</td></tr>
+<tr class="separator:a1c8205ca0c25390b1db0023cae8941d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5844bfcff265e865b63e66be89b2645"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5844bfcff265e865b63e66be89b2645"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (Ogre::Vector3 direction)=0</td></tr>
+<tr class="separator:ae5844bfcff265e865b63e66be89b2645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a435c5478fb50ae0e288dc706578316ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a435c5478fb50ae0e288dc706578316ce"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>goFordward</b> (float units)=0</td></tr>
 <tr class="separator:a435c5478fb50ae0e288dc706578316ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,8 +187,12 @@ Additional Inherited Members</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediator</b> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
 <tr class="separator:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>Project/HCore/include/<a class="el" href="_ogre_camera_manager_8h_source.html">OgreCameraManager.h</a></li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Project/HCore/include/Camera/<a class="el" href="_ogre_camera_manager_8h_source.html">OgreCameraManager.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -183,7 +200,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediato
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_ogre_camera_manager.html">OgreCameraManager</a></li>
-    <li class="footer">Generated on Thu Apr 18 2013 12:21:24 for HCore by
+    <li class="footer">Generated on Thu May 30 2013 13:01:43 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

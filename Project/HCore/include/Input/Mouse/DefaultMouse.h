@@ -30,6 +30,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /* INCLUDES */
 #include <Input/Mouse/MouseManager.h>
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class DefaultMouse : public MouseManager {
 private:
 	bool mPressed;

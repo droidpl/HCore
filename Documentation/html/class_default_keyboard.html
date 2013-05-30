@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
    &#160;<span id="projectnumber">0.5</span>
@@ -112,6 +111,8 @@ $(document).ready(function(){initNavTree('class_default_keyboard.html','');});
 <div class="title">DefaultKeyboard Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_default_keyboard_8h_source.html">DefaultKeyboard.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DefaultKeyboard:</div>
 <div class="dyncontent">
@@ -132,12 +133,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2fe08727958f346aa804c74f3f6f3b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2fe08727958f346aa804c74f3f6f3b8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>onUpdate</b> (<a class="el" href="class_render_event.html">RenderEvent</a> &amp;renderEvent)</td></tr>
 <tr class="separator:af2fe08727958f346aa804c74f3f6f3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934c85a0cc36bc0c6fe30846d8a3b8ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a934c85a0cc36bc0c6fe30846d8a3b8ab"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressed</b> (const OIS::KeyEvent &amp;arg)</td></tr>
-<tr class="separator:a934c85a0cc36bc0c6fe30846d8a3b8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0829611e01363bfa2b0d0946126dfec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0829611e01363bfa2b0d0946126dfec"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleased</b> (const OIS::KeyEvent &amp;arg)</td></tr>
-<tr class="separator:af0829611e01363bfa2b0d0946126dfec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be3659797e89517d785854a680ad8d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7be3659797e89517d785854a680ad8d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressed</b> (const OIS::KeyEvent &amp;keyPressed)</td></tr>
+<tr class="separator:a7be3659797e89517d785854a680ad8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d94654aca539c6f5225bf77ceb8dac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73d94654aca539c6f5225bf77ceb8dac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleased</b> (const OIS::KeyEvent &amp;keyReleased)</td></tr>
+<tr class="separator:a73d94654aca539c6f5225bf77ceb8dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0706fb01d551d71d5a95a32ae8d756d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0706fb01d551d71d5a95a32ae8d756d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCommandKey</b> (const OIS::KeyCode &amp;keyCode)</td></tr>
+<tr class="separator:aa0706fb01d551d71d5a95a32ae8d756d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_keyboard_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_keyboard_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_keyboard_manager.html">KeyboardManager</a></td></tr>
 <tr class="memitem:ac05f0a3dd233937cd609c859d46172c8 inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac05f0a3dd233937cd609c859d46172c8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>startKeyboard</b> ()</td></tr>
@@ -145,6 +149,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>startKeyboard</b> ()<
 <tr class="memitem:a85dc03d688f2af15b1a3284544dc4a8b inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85dc03d688f2af15b1a3284544dc4a8b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stopKeyboard</b> ()</td></tr>
 <tr class="separator:a85dc03d688f2af15b1a3284544dc4a8b inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4bbe67869c2d421731e1a859e2d2690 inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4bbe67869c2d421731e1a859e2d2690"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseAllPressedKeys</b> ()</td></tr>
+<tr class="separator:ae4bbe67869c2d421731e1a859e2d2690 inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7cfb61c6f09c581be82242cd006b06 inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace7cfb61c6f09c581be82242cd006b06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>releasePressedKey</b> (const OIS::KeyCode &amp;keyCode)</td></tr>
+<tr class="separator:ace7cfb61c6f09c581be82242cd006b06 inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1198baa202f0aecbed9fe1d91d58d416 inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1198baa202f0aecbed9fe1d91d58d416"></a>
+list&lt; const OIS::KeyCode &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>getListOfKeys</b> ()</td></tr>
+<tr class="separator:a1198baa202f0aecbed9fe1d91d58d416 inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4494d3e61885b5eac6bef894877f1b inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b4494d3e61885b5eac6bef894877f1b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>getTimeSinceLastFrame</b> ()</td></tr>
+<tr class="separator:a7b4494d3e61885b5eac6bef894877f1b inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -159,13 +175,20 @@ OIS::Keyboard *&#160;</td><td class="memItemRight" valign="bottom"><b>mKeyboard<
 <tr class="memitem:ac71e40a15a2eb84aa2756154b0912206 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac71e40a15a2eb84aa2756154b0912206"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>mStarted</b></td></tr>
 <tr class="separator:ac71e40a15a2eb84aa2756154b0912206 inherit pro_attribs_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988107219c9258421fbdd49260c7c7a4 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a988107219c9258421fbdd49260c7c7a4"></a>
-list&lt; OIS::KeyCode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mRenderObservers</b></td></tr>
-<tr class="separator:a988107219c9258421fbdd49260c7c7a4 inherit pro_attribs_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca656a9183932c72a2fd8fc5690f18a4 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca656a9183932c72a2fd8fc5690f18a4"></a>
+list&lt; const OIS::KeyCode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mKeyCodes</b></td></tr>
+<tr class="separator:aca656a9183932c72a2fd8fc5690f18a4 inherit pro_attribs_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758456d16f08ba7ee6ab22663bf97f72 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a758456d16f08ba7ee6ab22663bf97f72"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mTimeSinceLastFrame</b></td></tr>
+<tr class="separator:a758456d16f08ba7ee6ab22663bf97f72 inherit pro_attribs_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>Project/HCore/include/<a class="el" href="_default_keyboard_8h_source.html">DefaultKeyboard.h</a></li>
-<li>Project/HCore/src/DefaultKeyboard.cpp</li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>Project/HCore/include/Input/Keyboard/<a class="el" href="_default_keyboard_8h_source.html">DefaultKeyboard.h</a></li>
+<li>Project/HCore/src/Input/Keyboard/DefaultKeyboard.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -173,7 +196,7 @@ list&lt; OIS::KeyCode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_default_keyboard.html">DefaultKeyboard</a></li>
-    <li class="footer">Generated on Thu Apr 18 2013 12:21:23 for HCore by
+    <li class="footer">Generated on Thu May 30 2013 13:01:43 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

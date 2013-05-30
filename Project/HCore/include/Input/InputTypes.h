@@ -27,6 +27,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef _InputTypes_H_
 #define _InputTypes_H_
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class InputTypes {
 public:
 	struct KeyboardTypes {

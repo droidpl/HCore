@@ -38,9 +38,15 @@ using namespace std;
  * @brief This service provide the needed information to manage the scene and all it's objects.
  *
  * Provides the functions needed to manage the scene, it's objects and the mayor operations you can perform with them.
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
  */
 class SimulatorAPI {
 private:
+	/**
+	 * Facade that encapsulates Ogre inside.
+	 */
 	class Facade;
 	shared_ptr<Facade>			pImpl; /**< Private implementation of the Facade. */
 	/**
@@ -73,9 +79,21 @@ public:
 	 * those instructions can cause the death of the program with runtime errors.
 	 */
 	void startRendering();
-
+	/**
+	 * @brief Adds a render listener to receive events.
+	 * 
+	 * Allosw the attach of a render listener that will receive avery frame render event. The user can perform an action
+	 * periodically on each frame.
+	 * @param renderListener The render listener to attach.
+	 */
 	void addRenderListener(RenderListener* renderListener);
-
+	/**
+	 * @brief Removes a render listener from the registered list. This listener will not receive events anymore
+	 *
+	 * It is necessary to remove the render listener before removing the object. If this action is not done, you can
+	 * get unexpected behaviour or memory problems.
+	 * @param renderListener The listener that will be detached.
+	 */ 
 	void detachRenderListener(RenderListener* renderListener);
 };
 #endif

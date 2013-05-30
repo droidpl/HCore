@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
    &#160;<span id="projectnumber">0.5</span>
@@ -138,11 +137,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad347c54912ca69e37ccc9700c0af586e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulator_a_p_i.html#ad347c54912ca69e37ccc9700c0af586e">startRendering</a> ()</td></tr>
 <tr class="memdesc:ad347c54912ca69e37ccc9700c0af586e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the render loop.  <a href="#ad347c54912ca69e37ccc9700c0af586e">More...</a><br/></td></tr>
 <tr class="separator:ad347c54912ca69e37ccc9700c0af586e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114a457de47fbe7a39c7d7567c3bdfb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a114a457de47fbe7a39c7d7567c3bdfb5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addRenderListener</b> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memitem:a114a457de47fbe7a39c7d7567c3bdfb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulator_a_p_i.html#a114a457de47fbe7a39c7d7567c3bdfb5">addRenderListener</a> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memdesc:a114a457de47fbe7a39c7d7567c3bdfb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a render listener to receive events.  <a href="#a114a457de47fbe7a39c7d7567c3bdfb5">More...</a><br/></td></tr>
 <tr class="separator:a114a457de47fbe7a39c7d7567c3bdfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8ca90a36766b11985d2950879c5163"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec8ca90a36766b11985d2950879c5163"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>detachRenderListener</b> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memitem:aec8ca90a36766b11985d2950879c5163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulator_a_p_i.html#aec8ca90a36766b11985d2950879c5163">detachRenderListener</a> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memdesc:aec8ca90a36766b11985d2950879c5163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a render listener from the registered list. This listener will not receive events anymore.  <a href="#aec8ca90a36766b11985d2950879c5163">More...</a><br/></td></tr>
 <tr class="separator:aec8ca90a36766b11985d2950879c5163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -154,7 +153,60 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This service provide the needed information to manage the scene and all it's objects. </p>
 <p>Provides the functions needed to manage the scene, it's objects and the mayor operations you can perform with them. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a114a457de47fbe7a39c7d7567c3bdfb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SimulatorAPI::addRenderListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_listener.html">RenderListener</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a render listener to receive events. </p>
+<p>Allosw the attach of a render listener that will receive avery frame render event. The user can perform an action periodically on each frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>The render listener to attach. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aec8ca90a36766b11985d2950879c5163"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SimulatorAPI::detachRenderListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_listener.html">RenderListener</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a render listener from the registered list. This listener will not receive events anymore. </p>
+<p>It is necessary to remove the render listener before removing the object. If this action is not done, you can get unexpected behaviour or memory problems. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>The listener that will be detached. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a578bf0e7b78904a11843475ac13749c0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +279,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_simulator_a_p_i.html">SimulatorAPI</a></li>
-    <li class="footer">Generated on Thu Apr 18 2013 12:21:24 for HCore by
+    <li class="footer">Generated on Thu May 30 2013 13:01:43 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

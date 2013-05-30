@@ -39,6 +39,9 @@ using namespace std;
 /**
  * @brief Provides some useful options to perform activities like playing music or
  * modifying the triangle constructions of the figures.
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
  */
 class SimulatorUtils {
 private:

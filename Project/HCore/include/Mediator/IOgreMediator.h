@@ -31,6 +31,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Mediator/AbstractOgreNegotiator.h>
 #include <Mediator/NegotiatorEvent.h>
 
+/**
+ * @brief
+ *
+ * @author    Javier de Pedro Lopez
+ * @version   1.0
+ * @date      2013
+ */
 class IOgreMediator {
 public:
 	virtual void onOgreChanged(AbstractOgreNegotiator* negotiator, NegotiatorEvent& negotiatorEvent) = 0;
