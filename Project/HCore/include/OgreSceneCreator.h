@@ -239,5 +239,10 @@ public:
 	  * Parses a scene following the HCore Scene XML Schema (It is stored on Media folder).
 	  */
 	void parseScene();
+	/**
+	 * @brief Adds or changes the pointer that will be displayed on the screen. It allows the change between tools in the surgery.
+	 * @param resource The resource to load as a pointer.
+	 */
+	void addPointer(string resource);
 };
 #endif

@@ -64,6 +64,7 @@ bool OgreMediator::initFramework(){
 	//Parse the scene
 	mSceneCreator->parseScene();
 	mSceneCreator->setSkyBox("Global/sky");
+	mSceneCreator->addPointer("pinzas_de_capsulorrexis.mesh");
 	return result;
 }
 

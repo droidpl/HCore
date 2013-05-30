@@ -9,6 +9,7 @@ var class_ogre_scene_creator =
     [ "addInteractionToNode", "class_ogre_scene_creator.html#ad50e2bf6e69927f9ad6ef85b7535136a", null ],
     [ "addInteractionToNode", "class_ogre_scene_creator.html#a5d4fcd3ea8c1e3545d61945883f770f2", null ],
     [ "addNodeToRootNode", "class_ogre_scene_creator.html#aee4127529a8d62224ba2da8bd37197eb", null ],
+    [ "addPointer", "class_ogre_scene_creator.html#a1d9b52fc160603d5d78c221bdae4618a", null ],
     [ "attachToExistingNode", "class_ogre_scene_creator.html#a06daf1904556f48c3e2af479820c5744", null ],
     [ "createCamera", "class_ogre_scene_creator.html#aff35a7eb51869cfc8f5e8c65b990b394", null ],
     [ "createEntity", "class_ogre_scene_creator.html#a2854258890c198565c98bf6e79d892d0", null ],

@@ -1,0 +1,60 @@
+material 03-Default
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 1
+			diffuse 0.588235 0.588235 0.588235 1
+			specular 0 0 0 1 10
+
+			texture_unit
+			{
+				texture textura14.png
+			}
+		}
+
+	}
+
+}
+
+
+
+material viscoelastico-cubierta
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 1
+			diffuse 0.588235 0.588235 0.588235 1
+			specular 0 0 0 1 10
+
+			texture_unit
+			{
+				texture textura9.png
+			}
+		}
+
+	}
+
+}
+
+
+
+material viscoelastico-transparente
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 1
+			diffuse 0.588235 0.588235 0.588235 1
+			specular 0 0 0 1 10
+			scene_blend add
+			depth_check off
+		}
+
+	}
+
+}

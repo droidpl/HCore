@@ -20,6 +20,11 @@ Ogre::Entity* OgreSceneCreator::createEntity(string id, string resource){
 	return mOpticWorld->createEntity(id, resource);
 }
 
+void OgreSceneCreator::addPointer(string resource){
+	string idEntity = "tool";
+	addEntityToRootNode(createEntity(idEntity, resource));
+}
+
 void OgreSceneCreator::addEntityToRootNode(Ogre::Entity* entity){
 	mOpticWorld->getRootSceneNode()->attachObject(entity);
 }
@@ -97,6 +102,8 @@ void OgreSceneCreator::removeObject(string objectId){
 void OgreSceneCreator::setSkyBox(string material, float distance, bool enabled, bool drawFirst){
 	mOpticWorld->setSkyBox(enabled, material, distance, drawFirst);
 }
+
+
 
 Ogre::Light* OgreSceneCreator::createLight(string name, Ogre::Vector3 position){
 	Ogre::Light* light = mOpticWorld->createLight(name);

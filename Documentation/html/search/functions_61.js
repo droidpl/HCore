@@ -5,6 +5,7 @@ var searchData=
   ['addentitytorootnode',['addEntityToRootNode',['../class_ogre_scene_creator.html#a76f59b46a8d58f29242c62c65ceff491',1,'OgreSceneCreator::addEntityToRootNode(Ogre::Entity *entity)'],['../class_ogre_scene_creator.html#aece932b18a8f19c271c0978e4ecb54d8',1,'OgreSceneCreator::addEntityToRootNode(string idEntity, string resource)']]],
   ['addinteractiontonode',['addInteractionToNode',['../class_ogre_scene_creator.html#ad50e2bf6e69927f9ad6ef85b7535136a',1,'OgreSceneCreator::addInteractionToNode(Ogre::SceneNode *node, bool hasPhysics, bool hasHaptics)'],['../class_ogre_scene_creator.html#a5d4fcd3ea8c1e3545d61945883f770f2',1,'OgreSceneCreator::addInteractionToNode(string idNode, bool hasPhysics, bool hasHaptics)']]],
   ['addnodetorootnode',['addNodeToRootNode',['../class_ogre_scene_creator.html#aee4127529a8d62224ba2da8bd37197eb',1,'OgreSceneCreator']]],
+  ['addpointer',['addPointer',['../class_ogre_scene_creator.html#a1d9b52fc160603d5d78c221bdae4618a',1,'OgreSceneCreator']]],
   ['addrenderlistener',['addRenderListener',['../class_ogre_engine.html#a921d473be863ffb80c50e96bc8ef9eda',1,'OgreEngine::addRenderListener()'],['../class_simulator_a_p_i.html#a114a457de47fbe7a39c7d7567c3bdfb5',1,'SimulatorAPI::addRenderListener()']]],
   ['addviewport',['addViewport',['../class_ogre_engine.html#a22503a3347881645eadea1ec881593d8',1,'OgreEngine']]],
   ['attachtoexistingnode',['attachToExistingNode',['../class_ogre_scene_creator.html#a06daf1904556f48c3e2af479820c5744',1,'OgreSceneCreator']]],
