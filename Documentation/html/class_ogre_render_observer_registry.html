@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -112,6 +113,9 @@ $(document).ready(function(){initNavTree('class_ogre_render_observer_registry.ht
 </div><!--header-->
 <div class="contents">
 
+<p>The render registry stores every render observer registered on HCore inside its list. Those observers stored receives the notifications and will be removed when needed.  
+ <a href="class_ogre_render_observer_registry.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_ogre_render_observer_registry_8h_source.html">OgreRenderObserverRegistry.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OgreRenderObserverRegistry:</div>
@@ -119,40 +123,146 @@ Inheritance diagram for OgreRenderObserverRegistry:</div>
  <div class="center">
   <img src="class_ogre_render_observer_registry.png" usemap="#OgreRenderObserverRegistry_map" alt=""/>
   <map id="OgreRenderObserverRegistry_map" name="OgreRenderObserverRegistry_map">
-<area href="class_abstract_ogre_negotiator.html" alt="AbstractOgreNegotiator" shape="rect" coords="0,0,182,24"/>
+<area href="class_abstract_ogre_negotiator.html" title="Abstract class that represents the negotiators. Those negotiators saves the instance of a mediator wh..." alt="AbstractOgreNegotiator" shape="rect" coords="0,0,182,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98013cbe781af193f4e56489a4d8d19d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98013cbe781af193f4e56489a4d8d19d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>OgreRenderObserverRegistry</b> (<a class="el" href="class_ogre_mediator.html">OgreMediator</a> *mediator)</td></tr>
+<tr class="memitem:a98013cbe781af193f4e56489a4d8d19d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer_registry.html#a98013cbe781af193f4e56489a4d8d19d">OgreRenderObserverRegistry</a> (<a class="el" href="class_ogre_mediator.html">OgreMediator</a> *mediator)</td></tr>
+<tr class="memdesc:a98013cbe781af193f4e56489a4d8d19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the registry.  <a href="#a98013cbe781af193f4e56489a4d8d19d">More...</a><br/></td></tr>
 <tr class="separator:a98013cbe781af193f4e56489a4d8d19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a1b322a45f1f2e6a5e12bd8afde4234"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a1b322a45f1f2e6a5e12bd8afde4234"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addListener</b> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memitem:a8c9cb9d4807c01ba3ba6c3044b1da4a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c9cb9d4807c01ba3ba6c3044b1da4a1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer_registry.html#a8c9cb9d4807c01ba3ba6c3044b1da4a1">~OgreRenderObserverRegistry</a> ()</td></tr>
+<tr class="memdesc:a8c9cb9d4807c01ba3ba6c3044b1da4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor to release memory. <br/></td></tr>
+<tr class="separator:a8c9cb9d4807c01ba3ba6c3044b1da4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1b322a45f1f2e6a5e12bd8afde4234"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer_registry.html#a7a1b322a45f1f2e6a5e12bd8afde4234">addListener</a> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memdesc:a7a1b322a45f1f2e6a5e12bd8afde4234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new render listener to the registry.  <a href="#a7a1b322a45f1f2e6a5e12bd8afde4234">More...</a><br/></td></tr>
 <tr class="separator:a7a1b322a45f1f2e6a5e12bd8afde4234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84660d63eaf435717ecf36dc9bf99d7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84660d63eaf435717ecf36dc9bf99d7d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>detachListener</b> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memitem:a84660d63eaf435717ecf36dc9bf99d7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer_registry.html#a84660d63eaf435717ecf36dc9bf99d7d">detachListener</a> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memdesc:a84660d63eaf435717ecf36dc9bf99d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a render observer and free the memory.  <a href="#a84660d63eaf435717ecf36dc9bf99d7d">More...</a><br/></td></tr>
 <tr class="separator:a84660d63eaf435717ecf36dc9bf99d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a432dfd5555fc686bf26daf257ddd76a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a432dfd5555fc686bf26daf257ddd76a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>flushCache</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer_registry.html#a432dfd5555fc686bf26daf257ddd76a7">flushCache</a> ()</td></tr>
+<tr class="memdesc:a432dfd5555fc686bf26daf257ddd76a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes but not frees the observer stored on the cache. The its value is NULL. <br/></td></tr>
 <tr class="separator:a432dfd5555fc686bf26daf257ddd76a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4067d6a1e6053628e5eefd9c50f11912"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4067d6a1e6053628e5eefd9c50f11912"></a>
-<a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCachedObserver</b> ()</td></tr>
+<tr class="memitem:a4067d6a1e6053628e5eefd9c50f11912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer_registry.html#a4067d6a1e6053628e5eefd9c50f11912">getCachedObserver</a> ()</td></tr>
+<tr class="memdesc:a4067d6a1e6053628e5eefd9c50f11912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the cached observer.  <a href="#a4067d6a1e6053628e5eefd9c50f11912">More...</a><br/></td></tr>
 <tr class="separator:a4067d6a1e6053628e5eefd9c50f11912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_class_abstract_ogre_negotiator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_abstract_ogre_negotiator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a></td></tr>
-<tr class="memitem:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6836be1ba9e6c104d4e133da0bf3a47a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediator</b> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
+<tr class="memitem:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_ogre_negotiator.html#a6836be1ba9e6c104d4e133da0bf3a47a">notifyMediator</a> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
+<tr class="memdesc:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the mediator with an event to order it an actions.  <a href="#a6836be1ba9e6c104d4e133da0bf3a47a">More...</a><br/></td></tr>
 <tr class="separator:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>The render registry stores every render observer registered on HCore inside its list. Those observers stored receives the notifications and will be removed when needed. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a98013cbe781af193f4e56489a4d8d19d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OgreRenderObserverRegistry::OgreRenderObserverRegistry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ogre_mediator.html">OgreMediator</a> *&#160;</td>
+          <td class="paramname"><em>mediator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor of the registry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mediator</td><td>The mediator that belongs to this negotiator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7a1b322a45f1f2e6a5e12bd8afde4234"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreRenderObserverRegistry::addListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_listener.html">RenderListener</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new render listener to the registry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>The render listener to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a84660d63eaf435717ecf36dc9bf99d7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreRenderObserverRegistry::detachListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_listener.html">RenderListener</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a render observer and free the memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>The render listener to detach. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4067d6a1e6053628e5eefd9c50f11912"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a>* OgreRenderObserverRegistry::getCachedObserver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the value of the cached observer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The value of the cached observer. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Project/HCore/include/Listener/<a class="el" href="_ogre_render_observer_registry_8h_source.html">OgreRenderObserverRegistry.h</a></li>
 <li>Project/HCore/src/Listener/OgreRenderObserverRegistry.cpp</li>
 </ul>
@@ -162,7 +272,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediato
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_ogre_render_observer_registry.html">OgreRenderObserverRegistry</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:44 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -92,7 +93,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions_func_0x67.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_0x69.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_func_0x6b.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_0x6c.html#index_l"><span>l</span></a></li>
+      <li><a href="functions_func_0x6d.html#index_m"><span>m</span></a></li>
       <li><a href="functions_func_0x6e.html#index_n"><span>n</span></a></li>
       <li><a href="functions_func_0x6f.html#index_o"><span>o</span></a></li>
       <li><a href="functions_func_0x70.html#index_p"><span>p</span></a></li>
@@ -103,6 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_0x75.html#index_u"><span>u</span></a></li>
       <li><a href="functions_func_0x76.html#index_v"><span>v</span></a></li>
       <li><a href="functions_func_0x78.html#index_x"><span>x</span></a></li>
+      <li><a href="functions_func_0x79.html#index_y"><span>y</span></a></li>
       <li><a href="functions_func_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
@@ -139,8 +143,18 @@ $(document).ready(function(){initNavTree('functions_func_0x67.html','');});
 &#160;
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>getCachedObserver()
+: <a class="el" href="class_ogre_render_observer_registry.html#a4067d6a1e6053628e5eefd9c50f11912">OgreRenderObserverRegistry</a>
+</li>
+<li>getCamera()
+: <a class="el" href="class_ogre_camera_manager.html#a18a980c07fa5b4d45ce05489b8538bc8">OgreCameraManager</a>
+</li>
 <li>getConvex()
 : <a class="el" href="class_simulator_utils.html#a395f1e002853c5e5ef3b545527970afb">SimulatorUtils</a>
+</li>
+<li>getDirection()
+: <a class="el" href="class_ogre_camera_manager.html#a7fa6f04e43342e7221dd8a077ca55056">OgreCameraManager</a>
+, <a class="el" href="class_ogre_standard_camera.html#a701d8118bdbef7a372cf6225ab8ba806">OgreStandardCamera</a>
 </li>
 <li>GetDocument()
 : <a class="el" href="classtinyxml2_1_1_x_m_l_node.html#add244bca368083fa29698db8dcf147ca">tinyxml2::XMLNode</a>
@@ -151,10 +165,23 @@ $(document).ready(function(){initNavTree('functions_func_0x67.html','');});
 <li>GetErrorStr2()
 : <a class="el" href="classtinyxml2_1_1_x_m_l_document.html#a88f6b44bd019033bda28abd31fe257b2">tinyxml2::XMLDocument</a>
 </li>
+<li>getId()
+: <a class="el" href="class_negotiator_event.html#a4f6c5696e63e3b55ee05bb42c1a85eda">NegotiatorEvent</a>
+</li>
 <li>getInstance()
-: <a class="el" href="class_log_a_p_i.html#a6d75c2596041d1ebd7b1de5738aba02d">LogAPI</a>
-, <a class="el" href="class_ogre_input_system.html#aef76e90459e0b9d33fa24f3dade5dd92">OgreInputSystem</a>
+: <a class="el" href="class_ogre_input_system.html#aef76e90459e0b9d33fa24f3dade5dd92">OgreInputSystem</a>
 , <a class="el" href="class_simulator_a_p_i.html#a578bf0e7b78904a11843475ac13749c0">SimulatorAPI</a>
+, <a class="el" href="class_log_a_p_i.html#a6d75c2596041d1ebd7b1de5738aba02d">LogAPI</a>
+</li>
+<li>getListOfKeys()
+: <a class="el" href="class_keyboard_manager.html#a1198baa202f0aecbed9fe1d91d58d416">KeyboardManager</a>
+</li>
+<li>getMessage()
+: <a class="el" href="class_negotiator_event.html#a6cc874c6acef2df4b64d35b4ce954ed4">NegotiatorEvent</a>
+</li>
+<li>getPosition()
+: <a class="el" href="class_ogre_camera_manager.html#abedd90f802be33442bad7a30686d0605">OgreCameraManager</a>
+, <a class="el" href="class_ogre_standard_camera.html#a08ddfc5d4f1fcb65416f372c76c2de03">OgreStandardCamera</a>
 </li>
 <li>getPropertyFileName()
 : <a class="el" href="class_property_loader.html#aa48340334d79c6899de5ff2ead3fd5f4">PropertyLoader</a>
@@ -162,20 +189,52 @@ $(document).ready(function(){initNavTree('functions_func_0x67.html','');});
 <li>getPropertyValue()
 : <a class="el" href="class_property_loader.html#ac423fb12661cb22e938766e0278cd3d3">PropertyLoader</a>
 </li>
+<li>getRight()
+: <a class="el" href="class_ogre_camera_manager.html#a1c1ef112f8ec4d1010a8073b37b81bb8">OgreCameraManager</a>
+, <a class="el" href="class_ogre_standard_camera.html#aea130561ae844ab8f69014f1c27a2228">OgreStandardCamera</a>
+</li>
 <li>getRoot()
 : <a class="el" href="class_ogre_engine.html#a190dcdab6a8edd34b0777a2b6ab9ce19">OgreEngine</a>
 </li>
 <li>GetText()
 : <a class="el" href="classtinyxml2_1_1_x_m_l_element.html#a56cc727044dad002b978256754d43a4b">tinyxml2::XMLElement</a>
 </li>
+<li>getTimeSinceLastEvent()
+: <a class="el" href="class_render_event.html#ac8840d6cee7f1e2546755e00aea764ad">RenderEvent</a>
+</li>
+<li>getTimeSinceLastFrame()
+: <a class="el" href="class_keyboard_manager.html#a7b4494d3e61885b5eac6bef894877f1b">KeyboardManager</a>
+, <a class="el" href="class_render_event.html#a66ff33180ffb750b8b7db17039973fd2">RenderEvent</a>
+</li>
 <li>getTrimesh()
 : <a class="el" href="class_simulator_utils.html#a84083bba749f1fcf85bf4a4cf428db96">SimulatorUtils</a>
+</li>
+<li>getUp()
+: <a class="el" href="class_ogre_standard_camera.html#a61f7e11e29e43718337a7d7802cabb9f">OgreStandardCamera</a>
+, <a class="el" href="class_ogre_camera_manager.html#a1c8205ca0c25390b1db0023cae8941d6">OgreCameraManager</a>
 </li>
 <li>getWindow()
 : <a class="el" href="class_ogre_engine.html#a304142f13871b9fa2468a97f6300b810">OgreEngine</a>
 </li>
+<li>getXAxis()
+: <a class="el" href="class_mouse_manager.html#afeec490695fe1f0e3ef4f36c42ff5d6a">MouseManager</a>
+</li>
+<li>getYAxis()
+: <a class="el" href="class_mouse_manager.html#a25db9732979965ab4d35b57abfd73a0b">MouseManager</a>
+</li>
+<li>getZAxis()
+: <a class="el" href="class_mouse_manager.html#aac87a33121505c689c1bdd3ede433373">MouseManager</a>
+</li>
 <li>go()
 : <a class="el" href="class_loader.html#ae1296307c941f44ead0466fc22f967a3">Loader</a>
+</li>
+<li>goBackward()
+: <a class="el" href="class_ogre_standard_camera.html#a1142b93ad6c09d985371935a51ce1ec1">OgreStandardCamera</a>
+, <a class="el" href="class_ogre_camera_manager.html#a7e271161c01f5368c9c1f5733ba2cb49">OgreCameraManager</a>
+</li>
+<li>goFordward()
+: <a class="el" href="class_ogre_standard_camera.html#afd485dd3d84a0847dc5c3e138897710f">OgreStandardCamera</a>
+, <a class="el" href="class_ogre_camera_manager.html#a435c5478fb50ae0e288dc706578316ce">OgreCameraManager</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -183,7 +242,7 @@ $(document).ready(function(){initNavTree('functions_func_0x67.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu May 30 2013 13:08:44 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:52 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

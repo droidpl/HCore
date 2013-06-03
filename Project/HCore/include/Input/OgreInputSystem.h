@@ -32,7 +32,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <OgreRenderWindow.h>
 
 /**
- * @brief
+ * @brief Input system creator. Depending on the needs it creates OIS systems to interact with the 
+ * peripherals (scpecially keyboard and mouse.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -40,8 +41,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class OgreInputSystem {
 private:
-	OIS::InputManager*		mInputManager;
-	OgreInputSystem(Ogre::RenderWindow* window);
+	OIS::InputManager*		mInputManager; /**< The input manager that can create OIS systems. */
+	OgreInputSystem(Ogre::RenderWindow* window); /**< Render window where those systems will be attached. 
+												 We can calculate the coordinates of this window and resize the input system. */
 public:
 	/**
 	 * @brief Returns the instance of the singleton.
@@ -51,7 +53,16 @@ public:
 		static OgreInputSystem instance(window);
 		return instance;
 	}
+	/**
+	 * @brief Creates the needed input onject.
+	 * @param type The type of input to create.
+	 * @param bufferMode This mode allows buffered entrance of data or unbuffered.
+	 */
 	OIS::Object* createInputObject(OIS::Type type, bool bufferMode = true);
+	/**
+	 * @brief Destroys the input object passed as parameter.
+	 * @param inputObject The input object to destroy.
+	 */
 	void destroyInputObject(OIS::Object* inputObject);
 };
 #endif

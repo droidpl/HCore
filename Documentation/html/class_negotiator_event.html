@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -112,28 +113,146 @@ $(document).ready(function(){initNavTree('class_negotiator_event.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Event with all data needed to perform an action than a negotiator sends to a mediator.  
+ <a href="class_negotiator_event.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_negotiator_event_8h_source.html">NegotiatorEvent.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a32c16fc368a2cbbf6bc65acade1ac6b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32c16fc368a2cbbf6bc65acade1ac6b5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NegotiatorEvent</b> (string id=&quot;&quot;, string message=&quot;&quot;)</td></tr>
-<tr class="separator:a32c16fc368a2cbbf6bc65acade1ac6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b3fda32bda4e9c6c71c4336662f1078"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b3fda32bda4e9c6c71c4336662f1078"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>matchEvent</b> (string eventId)</td></tr>
+<tr class="memitem:a98ebb2b614744ef2c10cbb2638a87f52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_negotiator_event.html#a98ebb2b614744ef2c10cbb2638a87f52">NegotiatorEvent</a> (string id, string message=&quot;&quot;)</td></tr>
+<tr class="memdesc:a98ebb2b614744ef2c10cbb2638a87f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the negotiator event.  <a href="#a98ebb2b614744ef2c10cbb2638a87f52">More...</a><br/></td></tr>
+<tr class="separator:a98ebb2b614744ef2c10cbb2638a87f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3fda32bda4e9c6c71c4336662f1078"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_negotiator_event.html#a0b3fda32bda4e9c6c71c4336662f1078">matchEvent</a> (string eventId)</td></tr>
+<tr class="memdesc:a0b3fda32bda4e9c6c71c4336662f1078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an event is the same as another by compating its ids.  <a href="#a0b3fda32bda4e9c6c71c4336662f1078">More...</a><br/></td></tr>
 <tr class="separator:a0b3fda32bda4e9c6c71c4336662f1078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cc874c6acef2df4b64d35b4ce954ed4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cc874c6acef2df4b64d35b4ce954ed4"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getMessage</b> ()</td></tr>
+<tr class="memitem:a6cc874c6acef2df4b64d35b4ce954ed4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_negotiator_event.html#a6cc874c6acef2df4b64d35b4ce954ed4">getMessage</a> ()</td></tr>
+<tr class="memdesc:a6cc874c6acef2df4b64d35b4ce954ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the message.  <a href="#a6cc874c6acef2df4b64d35b4ce954ed4">More...</a><br/></td></tr>
 <tr class="separator:a6cc874c6acef2df4b64d35b4ce954ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f6c5696e63e3b55ee05bb42c1a85eda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f6c5696e63e3b55ee05bb42c1a85eda"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getId</b> ()</td></tr>
+<tr class="memitem:a4f6c5696e63e3b55ee05bb42c1a85eda"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_negotiator_event.html#a4f6c5696e63e3b55ee05bb42c1a85eda">getId</a> ()</td></tr>
+<tr class="memdesc:a4f6c5696e63e3b55ee05bb42c1a85eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the id.  <a href="#a4f6c5696e63e3b55ee05bb42c1a85eda">More...</a><br/></td></tr>
 <tr class="separator:a4f6c5696e63e3b55ee05bb42c1a85eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>Event with all data needed to perform an action than a negotiator sends to a mediator. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a98ebb2b614744ef2c10cbb2638a87f52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NegotiatorEvent::NegotiatorEvent </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor of the negotiator event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The identifier of the event. </td></tr>
+    <tr><td class="paramname">message</td><td>The optional message. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4f6c5696e63e3b55ee05bb42c1a85eda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NegotiatorEvent::getId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the id. </p>
+<dl class="section return"><dt>Returns</dt><dd>The id internal value. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6cc874c6acef2df4b64d35b4ce954ed4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NegotiatorEvent::getMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the message. </p>
+<dl class="section return"><dt>Returns</dt><dd>The message internal value. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0b3fda32bda4e9c6c71c4336662f1078"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NegotiatorEvent::matchEvent </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>eventId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if an event is the same as another by compating its ids. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventId</td><td>The identifier of the second event that will be compared. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if those events are the same. Elsewhere, false. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Project/HCore/include/Mediator/<a class="el" href="_negotiator_event_8h_source.html">NegotiatorEvent.h</a></li>
 <li>Project/HCore/src/Mediator/NegotiatorEvent.cpp</li>
 </ul>
@@ -143,7 +262,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>getId</b> ()</td></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_negotiator_event.html">NegotiatorEvent</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

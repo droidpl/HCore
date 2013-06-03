@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -141,24 +142,24 @@ $(document).ready(function(){initNavTree('_negotiator_event_8h_source.html','');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/* NAMESPACES */</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_negotiator_event.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_negotiator_event.html">NegotiatorEvent</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_negotiator_event.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_negotiator_event.html" title="Event with all data needed to perform an action than a negotiator sends to a mediator.">NegotiatorEvent</a> {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">string</span>                  mId;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">string</span>                  mMessage;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">string</span>                  mId; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">string</span>                  mMessage; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_negotiator_event.html">NegotiatorEvent</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>=<span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">string</span> message=<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> matchEvent(<span class="keywordtype">string</span> eventId);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">string</span> getMessage(){<span class="keywordflow">return</span> mMessage; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">string</span> getId(){ <span class="keywordflow">return</span> mId; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_negotiator_event.html" title="Event with all data needed to perform an action than a negotiator sends to a mediator.">NegotiatorEvent</a>(<span class="keywordtype">string</span> <span class="keywordtype">id</span>, <span class="keywordtype">string</span> message=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> matchEvent(<span class="keywordtype">string</span> eventId);</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="class_negotiator_event.html#a6cc874c6acef2df4b64d35b4ce954ed4">   65</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_negotiator_event.html#a6cc874c6acef2df4b64d35b4ce954ed4" title="Returns the message.">getMessage</a>(){<span class="keywordflow">return</span> mMessage; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="class_negotiator_event.html#a4f6c5696e63e3b55ee05bb42c1a85eda">   70</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_negotiator_event.html#a4f6c5696e63e3b55ee05bb42c1a85eda" title="Returns the id.">getId</a>(){ <span class="keywordflow">return</span> mId; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><a class="el" href="dir_9494a7113f4f02b70f55593ebd2e7b1e.html">Mediator</a></li><li class="navelem"><b>NegotiatorEvent.h</b></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

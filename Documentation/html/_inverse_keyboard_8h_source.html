@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -137,24 +138,24 @@ $(document).ready(function(){initNavTree('_inverse_keyboard_8h_source.html','');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* INCLUDES */</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;Input/Keyboard/KeyboardManager.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_inverse_keyboard.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_inverse_keyboard.html">InverseKeyboard</a> : <span class="keyword">public</span> <a class="code" href="class_keyboard_manager.html">KeyboardManager</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_inverse_keyboard.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_inverse_keyboard.html" title="Keyboard that performs the movement using the inverse key move (ex. Right goes to left...">InverseKeyboard</a> : <span class="keyword">public</span> <a class="code" href="class_keyboard_manager.html" title="This class manages the keyboard giving a consistent interface to create as much keyboards as needed...">KeyboardManager</a> {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_inverse_keyboard.html">InverseKeyboard</a>(<a class="code" href="class_ogre_mediator.html">OgreMediator</a>* mediator, OIS::Keyboard* keyboard);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> onUpdate (<a class="code" href="class_render_event.html">RenderEvent</a>&amp; renderEvent);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> keyPressed(<span class="keyword">const</span> OIS::KeyEvent &amp;keyPressed);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> keyReleased(<span class="keyword">const</span> OIS::KeyEvent &amp;keyReleased);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> OIS::KeyCode translateKey(<span class="keyword">const</span> OIS::KeyCode&amp; code);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> isCommandKey(<span class="keyword">const</span> OIS::KeyCode &amp;keyCode);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_inverse_keyboard.html#af40f0740fed1808b67db38f4d9e7c046" title="Constructor of the keyboard negotiator.">InverseKeyboard</a>(<a class="code" href="class_ogre_mediator.html" title="The mediator class acts as a mediator that can interchange events between all the negotiators attache...">OgreMediator</a>* mediator, OIS::Keyboard* keyboard);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_inverse_keyboard.html#af5944273b8d46ec03789753dce202d98" title="The callback implemented by render listeners.">onUpdate</a> (<a class="code" href="class_render_event.html" title="Event sent when a frame has been rendered.">RenderEvent</a>&amp; renderEvent);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_inverse_keyboard.html#ae7d88bca309b45b0f9bea9f79009492c" title="Callback that notifies the concrete keyboard that a key on the physical keyboard has been pressed...">keyPressed</a>(<span class="keyword">const</span> OIS::KeyEvent &amp;<a class="code" href="class_inverse_keyboard.html#ae7d88bca309b45b0f9bea9f79009492c" title="Callback that notifies the concrete keyboard that a key on the physical keyboard has been pressed...">keyPressed</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_inverse_keyboard.html#af58f8460a49ce9aaa6337bd6a2c0bf63" title="Callback that notifies the concrete keyboard that a key on the physical keyboard has been released...">keyReleased</a>(<span class="keyword">const</span> OIS::KeyEvent &amp;<a class="code" href="class_inverse_keyboard.html#af58f8460a49ce9aaa6337bd6a2c0bf63" title="Callback that notifies the concrete keyboard that a key on the physical keyboard has been released...">keyReleased</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> OIS::KeyCode <a class="code" href="class_inverse_keyboard.html#a5c95fac7906cc1f2ef7558b6a18250e8" title="Makes the translation between one code to the inverse.">translateKey</a>(<span class="keyword">const</span> OIS::KeyCode&amp; code);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_inverse_keyboard.html#aaab90b2ad443c2d36d7c598b3ec9dc83" title="On the concrete keyboards not all the keys are needed. This method must be called to check if the key...">isCommandKey</a>(<span class="keyword">const</span> OIS::KeyCode &amp;keyCode);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><a class="el" href="dir_22d2a9e5e629041c79abdd7385caa366.html">Input</a></li><li class="navelem"><a class="el" href="dir_fc591f2334c20e64ed5916fd09c8456a.html">Keyboard</a></li><li class="navelem"><b>InverseKeyboard.h</b></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

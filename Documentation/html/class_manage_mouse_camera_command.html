@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -112,6 +113,9 @@ $(document).ready(function(){initNavTree('class_manage_mouse_camera_command.html
 </div><!--header-->
 <div class="contents">
 
+<p>The command that moves the camera depending on the mouse movement.  
+ <a href="class_manage_mouse_camera_command.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_manage_mouse_camera_command_8h_source.html">ManageMouseCameraCommand.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ManageMouseCameraCommand:</div>
@@ -119,14 +123,14 @@ Inheritance diagram for ManageMouseCameraCommand:</div>
  <div class="center">
   <img src="class_manage_mouse_camera_command.png" usemap="#ManageMouseCameraCommand_map" alt=""/>
   <map id="ManageMouseCameraCommand_map" name="ManageMouseCameraCommand_map">
-<area href="class_i_ogre_command.html" alt="IOgreCommand" shape="rect" coords="0,0,195,24"/>
+<area href="class_i_ogre_command.html" title="Interface for the command pattern that is used by the mediator to perform actions depending on the re..." alt="IOgreCommand" shape="rect" coords="0,0,195,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8da4e11af6aab5cc8c8529153cce3172"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8da4e11af6aab5cc8c8529153cce3172"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ManageMouseCameraCommand</b> (<a class="el" href="class_ogre_camera_manager.html">OgreCameraManager</a> *cameraManager, <a class="el" href="class_mouse_manager.html">MouseManager</a> *mouseManager)</td></tr>
+<tr class="memitem:a8da4e11af6aab5cc8c8529153cce3172"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manage_mouse_camera_command.html#a8da4e11af6aab5cc8c8529153cce3172">ManageMouseCameraCommand</a> (<a class="el" href="class_ogre_camera_manager.html">OgreCameraManager</a> *cameraManager, <a class="el" href="class_mouse_manager.html">MouseManager</a> *mouseManager)</td></tr>
+<tr class="memdesc:a8da4e11af6aab5cc8c8529153cce3172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the camera command.  <a href="#a8da4e11af6aab5cc8c8529153cce3172">More...</a><br/></td></tr>
 <tr class="separator:a8da4e11af6aab5cc8c8529153cce3172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab02133752aaf9c3cc319054c619b0ec6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab02133752aaf9c3cc319054c619b0ec6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manage_mouse_camera_command.html#ab02133752aaf9c3cc319054c619b0ec6">execute</a> ()</td></tr>
@@ -139,10 +143,47 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a88380002adb13e574f1ced1b9e82be23 inherit pub_methods_class_i_ogre_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>The command that moves the camera depending on the mouse movement. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8da4e11af6aab5cc8c8529153cce3172"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ManageMouseCameraCommand::ManageMouseCameraCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ogre_camera_manager.html">OgreCameraManager</a> *&#160;</td>
+          <td class="paramname"><em>cameraManager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_mouse_manager.html">MouseManager</a> *&#160;</td>
+          <td class="paramname"><em>mouseManager</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor of the camera command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraManager</td><td>The camera manager. </td></tr>
+    <tr><td class="paramname">mouseManager</td><td>The mouse manager containing the reference to physical mouse. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Project/HCore/include/Commands/<a class="el" href="_manage_mouse_camera_command_8h_source.html">ManageMouseCameraCommand.h</a></li>
 <li>Project/HCore/src/Commands/ManageMouseCameraCommand.cpp</li>
 </ul>
@@ -152,7 +193,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_manage_mouse_camera_command.html">ManageMouseCameraCommand</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

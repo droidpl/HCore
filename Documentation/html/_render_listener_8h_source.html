@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -136,18 +137,18 @@ $(document).ready(function(){initNavTree('_render_listener_8h_source.html','');}
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;Listener/RenderEvent.h&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_render_listener.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_render_listener.html">RenderListener</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onUpdate (<a class="code" href="class_render_event.html">RenderEvent</a>&amp; renderEvent) = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="class_render_listener.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_render_listener.html" title="Interface implemented by every class that want to listen for rendered frame. In simulator layer it is...">RenderListener</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_render_listener.html#a144f5e8241d2ccd013ab57551bfa21ad" title="The callback implemented by render listeners.">onUpdate</a> (<a class="code" href="class_render_event.html" title="Event sent when a frame has been rendered.">RenderEvent</a>&amp; renderEvent) = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><a class="el" href="dir_58d80e93dbea32ed999779d199f33d06.html">Listener</a></li><li class="navelem"><b>RenderListener.h</b></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

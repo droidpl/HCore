@@ -30,7 +30,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Listener/RenderEvent.h>
 
 /**
- * @brief
+ * @brief Interface implemented by every class that want to listen for rendered frame. In simulator
+ * layer it is the only way to take the control and perform some actions once startRendering @see OgreEngine has
+ * been called.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -38,6 +40,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class RenderListener {
 public:
+	/**
+	 * @brief The callback implemented by render listeners.
+	 * @param renderEvent Event received that has the needed information related to the frame
+	 * recently rendered.
+	 */
 	virtual void onUpdate (RenderEvent& renderEvent) = 0;
 };
 #endif

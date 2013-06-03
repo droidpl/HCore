@@ -32,7 +32,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 class OgreMediator;
 
 /**
- * @brief
+ * @brief Abstract class that represents the negotiators. Those negotiators saves the instance of a mediator
+ * which receives messages and performs some predefined actions.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -40,8 +41,16 @@ class OgreMediator;
  */
 class AbstractOgreNegotiator {
 protected:
-	OgreMediator*			mMediator;
+	OgreMediator*			mMediator; /**< The mediator that receives messages and performs predefined operations. */
 public:
+	/**
+	 * @brief Notifies the mediator with an event to order it an actions.
+	 *
+	 * Actions sent to the mediator are only needed when multiple negotiators are involved in this action. If the 
+	 * negotiator can perform this action itself or the only implied negotiator is the one that sends the event, then
+	 * this event might not be sent.
+	 * @param mediatorEvent The event that will be sent to the mediator.
+	 */
 	virtual void notifyMediator(NegotiatorEvent& mediatorEvent);
 };
 #endif

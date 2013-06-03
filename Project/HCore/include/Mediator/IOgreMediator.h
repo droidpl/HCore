@@ -32,7 +32,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Mediator/NegotiatorEvent.h>
 
 /**
- * @brief
+ * @brief Interface that might be implemented by a mediator that receives messages and performs actions.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -40,6 +40,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class IOgreMediator {
 public:
+	/**
+	 * @brief Callback that will be called each time a negotiator launches a new event.
+	 * @param negotiator The negotiator that launched the event.
+	 * @param negotiatorEvent The event that has been launched.
+	 */
 	virtual void onOgreChanged(AbstractOgreNegotiator* negotiator, NegotiatorEvent& negotiatorEvent) = 0;
 };
 #endif

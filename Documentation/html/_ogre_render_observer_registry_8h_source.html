@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -142,32 +143,31 @@ $(document).ready(function(){initNavTree('_ogre_render_observer_registry_8h_sour
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;Utils/LogAPI.h&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;Mediator/AbstractOgreNegotiator.h&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span><a class="code" href="class_ogre_mediator.html">OgreMediator</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span><a class="code" href="class_ogre_mediator.html" title="The mediator class acts as a mediator that can interchange events between all the negotiators attache...">OgreMediator</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/* NAMESPACE */</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_ogre_render_observer_registry.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ogre_render_observer_registry.html">OgreRenderObserverRegistry</a> : <span class="keyword">protected</span> <a class="code" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_ogre_render_observer_registry.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_ogre_render_observer_registry.html" title="The render registry stores every render observer registered on HCore inside its list. Those observers stored receives the notifications and will be removed when needed.">OgreRenderObserverRegistry</a> : <span class="keyword">protected</span> <a class="code" href="class_abstract_ogre_negotiator.html" title="Abstract class that represents the negotiators. Those negotiators saves the instance of a mediator wh...">AbstractOgreNegotiator</a>{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    list&lt;OgreRenderObserver*&gt;   mRenderObservers;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_ogre_render_observer.html">OgreRenderObserver</a>*         mCacheLastObserver;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> deleteRenderObserver(<a class="code" href="class_ogre_render_observer.html">OgreRenderObserver</a>* renderObserver);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_ogre_render_observer_registry.html">OgreRenderObserverRegistry</a>(<a class="code" href="class_ogre_mediator.html">OgreMediator</a>* mediator);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ~<a class="code" href="class_ogre_render_observer_registry.html">OgreRenderObserverRegistry</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> addListener(<a class="code" href="class_render_listener.html">RenderListener</a>* renderListener);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> detachListener(<a class="code" href="class_render_listener.html">RenderListener</a>* renderListener);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> flushCache(){ mCacheLastObserver = NULL; }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_ogre_render_observer.html">OgreRenderObserver</a>* getCachedObserver() {<span class="keywordflow">return</span> mCacheLastObserver; }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    list&lt;OgreRenderObserver*&gt;   mRenderObservers; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_ogre_render_observer.html" title="A render observer wrapper that, using Ogre frame listener interface and extending it...">OgreRenderObserver</a>*         mCacheLastObserver; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> deleteRenderObserver(<a class="code" href="class_ogre_render_observer.html" title="A render observer wrapper that, using Ogre frame listener interface and extending it...">OgreRenderObserver</a>* renderObserver);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_ogre_render_observer_registry.html" title="The render registry stores every render observer registered on HCore inside its list. Those observers stored receives the notifications and will be removed when needed.">OgreRenderObserverRegistry</a>(<a class="code" href="class_ogre_mediator.html" title="The mediator class acts as a mediator that can interchange events between all the negotiators attache...">OgreMediator</a>* mediator);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    ~<a class="code" href="class_ogre_render_observer_registry.html" title="The render registry stores every render observer registered on HCore inside its list. Those observers stored receives the notifications and will be removed when needed.">OgreRenderObserverRegistry</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> addListener(<a class="code" href="class_render_listener.html" title="Interface implemented by every class that want to listen for rendered frame. In simulator layer it is...">RenderListener</a>* renderListener);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> detachListener(<a class="code" href="class_render_listener.html" title="Interface implemented by every class that want to listen for rendered frame. In simulator layer it is...">RenderListener</a>* renderListener);</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="class_ogre_render_observer_registry.html#a432dfd5555fc686bf26daf257ddd76a7">   84</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_ogre_render_observer_registry.html#a432dfd5555fc686bf26daf257ddd76a7" title="Removes but not frees the observer stored on the cache. The its value is NULL.">flushCache</a>(){ mCacheLastObserver = NULL; }</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="class_ogre_render_observer_registry.html#a4067d6a1e6053628e5eefd9c50f11912">   89</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_ogre_render_observer.html" title="A render observer wrapper that, using Ogre frame listener interface and extending it...">OgreRenderObserver</a>* <a class="code" href="class_ogre_render_observer_registry.html#a4067d6a1e6053628e5eefd9c50f11912" title="Returns the value of the cached observer.">getCachedObserver</a>() {<span class="keywordflow">return</span> mCacheLastObserver; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><a class="el" href="dir_58d80e93dbea32ed999779d199f33d06.html">Listener</a></li><li class="navelem"><b>OgreRenderObserverRegistry.h</b></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

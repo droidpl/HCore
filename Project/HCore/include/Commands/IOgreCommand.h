@@ -28,7 +28,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define _IOgreCommand_H_
 
 /**
- * @brief
+ * @brief Interface for the command pattern that is used by the mediator to perform actions
+ * depending on the received event.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0

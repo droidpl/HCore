@@ -45,7 +45,7 @@ using namespace std;
 class LogAPI {
 private:
 	/**
-	 * Facade that encapsulates Ogre inside.
+	 * @brief Facade that encapsulates Ogre inside.
 	 */
 	class Facade;
 	shared_ptr<Facade>			pImpl; /**< Private implementation of the Facade. */

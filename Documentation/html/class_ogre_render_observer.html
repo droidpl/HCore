@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -112,6 +113,9 @@ $(document).ready(function(){initNavTree('class_ogre_render_observer.html','');}
 </div><!--header-->
 <div class="contents">
 
+<p>A render observer wrapper that, using Ogre frame listener interface and extending it, can call RenderObserber elements from HCore. This class is only an intermediate between the ogre render observers and HCore observers, hiding the dependency from the Ogre library.  
+ <a href="class_ogre_render_observer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_ogre_render_observer_8h_source.html">OgreRenderObserver.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OgreRenderObserver:</div>
@@ -124,24 +128,106 @@ Inheritance diagram for OgreRenderObserver:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac33422d30430ba5e3a871120d510f945"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac33422d30430ba5e3a871120d510f945"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>OgreRenderObserver</b> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memitem:ac33422d30430ba5e3a871120d510f945"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer.html#ac33422d30430ba5e3a871120d510f945">OgreRenderObserver</a> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memdesc:ac33422d30430ba5e3a871120d510f945"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of the render observer.  <a href="#ac33422d30430ba5e3a871120d510f945">More...</a><br/></td></tr>
 <tr class="separator:ac33422d30430ba5e3a871120d510f945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3f3495c9af376732645b248a8fd272b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3f3495c9af376732645b248a8fd272b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>matchListener</b> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memitem:a23be438fd41c906b0b5100fef6972e6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23be438fd41c906b0b5100fef6972e6a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer.html#a23be438fd41c906b0b5100fef6972e6a">~OgreRenderObserver</a> ()</td></tr>
+<tr class="memdesc:a23be438fd41c906b0b5100fef6972e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. It frees the memory allocated by this class. <br/></td></tr>
+<tr class="separator:a23be438fd41c906b0b5100fef6972e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f3495c9af376732645b248a8fd272b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer.html#ab3f3495c9af376732645b248a8fd272b">matchListener</a> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memdesc:ab3f3495c9af376732645b248a8fd272b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a render listener passed as a parameter is the same as the one it stores.  <a href="#ab3f3495c9af376732645b248a8fd272b">More...</a><br/></td></tr>
 <tr class="separator:ab3f3495c9af376732645b248a8fd272b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe1b752cf6f147a6fec63ee88a4eddbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe1b752cf6f147a6fec63ee88a4eddbd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>notify</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer.html#afe1b752cf6f147a6fec63ee88a4eddbd">notify</a> ()</td></tr>
+<tr class="memdesc:afe1b752cf6f147a6fec63ee88a4eddbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the render listener that a frame has been rendered. <br/></td></tr>
 <tr class="separator:afe1b752cf6f147a6fec63ee88a4eddbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad52369f287f3df9280725eaeb2943f3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad52369f287f3df9280725eaeb2943f3d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>frameRenderingQueued</b> (const Ogre::FrameEvent &amp;evt)</td></tr>
+<tr class="memitem:ad52369f287f3df9280725eaeb2943f3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_render_observer.html#ad52369f287f3df9280725eaeb2943f3d">frameRenderingQueued</a> (const Ogre::FrameEvent &amp;evt)</td></tr>
+<tr class="memdesc:ad52369f287f3df9280725eaeb2943f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an Ogre member function that is called each time a frame is rendered.  <a href="#ad52369f287f3df9280725eaeb2943f3d">More...</a><br/></td></tr>
 <tr class="separator:ad52369f287f3df9280725eaeb2943f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>A render observer wrapper that, using Ogre frame listener interface and extending it, can call RenderObserber elements from HCore. This class is only an intermediate between the ogre render observers and HCore observers, hiding the dependency from the Ogre library. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac33422d30430ba5e3a871120d510f945"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OgreRenderObserver::OgreRenderObserver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_listener.html">RenderListener</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The constructor of the render observer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>Receives the render listener on which the events will be sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad52369f287f3df9280725eaeb2943f3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OgreRenderObserver::frameRenderingQueued </td>
+          <td>(</td>
+          <td class="paramtype">const Ogre::FrameEvent &amp;&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an Ogre member function that is called each time a frame is rendered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>The event generated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the execution must continue or false if must be stopped. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab3f3495c9af376732645b248a8fd272b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OgreRenderObserver::matchListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_listener.html">RenderListener</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a render listener passed as a parameter is the same as the one it stores. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>The render listener to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if they are the same or false in other case. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Project/HCore/include/Listener/<a class="el" href="_ogre_render_observer_8h_source.html">OgreRenderObserver.h</a></li>
 <li>Project/HCore/src/Listener/OgreRenderObserver.cpp</li>
 </ul>
@@ -151,7 +237,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>frameRenderingQueued<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_ogre_render_observer.html">OgreRenderObserver</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

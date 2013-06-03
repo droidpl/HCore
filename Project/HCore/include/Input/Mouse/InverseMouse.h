@@ -31,7 +31,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Input/Mouse/MouseManager.h>
 
 /**
- * @brief
+ * @brief Concrete mouse that uses the movement of the camera on an inverse mode.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -39,8 +39,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class InverseMouse : public MouseManager {
 private:
-	bool			mPressed;
+	bool			mPressed; /**< Checks if the mouse is pressed. Movement is only produced if it is pressed. */
 public:
+	/**
+	 * @brief Constructor of the inverse mouse negotiator.
+	 * @param mediator The mediator attached to this negotiator.
+	 * @param mouse The mouse OIS system.
+	 */
 	InverseMouse(OgreMediator* mediator, OIS::Mouse* mouse);
 	void onUpdate (RenderEvent& renderEvent);
 	bool mouseMoved(const OIS::MouseEvent &evt );

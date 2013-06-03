@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -112,6 +113,9 @@ $(document).ready(function(){initNavTree('class_i_ogre_mediator.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Interface that might be implemented by a mediator that receives messages and performs actions.  
+ <a href="class_i_ogre_mediator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_i_ogre_mediator_8h_source.html">IOgreMediator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IOgreMediator:</div>
@@ -119,21 +123,68 @@ Inheritance diagram for IOgreMediator:</div>
  <div class="center">
   <img src="class_i_ogre_mediator.png" usemap="#IOgreMediator_map" alt=""/>
   <map id="IOgreMediator_map" name="IOgreMediator_map">
-<area href="class_ogre_mediator.html" alt="OgreMediator" shape="rect" coords="0,56,94,80"/>
+<area href="class_ogre_mediator.html" title="The mediator class acts as a mediator that can interchange events between all the negotiators attache..." alt="OgreMediator" shape="rect" coords="0,56,94,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4d965cce29eb02796f5b431d932fbaf3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d965cce29eb02796f5b431d932fbaf3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onOgreChanged</b> (<a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a> *negotiator, <a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;negotiatorEvent)=0</td></tr>
+<tr class="memitem:a4d965cce29eb02796f5b431d932fbaf3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_ogre_mediator.html#a4d965cce29eb02796f5b431d932fbaf3">onOgreChanged</a> (<a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a> *negotiator, <a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;negotiatorEvent)=0</td></tr>
+<tr class="memdesc:a4d965cce29eb02796f5b431d932fbaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback that will be called each time a negotiator launches a new event.  <a href="#a4d965cce29eb02796f5b431d932fbaf3">More...</a><br/></td></tr>
 <tr class="separator:a4d965cce29eb02796f5b431d932fbaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>Interface that might be implemented by a mediator that receives messages and performs actions. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4d965cce29eb02796f5b431d932fbaf3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IOgreMediator::onOgreChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a> *&#160;</td>
+          <td class="paramname"><em>negotiator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>negotiatorEvent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback that will be called each time a negotiator launches a new event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">negotiator</td><td>The negotiator that launched the event. </td></tr>
+    <tr><td class="paramname">negotiatorEvent</td><td>The event that has been launched. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_ogre_mediator.html#af0ae8fd059c51c1cc555e7bff394c333">OgreMediator</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Project/HCore/include/Mediator/<a class="el" href="_i_ogre_mediator_8h_source.html">IOgreMediator.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -142,7 +193,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onOgreChanged
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_i_ogre_mediator.html">IOgreMediator</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

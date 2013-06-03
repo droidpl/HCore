@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -112,25 +113,122 @@ $(document).ready(function(){initNavTree('class_render_event.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Event sent when a frame has been rendered.  
+ <a href="class_render_event.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_render_event_8h_source.html">RenderEvent.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a493fc3a3c42abfaf08aaa4ea6ebda8ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a493fc3a3c42abfaf08aaa4ea6ebda8ad"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RenderEvent</b> (float timeSinceLastEvent, float timeSinceLastFrame)</td></tr>
+<tr class="memitem:aacea7a05980a7b7393985f693f93ed72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacea7a05980a7b7393985f693f93ed72"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_render_event.html#aacea7a05980a7b7393985f693f93ed72">RenderEvent</a> ()</td></tr>
+<tr class="memdesc:aacea7a05980a7b7393985f693f93ed72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the render event. Initializes elements to default value. <br/></td></tr>
+<tr class="separator:aacea7a05980a7b7393985f693f93ed72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493fc3a3c42abfaf08aaa4ea6ebda8ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_render_event.html#a493fc3a3c42abfaf08aaa4ea6ebda8ad">RenderEvent</a> (float timeSinceLastEvent, float timeSinceLastFrame)</td></tr>
+<tr class="memdesc:a493fc3a3c42abfaf08aaa4ea6ebda8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with some parameters needed.  <a href="#a493fc3a3c42abfaf08aaa4ea6ebda8ad">More...</a><br/></td></tr>
 <tr class="separator:a493fc3a3c42abfaf08aaa4ea6ebda8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8840d6cee7f1e2546755e00aea764ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8840d6cee7f1e2546755e00aea764ad"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getTimeSinceLastEvent</b> ()</td></tr>
+<tr class="memitem:ac8840d6cee7f1e2546755e00aea764ad"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_render_event.html#ac8840d6cee7f1e2546755e00aea764ad">getTimeSinceLastEvent</a> ()</td></tr>
+<tr class="memdesc:ac8840d6cee7f1e2546755e00aea764ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time between two consecutive events.  <a href="#ac8840d6cee7f1e2546755e00aea764ad">More...</a><br/></td></tr>
 <tr class="separator:ac8840d6cee7f1e2546755e00aea764ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66ff33180ffb750b8b7db17039973fd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66ff33180ffb750b8b7db17039973fd2"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getTimeSinceLastFrame</b> ()</td></tr>
+<tr class="memitem:a66ff33180ffb750b8b7db17039973fd2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_render_event.html#a66ff33180ffb750b8b7db17039973fd2">getTimeSinceLastFrame</a> ()</td></tr>
+<tr class="memdesc:a66ff33180ffb750b8b7db17039973fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time between two consecutive frames.  <a href="#a66ff33180ffb750b8b7db17039973fd2">More...</a><br/></td></tr>
 <tr class="separator:a66ff33180ffb750b8b7db17039973fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>Event sent when a frame has been rendered. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a493fc3a3c42abfaf08aaa4ea6ebda8ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderEvent::RenderEvent </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeSinceLastEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeSinceLastFrame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor with some parameters needed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeSinceLastEvent</td><td>The time between two consecutive events. </td></tr>
+    <tr><td class="paramname">timeSinceLastFrame</td><td>The time between two consecutive frames. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac8840d6cee7f1e2546755e00aea764ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RenderEvent::getTimeSinceLastEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the time between two consecutive events. </p>
+<dl class="section return"><dt>Returns</dt><dd>Time between two consecutive events. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a66ff33180ffb750b8b7db17039973fd2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RenderEvent::getTimeSinceLastFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the time between two consecutive frames. </p>
+<dl class="section return"><dt>Returns</dt><dd>Time between two consecutive frames. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Project/HCore/include/Listener/<a class="el" href="_render_event_8h_source.html">RenderEvent.h</a></li>
 <li>Project/HCore/src/Listener/RenderEvent.cpp</li>
 </ul>
@@ -140,7 +238,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>getTimeSinceLastFram
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_render_event.html">RenderEvent</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:44 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

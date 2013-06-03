@@ -35,7 +35,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 using namespace std;
 
 /**
- * @brief
+ * @brief Standar camera that moves on a typical way giving all elements necessary to change 
+ * its position and direction.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -43,7 +44,11 @@ using namespace std;
  */
 class OgreStandardCamera : private OgreCameraManager {
 public:
-	static const string ID_CAMERA;
+	static const string ID_CAMERA; /**< The id of the standard camera */
+	/**
+	 * @brief Constructor of the standard camera.
+	 * @param mediator As a negotiator it needs a mediator on which it is attached.
+	 */
 	OgreStandardCamera(OgreMediator* mediator);
 	void setPosition (float x, float y, float z);
 	void move (Ogre::Vector3 direction);

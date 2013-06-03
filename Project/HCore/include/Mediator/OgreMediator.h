@@ -49,7 +49,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Utils/LogAPI.h>
 
 /**
- * @brief
+ * @brief The mediator class acts as a mediator that can interchange events between all the negotiators attached to it.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -65,15 +65,49 @@ private:
 	MouseManager*					mMouseManager; /**< The mouse manager **/
 	KeyboardManager*				mKeyboardManager; /**< The keyboard manager **/
 public:
+	/**
+	 * @brief The constructor of the mediator.
+	 */
 	OgreMediator();
+	/**
+	 * @brief Destructor that frees all the memory used by the mediator and all its negotiators.
+	 */
 	~OgreMediator();
 	void onOgreChanged(AbstractOgreNegotiator* negotiator, NegotiatorEvent& negotiatorEvent);
+	/**
+	 * @brief Initializes HCore by creating all needed instances. It must be called before any action.
+	 * If this method is not called the behaviour can be unexpected and you can receive any kind of errors.
+	 */
 	bool initFramework();
+	/**
+	 * @brief Start the rendering process. This process block the execution by looping on the render loop.
+	 * Any instruction written before a call to this member function will not be executed until the program is closed.
+	 */
 	void startRendering();
+	/**
+	 * @brief Adds the given render listener to the registry.
+	 * @param renderListener The render listener to add to the registry.
+	 */
 	void addRenderListener(RenderListener* renderListener);
+	/**
+	 * @brief Removes the given render listener from the registry.
+	 * @param renderListener The render listener to detach.
+	 */
 	void detachRenderListener(RenderListener* renderListener);
+	/**
+	 * @brief Changes the input system depending on the type and the strategy present.
+	 * @param type The type of the strategy that must change.
+	 */
 	void changeInputSystem(InputTypes::MouseTypes::types type);
+	/**
+	 * @brief Changes the input system depending on the type and the strategy present.
+	 * @param type The type of the strategy that must change.
+	 */
 	void changeInputSystem(InputTypes::KeyboardTypes::types type);
+	/**
+	 * @brief Changes the input system depending on the type and the strategy present.
+	 * @param type The type of the strategy that must change.
+	 */
 	void changeInputSystem(InputTypes::HapticTypes::types type);
 };
 #endif

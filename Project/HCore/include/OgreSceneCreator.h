@@ -63,7 +63,8 @@ public:
 	/**
 	 * @brief Constructor for the scene creator element.
 	 * 
-	 * @param Needs the root to initialize the SceneManager.
+	 * @param mediator Needs the root to initialize the SceneManager.
+	 * @param root The root node of the engine on the ogre core.
 	 */
 	OgreSceneCreator(OgreMediator* mediator, Ogre::Root* root);
 	/**
@@ -223,7 +224,7 @@ public:
 	 * @brief Removes one node from the scene.
 	 *
 	 * Remember that if you delete a node all it's referenced nodes will be deleted.
-	 * @param The node name we want to remove.
+	 * @param objectId The node name we want to remove.
 	 */
 	void removeObject(string objectId);
 	/**

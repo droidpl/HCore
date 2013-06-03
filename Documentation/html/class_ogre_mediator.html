@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -112,6 +113,9 @@ $(document).ready(function(){initNavTree('class_ogre_mediator.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>The mediator class acts as a mediator that can interchange events between all the negotiators attached to it.  
+ <a href="class_ogre_mediator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_ogre_mediator_8h_source.html">OgreMediator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OgreMediator:</div>
@@ -119,42 +123,219 @@ Inheritance diagram for OgreMediator:</div>
  <div class="center">
   <img src="class_ogre_mediator.png" usemap="#OgreMediator_map" alt=""/>
   <map id="OgreMediator_map" name="OgreMediator_map">
-<area href="class_i_ogre_mediator.html" alt="IOgreMediator" shape="rect" coords="0,0,94,24"/>
+<area href="class_i_ogre_mediator.html" title="Interface that might be implemented by a mediator that receives messages and performs actions..." alt="IOgreMediator" shape="rect" coords="0,0,94,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af0ae8fd059c51c1cc555e7bff394c333"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0ae8fd059c51c1cc555e7bff394c333"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>onOgreChanged</b> (<a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a> *negotiator, <a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;negotiatorEvent)</td></tr>
+<tr class="memitem:a21b15e6147676f963fad712e8bf0b3c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21b15e6147676f963fad712e8bf0b3c4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#a21b15e6147676f963fad712e8bf0b3c4">OgreMediator</a> ()</td></tr>
+<tr class="memdesc:a21b15e6147676f963fad712e8bf0b3c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of the mediator. <br/></td></tr>
+<tr class="separator:a21b15e6147676f963fad712e8bf0b3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca363465ee5401ed3a461787ec78d362"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca363465ee5401ed3a461787ec78d362"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#aca363465ee5401ed3a461787ec78d362">~OgreMediator</a> ()</td></tr>
+<tr class="memdesc:aca363465ee5401ed3a461787ec78d362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor that frees all the memory used by the mediator and all its negotiators. <br/></td></tr>
+<tr class="separator:aca363465ee5401ed3a461787ec78d362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ae8fd059c51c1cc555e7bff394c333"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#af0ae8fd059c51c1cc555e7bff394c333">onOgreChanged</a> (<a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a> *negotiator, <a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;negotiatorEvent)</td></tr>
+<tr class="memdesc:af0ae8fd059c51c1cc555e7bff394c333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback that will be called each time a negotiator launches a new event.  <a href="#af0ae8fd059c51c1cc555e7bff394c333">More...</a><br/></td></tr>
 <tr class="separator:af0ae8fd059c51c1cc555e7bff394c333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a57999e51c147a09e955d5d9057cefb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a57999e51c147a09e955d5d9057cefb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>initFramework</b> ()</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#a3a57999e51c147a09e955d5d9057cefb">initFramework</a> ()</td></tr>
+<tr class="memdesc:a3a57999e51c147a09e955d5d9057cefb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes HCore by creating all needed instances. It must be called before any action. If this method is not called the behaviour can be unexpected and you can receive any kind of errors. <br/></td></tr>
 <tr class="separator:a3a57999e51c147a09e955d5d9057cefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b65eea401f8016df45ec290e7b2343"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8b65eea401f8016df45ec290e7b2343"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>startRendering</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#ae8b65eea401f8016df45ec290e7b2343">startRendering</a> ()</td></tr>
+<tr class="memdesc:ae8b65eea401f8016df45ec290e7b2343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the rendering process. This process block the execution by looping on the render loop. Any instruction written before a call to this member function will not be executed until the program is closed. <br/></td></tr>
 <tr class="separator:ae8b65eea401f8016df45ec290e7b2343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a542bb408e2d29c7d86f2a8a2c4e2c258"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a542bb408e2d29c7d86f2a8a2c4e2c258"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addRenderListener</b> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memitem:a542bb408e2d29c7d86f2a8a2c4e2c258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#a542bb408e2d29c7d86f2a8a2c4e2c258">addRenderListener</a> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memdesc:a542bb408e2d29c7d86f2a8a2c4e2c258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given render listener to the registry.  <a href="#a542bb408e2d29c7d86f2a8a2c4e2c258">More...</a><br/></td></tr>
 <tr class="separator:a542bb408e2d29c7d86f2a8a2c4e2c258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af09f7d22a95b29280f02c1d73f09d592"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af09f7d22a95b29280f02c1d73f09d592"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>detachRenderListener</b> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memitem:af09f7d22a95b29280f02c1d73f09d592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#af09f7d22a95b29280f02c1d73f09d592">detachRenderListener</a> (<a class="el" href="class_render_listener.html">RenderListener</a> *renderListener)</td></tr>
+<tr class="memdesc:af09f7d22a95b29280f02c1d73f09d592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the given render listener from the registry.  <a href="#af09f7d22a95b29280f02c1d73f09d592">More...</a><br/></td></tr>
 <tr class="separator:af09f7d22a95b29280f02c1d73f09d592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5988d135db63a6018b6037a2e02e209f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5988d135db63a6018b6037a2e02e209f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>changeInputSystem</b> (InputTypes::MouseTypes::types type)</td></tr>
+<tr class="memitem:a5988d135db63a6018b6037a2e02e209f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#a5988d135db63a6018b6037a2e02e209f">changeInputSystem</a> (InputTypes::MouseTypes::types type)</td></tr>
+<tr class="memdesc:a5988d135db63a6018b6037a2e02e209f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the input system depending on the type and the strategy present.  <a href="#a5988d135db63a6018b6037a2e02e209f">More...</a><br/></td></tr>
 <tr class="separator:a5988d135db63a6018b6037a2e02e209f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2901ac9ca94a4a5b89ebdbd26e140111"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2901ac9ca94a4a5b89ebdbd26e140111"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>changeInputSystem</b> (InputTypes::KeyboardTypes::types type)</td></tr>
+<tr class="memitem:a2901ac9ca94a4a5b89ebdbd26e140111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#a2901ac9ca94a4a5b89ebdbd26e140111">changeInputSystem</a> (InputTypes::KeyboardTypes::types type)</td></tr>
+<tr class="memdesc:a2901ac9ca94a4a5b89ebdbd26e140111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the input system depending on the type and the strategy present.  <a href="#a2901ac9ca94a4a5b89ebdbd26e140111">More...</a><br/></td></tr>
 <tr class="separator:a2901ac9ca94a4a5b89ebdbd26e140111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849a7d8b00afc337c305a8bbd4626970"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a849a7d8b00afc337c305a8bbd4626970"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>changeInputSystem</b> (InputTypes::HapticTypes::types type)</td></tr>
+<tr class="memitem:a849a7d8b00afc337c305a8bbd4626970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ogre_mediator.html#a849a7d8b00afc337c305a8bbd4626970">changeInputSystem</a> (InputTypes::HapticTypes::types type)</td></tr>
+<tr class="memdesc:a849a7d8b00afc337c305a8bbd4626970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the input system depending on the type and the strategy present.  <a href="#a849a7d8b00afc337c305a8bbd4626970">More...</a><br/></td></tr>
 <tr class="separator:a849a7d8b00afc337c305a8bbd4626970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>The mediator class acts as a mediator that can interchange events between all the negotiators attached to it. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a542bb408e2d29c7d86f2a8a2c4e2c258"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreMediator::addRenderListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_listener.html">RenderListener</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the given render listener to the registry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>The render listener to add to the registry. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5988d135db63a6018b6037a2e02e209f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreMediator::changeInputSystem </td>
+          <td>(</td>
+          <td class="paramtype">InputTypes::MouseTypes::types&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the input system depending on the type and the strategy present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of the strategy that must change. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2901ac9ca94a4a5b89ebdbd26e140111"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreMediator::changeInputSystem </td>
+          <td>(</td>
+          <td class="paramtype">InputTypes::KeyboardTypes::types&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the input system depending on the type and the strategy present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of the strategy that must change. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a849a7d8b00afc337c305a8bbd4626970"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreMediator::changeInputSystem </td>
+          <td>(</td>
+          <td class="paramtype">InputTypes::HapticTypes::types&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the input system depending on the type and the strategy present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of the strategy that must change. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af09f7d22a95b29280f02c1d73f09d592"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreMediator::detachRenderListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_listener.html">RenderListener</a> *&#160;</td>
+          <td class="paramname"><em>renderListener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the given render listener from the registry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderListener</td><td>The render listener to detach. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af0ae8fd059c51c1cc555e7bff394c333"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreMediator::onOgreChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a> *&#160;</td>
+          <td class="paramname"><em>negotiator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>negotiatorEvent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback that will be called each time a negotiator launches a new event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">negotiator</td><td>The negotiator that launched the event. </td></tr>
+    <tr><td class="paramname">negotiatorEvent</td><td>The event that has been launched. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_i_ogre_mediator.html#a4d965cce29eb02796f5b431d932fbaf3">IOgreMediator</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Project/HCore/include/Mediator/<a class="el" href="_ogre_mediator_8h_source.html">OgreMediator.h</a></li>
 <li>Project/HCore/src/Mediator/OgreMediator.cpp</li>
 </ul>
@@ -164,7 +345,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>changeInputSystem</b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_ogre_mediator.html">OgreMediator</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

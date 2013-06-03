@@ -35,7 +35,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 using namespace std;
 
 /**
- * @brief
+ * @brief Event with all data needed to perform an action than a negotiator sends to a mediator.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -43,12 +43,30 @@ using namespace std;
  */
 class NegotiatorEvent {
 private:
-	string					mId;
-	string					mMessage;
+	string					mId; /**< Identifier of the events. Unique for each event. */
+	string					mMessage; /**< The optional message for a given event. Allow a simulated parameter for a command for this event. */
 public:
-	NegotiatorEvent(string id="", string message="");
+	/**
+	 * @brief Constructor of the negotiator event.
+	 * @param id The identifier of the event.
+	 * @param message The optional message.
+	 */
+	NegotiatorEvent(string id, string message="");
+	/**
+	 * @brief Checks if an event is the same as another by compating its ids.
+	 * @param eventId The identifier of the second event that will be compared.
+	 * @return True if those events are the same. Elsewhere, false.
+	 */
 	bool matchEvent(string eventId);
+	/**
+	 * @brief Returns the message.
+	 * @return The message internal value.
+	 */
 	inline string getMessage(){return mMessage; }
+	/**
+	 * @brief Returns the id.
+	 * @return The id internal value.
+	 */
 	inline string getId(){ return mId; }
 };
 #endif

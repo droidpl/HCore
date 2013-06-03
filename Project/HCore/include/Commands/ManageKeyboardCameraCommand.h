@@ -33,7 +33,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Input/Keyboard/KeyboardManager.h>
 
 /**
- * @brief
+ * @brief Manages the camera movement depending on keys pressed on the physical keyboard.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -41,10 +41,15 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class ManageKeyboardCameraCommand : public IOgreCommand{
 private:
-	OgreCameraManager*		mCameraManager;
-	KeyboardManager*		mKeyboardManager;
-	static const int		MAX_SPEED = 250;
+	OgreCameraManager*		mCameraManager; /**< The camera manager. */
+	KeyboardManager*		mKeyboardManager; /**< The keyboard manager containing the real reference to the keyboard. */
+	static const int		MAX_SPEED = 250; /**< Max movement speed of the keyboard. */
 public:
+	/**
+	 * @brief Constructor of the command that manages the keyboard.
+	 * @param camera The camera manager.
+	 * @param keyboardManager The keyboard manager containing the real reference to the keyboard.
+	 */
 	ManageKeyboardCameraCommand(OgreCameraManager* camera, KeyboardManager* keyboardManager);
 	void execute();
 };

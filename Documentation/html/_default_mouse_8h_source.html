@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -137,25 +138,25 @@ $(document).ready(function(){initNavTree('_default_mouse_8h_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* INCLUDES */</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;Input/Mouse/MouseManager.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_default_mouse.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_default_mouse.html">DefaultMouse</a> : <span class="keyword">public</span> <a class="code" href="class_mouse_manager.html">MouseManager</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_default_mouse.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_default_mouse.html" title="Concrete mouse that uses the movement of the camera on default mode.">DefaultMouse</a> : <span class="keyword">public</span> <a class="code" href="class_mouse_manager.html" title="Manager that uses its operations to perform movements with the mouse peripheral.">MouseManager</a> {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> mPressed;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> mPressed; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_default_mouse.html">DefaultMouse</a>(<a class="code" href="class_ogre_mediator.html">OgreMediator</a>* mediator, OIS::Mouse* mouse);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> onUpdate (<a class="code" href="class_render_event.html">RenderEvent</a>&amp; renderEvent);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> mouseMoved(<span class="keyword">const</span> OIS::MouseEvent &amp;evt );</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> mousePressed(<span class="keyword">const</span> OIS::MouseEvent &amp;evt, OIS::MouseButtonID <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> mouseReleased(<span class="keyword">const</span> OIS::MouseEvent &amp;evt, OIS::MouseButtonID <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_default_mouse.html#a0e3d03cf54c870c6da72ef965539e4e4" title="Constructor of the default mouse negotiator.">DefaultMouse</a>(<a class="code" href="class_ogre_mediator.html" title="The mediator class acts as a mediator that can interchange events between all the negotiators attache...">OgreMediator</a>* mediator, OIS::Mouse* mouse);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_default_mouse.html#ae9b94edea3bc11f7913f9b4b96d7766b" title="The callback implemented by render listeners.">onUpdate</a> (<a class="code" href="class_render_event.html" title="Event sent when a frame has been rendered.">RenderEvent</a>&amp; renderEvent);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_default_mouse.html#aa094fccaf4b9695f4db56f8c91b651ca" title="Callback called when the mouse is moved by the user.">mouseMoved</a>(<span class="keyword">const</span> OIS::MouseEvent &amp;evt );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_default_mouse.html#a075175d4d2d88c117f454ca8c69910c1" title="Callback called when the mouse is clicked by the user.">mousePressed</a>(<span class="keyword">const</span> OIS::MouseEvent &amp;evt, OIS::MouseButtonID <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_default_mouse.html#ae3b796a2f105bc566c524e1eb7c82802" title="Callback called when the mouse is unclicked by the user.">mouseReleased</a>(<span class="keyword">const</span> OIS::MouseEvent &amp;evt, OIS::MouseButtonID <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><a class="el" href="dir_22d2a9e5e629041c79abdd7385caa366.html">Input</a></li><li class="navelem"><a class="el" href="dir_f9369abffaabc16a651190fe2db63c7a.html">Mouse</a></li><li class="navelem"><b>DefaultMouse.h</b></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

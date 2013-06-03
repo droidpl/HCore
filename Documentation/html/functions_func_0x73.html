@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -92,7 +93,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_0x67.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_0x69.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_func_0x6b.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_0x6c.html#index_l"><span>l</span></a></li>
+      <li><a href="functions_func_0x6d.html#index_m"><span>m</span></a></li>
       <li><a href="functions_func_0x6e.html#index_n"><span>n</span></a></li>
       <li><a href="functions_func_0x6f.html#index_o"><span>o</span></a></li>
       <li><a href="functions_func_0x70.html#index_p"><span>p</span></a></li>
@@ -103,6 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_0x75.html#index_u"><span>u</span></a></li>
       <li><a href="functions_func_0x76.html#index_v"><span>v</span></a></li>
       <li><a href="functions_func_0x78.html#index_x"><span>x</span></a></li>
+      <li><a href="functions_func_0x79.html#index_y"><span>y</span></a></li>
       <li><a href="functions_func_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
@@ -159,11 +163,21 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 <li>SetBOM()
 : <a class="el" href="classtinyxml2_1_1_x_m_l_document.html#a14419b698f7c4b140df4e80f3f0c93b0">tinyxml2::XMLDocument</a>
 </li>
+<li>setCamera()
+: <a class="el" href="class_ogre_camera_manager.html#a866761449a0bd8e9e2fdb91b31e4418c">OgreCameraManager</a>
+</li>
 <li>SetCData()
 : <a class="el" href="classtinyxml2_1_1_x_m_l_text.html#ad080357d76ab7cc59d7651249949329d">tinyxml2::XMLText</a>
 </li>
+<li>setMouseAxis()
+: <a class="el" href="class_mouse_manager.html#a3b5937d840170c357e10224abde14624">MouseManager</a>
+</li>
 <li>SetName()
 : <a class="el" href="classtinyxml2_1_1_x_m_l_element.html#a97712009a530d8cb8a63bf705f02b4f1">tinyxml2::XMLElement</a>
+</li>
+<li>setPosition()
+: <a class="el" href="class_ogre_camera_manager.html#acede0580bb4b6e0d72d83b9da414884f">OgreCameraManager</a>
+, <a class="el" href="class_ogre_standard_camera.html#afec7a10266a1a439689a4f64e3ad24b8">OgreStandardCamera</a>
 </li>
 <li>setSkyBox()
 : <a class="el" href="class_ogre_scene_creator.html#a79c975cca36746af96837eb4d7375cab">OgreSceneCreator</a>
@@ -172,27 +186,40 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 : <a class="el" href="classtinyxml2_1_1_x_m_l_node.html#a09dd68cf9eae137579f6e50f36487513">tinyxml2::XMLNode</a>
 </li>
 <li>ShallowClone()
-: <a class="el" href="classtinyxml2_1_1_x_m_l_comment.html#a90bb60193a691b484f5e1b487857016d">tinyxml2::XMLComment</a>
+: <a class="el" href="classtinyxml2_1_1_x_m_l_text.html#af5115f8cc83de2947ed6a9d13e2f88c8">tinyxml2::XMLText</a>
+, <a class="el" href="classtinyxml2_1_1_x_m_l_document.html#a57c8511ed9f83aa3e20909a3db3f83d0">tinyxml2::XMLDocument</a>
+, <a class="el" href="classtinyxml2_1_1_x_m_l_element.html#a85d85e32c18863fff1eeed53ae1ce23d">tinyxml2::XMLElement</a>
 , <a class="el" href="classtinyxml2_1_1_x_m_l_node.html#a8402cbd3129d20e9e6024bbcc0531283">tinyxml2::XMLNode</a>
-, <a class="el" href="classtinyxml2_1_1_x_m_l_text.html#af5115f8cc83de2947ed6a9d13e2f88c8">tinyxml2::XMLText</a>
+, <a class="el" href="classtinyxml2_1_1_x_m_l_comment.html#a90bb60193a691b484f5e1b487857016d">tinyxml2::XMLComment</a>
 , <a class="el" href="classtinyxml2_1_1_x_m_l_declaration.html#a39458732ee6796cfc85dd35d3c488e0b">tinyxml2::XMLDeclaration</a>
 , <a class="el" href="classtinyxml2_1_1_x_m_l_unknown.html#aa09fc7cb0cd64d6bb9c5ae00ffc549ec">tinyxml2::XMLUnknown</a>
-, <a class="el" href="classtinyxml2_1_1_x_m_l_element.html#a85d85e32c18863fff1eeed53ae1ce23d">tinyxml2::XMLElement</a>
-, <a class="el" href="classtinyxml2_1_1_x_m_l_document.html#a57c8511ed9f83aa3e20909a3db3f83d0">tinyxml2::XMLDocument</a>
 </li>
 <li>ShallowEqual()
-: <a class="el" href="classtinyxml2_1_1_x_m_l_document.html#a12eac66c6e45d074d5cc47319868cd66">tinyxml2::XMLDocument</a>
-, <a class="el" href="classtinyxml2_1_1_x_m_l_declaration.html#ace0d2d9bc1b63278bd5e984ebe0c7bd0">tinyxml2::XMLDeclaration</a>
-, <a class="el" href="classtinyxml2_1_1_x_m_l_unknown.html#a0169df157bf69a092b404ca49621ff1a">tinyxml2::XMLUnknown</a>
-, <a class="el" href="classtinyxml2_1_1_x_m_l_element.html#a25d51a2aad92625c78441457d58c85bc">tinyxml2::XMLElement</a>
-, <a class="el" href="classtinyxml2_1_1_x_m_l_comment.html#a2d9f26757b0018fce933e74420cda22a">tinyxml2::XMLComment</a>
-, <a class="el" href="classtinyxml2_1_1_x_m_l_node.html#a7ce18b751c3ea09eac292dca264f9226">tinyxml2::XMLNode</a>
+: <a class="el" href="classtinyxml2_1_1_x_m_l_node.html#a7ce18b751c3ea09eac292dca264f9226">tinyxml2::XMLNode</a>
 , <a class="el" href="classtinyxml2_1_1_x_m_l_text.html#a1588aa5d23cb21eb31f36df0aaaa8d66">tinyxml2::XMLText</a>
+, <a class="el" href="classtinyxml2_1_1_x_m_l_declaration.html#ace0d2d9bc1b63278bd5e984ebe0c7bd0">tinyxml2::XMLDeclaration</a>
+, <a class="el" href="classtinyxml2_1_1_x_m_l_element.html#a25d51a2aad92625c78441457d58c85bc">tinyxml2::XMLElement</a>
+, <a class="el" href="classtinyxml2_1_1_x_m_l_unknown.html#a0169df157bf69a092b404ca49621ff1a">tinyxml2::XMLUnknown</a>
+, <a class="el" href="classtinyxml2_1_1_x_m_l_document.html#a12eac66c6e45d074d5cc47319868cd66">tinyxml2::XMLDocument</a>
+, <a class="el" href="classtinyxml2_1_1_x_m_l_comment.html#a2d9f26757b0018fce933e74420cda22a">tinyxml2::XMLComment</a>
+</li>
+<li>startKeyboard()
+: <a class="el" href="class_keyboard_manager.html#ac05f0a3dd233937cd609c859d46172c8">KeyboardManager</a>
+</li>
+<li>startMouse()
+: <a class="el" href="class_mouse_manager.html#a7d6eeff14cf017f2517e2d4dbc427905">MouseManager</a>
 </li>
 <li>startRendering()
-: <a class="el" href="class_simulator_a_p_i.html#ad347c54912ca69e37ccc9700c0af586e">SimulatorAPI</a>
+: <a class="el" href="class_ogre_mediator.html#ae8b65eea401f8016df45ec290e7b2343">OgreMediator</a>
 , <a class="el" href="class_ogre_engine.html#a859d3c2718b3d77611807ed3a2f7baf4">OgreEngine</a>
+, <a class="el" href="class_simulator_a_p_i.html#ad347c54912ca69e37ccc9700c0af586e">SimulatorAPI</a>
 , <a class="el" href="class_simulator_a_p_i_1_1_facade.html#a72d8c39ca610f5fe65e9bf2fa6e04445">SimulatorAPI::Facade</a>
+</li>
+<li>stopKeyboard()
+: <a class="el" href="class_keyboard_manager.html#a85dc03d688f2af15b1a3284544dc4a8b">KeyboardManager</a>
+</li>
+<li>stopMouse()
+: <a class="el" href="class_mouse_manager.html#a74dcea3f2397cef387c85c7dd35f6bcb">MouseManager</a>
 </li>
 <li>stopSimulator()
 : <a class="el" href="class_abstract_simulator.html#aa29bdccd5645878ff5dde330cd699e39">AbstractSimulator</a>
@@ -203,7 +230,7 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu May 30 2013 13:08:44 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:52 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

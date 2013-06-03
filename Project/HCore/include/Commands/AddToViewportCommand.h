@@ -34,7 +34,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <OgreEngine.h>
 
 /**
- * @brief
+ * @brief Command that adds a camera manager to the viewport to render elements on the scene.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -42,10 +42,16 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class AddToViewportCommand: public IOgreCommand {
 private:
-	OgreCameraManager*		mCameraManager;
-	OgreSceneCreator*		mSceneCreator;
-	OgreEngine*				mEngine;
+	OgreCameraManager*		mCameraManager; /**< The camera manager to attach. */
+	OgreSceneCreator*		mSceneCreator; /**< The scene creator where a node must be created for the camera. */
+	OgreEngine*				mEngine; /**< The engine where this camera must be attached to the window. */
 public:
+	/**
+	 * @brief Constructor of the command.
+	 * @param cameraManager The camera manager to attach.
+	 * @param sceneCreator The scene creator where a node must be created for the camera.
+	 * @param engine The engine where this camera must be attached to the window.
+	 */
 	AddToViewportCommand(OgreCameraManager* cameraManager, OgreSceneCreator* sceneCreator, OgreEngine* engine);
 	void execute();
 };

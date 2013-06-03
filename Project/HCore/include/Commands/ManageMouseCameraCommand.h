@@ -33,7 +33,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Input/Mouse/MouseManager.h>
 
 /**
- * @brief
+ * @brief The command that moves the camera depending on the mouse movement.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -41,10 +41,15 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class ManageMouseCameraCommand : public IOgreCommand {
 private:
-	OgreCameraManager* mCameraManager;
-	MouseManager* mMouseManager;
-	const float M_SPEED;
+	OgreCameraManager* mCameraManager; /**< The camera manager. */
+	MouseManager* mMouseManager; /**< The mouse manager containing the reference to physical mouse. */
+	const float M_SPEED; /**< The speed of the Mouse.*/
 public:
+	/**
+	 * @brief Constructor of the camera command.
+	 * @param cameraManager The camera manager.
+	 * @param mouseManager The mouse manager containing the reference to physical mouse.
+	 */
 	ManageMouseCameraCommand(OgreCameraManager* cameraManager, MouseManager* mouseManager);
 	void execute();
 };

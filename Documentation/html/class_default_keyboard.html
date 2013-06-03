@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -112,6 +113,9 @@ $(document).ready(function(){initNavTree('class_default_keyboard.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Default keyboard used to move the camera on the scene. The keys registered on this keyboard are arrows and 'a', 's', 'd', 'w', 'q', 'e'.  
+ <a href="class_default_keyboard.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_default_keyboard_8h_source.html">DefaultKeyboard.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DefaultKeyboard:</div>
@@ -119,74 +123,255 @@ Inheritance diagram for DefaultKeyboard:</div>
  <div class="center">
   <img src="class_default_keyboard.png" usemap="#DefaultKeyboard_map" alt=""/>
   <map id="DefaultKeyboard_map" name="DefaultKeyboard_map">
-<area href="class_keyboard_manager.html" alt="KeyboardManager" shape="rect" coords="156,56,302,80"/>
-<area href="class_render_listener.html" alt="RenderListener" shape="rect" coords="0,0,146,24"/>
-<area href="class_abstract_ogre_negotiator.html" alt="AbstractOgreNegotiator" shape="rect" coords="156,0,302,24"/>
+<area href="class_keyboard_manager.html" title="This class manages the keyboard giving a consistent interface to create as much keyboards as needed..." alt="KeyboardManager" shape="rect" coords="156,56,302,80"/>
+<area href="class_render_listener.html" title="Interface implemented by every class that want to listen for rendered frame. In simulator layer it is..." alt="RenderListener" shape="rect" coords="0,0,146,24"/>
+<area href="class_abstract_ogre_negotiator.html" title="Abstract class that represents the negotiators. Those negotiators saves the instance of a mediator wh..." alt="AbstractOgreNegotiator" shape="rect" coords="156,0,302,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7b4f5ece32653de501c4983735172ed5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b4f5ece32653de501c4983735172ed5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultKeyboard</b> (<a class="el" href="class_ogre_mediator.html">OgreMediator</a> *mediator, OIS::Keyboard *keyboard)</td></tr>
+<tr class="memitem:a7b4f5ece32653de501c4983735172ed5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_default_keyboard.html#a7b4f5ece32653de501c4983735172ed5">DefaultKeyboard</a> (<a class="el" href="class_ogre_mediator.html">OgreMediator</a> *mediator, OIS::Keyboard *keyboard)</td></tr>
+<tr class="memdesc:a7b4f5ece32653de501c4983735172ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the keyboard negotiator.  <a href="#a7b4f5ece32653de501c4983735172ed5">More...</a><br/></td></tr>
 <tr class="separator:a7b4f5ece32653de501c4983735172ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2fe08727958f346aa804c74f3f6f3b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2fe08727958f346aa804c74f3f6f3b8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>onUpdate</b> (<a class="el" href="class_render_event.html">RenderEvent</a> &amp;renderEvent)</td></tr>
+<tr class="memitem:af2fe08727958f346aa804c74f3f6f3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_default_keyboard.html#af2fe08727958f346aa804c74f3f6f3b8">onUpdate</a> (<a class="el" href="class_render_event.html">RenderEvent</a> &amp;renderEvent)</td></tr>
+<tr class="memdesc:af2fe08727958f346aa804c74f3f6f3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback implemented by render listeners.  <a href="#af2fe08727958f346aa804c74f3f6f3b8">More...</a><br/></td></tr>
 <tr class="separator:af2fe08727958f346aa804c74f3f6f3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7be3659797e89517d785854a680ad8d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7be3659797e89517d785854a680ad8d5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressed</b> (const OIS::KeyEvent &amp;keyPressed)</td></tr>
+<tr class="memitem:a7be3659797e89517d785854a680ad8d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_default_keyboard.html#a7be3659797e89517d785854a680ad8d5">keyPressed</a> (const OIS::KeyEvent &amp;keyPressed)</td></tr>
+<tr class="memdesc:a7be3659797e89517d785854a680ad8d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback that notifies the concrete keyboard that a key on the physical keyboard has been pressed. Adds to the list the pressed key.  <a href="#a7be3659797e89517d785854a680ad8d5">More...</a><br/></td></tr>
 <tr class="separator:a7be3659797e89517d785854a680ad8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73d94654aca539c6f5225bf77ceb8dac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73d94654aca539c6f5225bf77ceb8dac"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleased</b> (const OIS::KeyEvent &amp;keyReleased)</td></tr>
+<tr class="memitem:a73d94654aca539c6f5225bf77ceb8dac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_default_keyboard.html#a73d94654aca539c6f5225bf77ceb8dac">keyReleased</a> (const OIS::KeyEvent &amp;keyReleased)</td></tr>
+<tr class="memdesc:a73d94654aca539c6f5225bf77ceb8dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback that notifies the concrete keyboard that a key on the physical keyboard has been released. Release the key from the pressed keys list.  <a href="#a73d94654aca539c6f5225bf77ceb8dac">More...</a><br/></td></tr>
 <tr class="separator:a73d94654aca539c6f5225bf77ceb8dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0706fb01d551d71d5a95a32ae8d756d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0706fb01d551d71d5a95a32ae8d756d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCommandKey</b> (const OIS::KeyCode &amp;keyCode)</td></tr>
+<tr class="memitem:aa0706fb01d551d71d5a95a32ae8d756d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_default_keyboard.html#aa0706fb01d551d71d5a95a32ae8d756d">isCommandKey</a> (const OIS::KeyCode &amp;keyCode)</td></tr>
+<tr class="memdesc:aa0706fb01d551d71d5a95a32ae8d756d"><td class="mdescLeft">&#160;</td><td class="mdescRight">On the concrete keyboards not all the keys are needed. This method must be called to check if the key pressed is really a used key.  <a href="#aa0706fb01d551d71d5a95a32ae8d756d">More...</a><br/></td></tr>
 <tr class="separator:aa0706fb01d551d71d5a95a32ae8d756d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_keyboard_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_keyboard_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_keyboard_manager.html">KeyboardManager</a></td></tr>
+<tr class="memitem:a5321f1327f94403ead6b7fa083ae7cee inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5321f1327f94403ead6b7fa083ae7cee"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#a5321f1327f94403ead6b7fa083ae7cee">~KeyboardManager</a> ()</td></tr>
+<tr class="memdesc:a5321f1327f94403ead6b7fa083ae7cee inherit pub_methods_class_keyboard_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor that releases needed memory. <br/></td></tr>
+<tr class="separator:a5321f1327f94403ead6b7fa083ae7cee inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05f0a3dd233937cd609c859d46172c8 inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac05f0a3dd233937cd609c859d46172c8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>startKeyboard</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#ac05f0a3dd233937cd609c859d46172c8">startKeyboard</a> ()</td></tr>
+<tr class="memdesc:ac05f0a3dd233937cd609c859d46172c8 inherit pub_methods_class_keyboard_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the concrete keyboard behaviour. <br/></td></tr>
 <tr class="separator:ac05f0a3dd233937cd609c859d46172c8 inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85dc03d688f2af15b1a3284544dc4a8b inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85dc03d688f2af15b1a3284544dc4a8b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stopKeyboard</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#a85dc03d688f2af15b1a3284544dc4a8b">stopKeyboard</a> ()</td></tr>
+<tr class="memdesc:a85dc03d688f2af15b1a3284544dc4a8b inherit pub_methods_class_keyboard_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the concrete keyboard behaviour. <br/></td></tr>
 <tr class="separator:a85dc03d688f2af15b1a3284544dc4a8b inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4bbe67869c2d421731e1a859e2d2690 inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4bbe67869c2d421731e1a859e2d2690"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseAllPressedKeys</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#ae4bbe67869c2d421731e1a859e2d2690">releaseAllPressedKeys</a> ()</td></tr>
+<tr class="memdesc:ae4bbe67869c2d421731e1a859e2d2690 inherit pub_methods_class_keyboard_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes from the key list all pressed keys. After this operation, no events will be sent to the mediator with the pressed keys. <br/></td></tr>
 <tr class="separator:ae4bbe67869c2d421731e1a859e2d2690 inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7cfb61c6f09c581be82242cd006b06 inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace7cfb61c6f09c581be82242cd006b06"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>releasePressedKey</b> (const OIS::KeyCode &amp;keyCode)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#ace7cfb61c6f09c581be82242cd006b06">releasePressedKey</a> (const OIS::KeyCode &amp;keyCode)</td></tr>
+<tr class="memdesc:ace7cfb61c6f09c581be82242cd006b06 inherit pub_methods_class_keyboard_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a given key if it is on the list. <br/></td></tr>
 <tr class="separator:ace7cfb61c6f09c581be82242cd006b06 inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1198baa202f0aecbed9fe1d91d58d416 inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1198baa202f0aecbed9fe1d91d58d416"></a>
-list&lt; const OIS::KeyCode &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>getListOfKeys</b> ()</td></tr>
+<tr class="memitem:a1198baa202f0aecbed9fe1d91d58d416 inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top">list&lt; const OIS::KeyCode &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#a1198baa202f0aecbed9fe1d91d58d416">getListOfKeys</a> ()</td></tr>
+<tr class="memdesc:a1198baa202f0aecbed9fe1d91d58d416 inherit pub_methods_class_keyboard_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the complete list of used keys.  <a href="#a1198baa202f0aecbed9fe1d91d58d416">More...</a><br/></td></tr>
 <tr class="separator:a1198baa202f0aecbed9fe1d91d58d416 inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4494d3e61885b5eac6bef894877f1b inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b4494d3e61885b5eac6bef894877f1b"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getTimeSinceLastFrame</b> ()</td></tr>
+<tr class="memitem:a7b4494d3e61885b5eac6bef894877f1b inherit pub_methods_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#a7b4494d3e61885b5eac6bef894877f1b">getTimeSinceLastFrame</a> ()</td></tr>
+<tr class="memdesc:a7b4494d3e61885b5eac6bef894877f1b inherit pub_methods_class_keyboard_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time since last frame rendered.  <a href="#a7b4494d3e61885b5eac6bef894877f1b">More...</a><br/></td></tr>
 <tr class="separator:a7b4494d3e61885b5eac6bef894877f1b inherit pub_methods_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_class_abstract_ogre_negotiator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_abstract_ogre_negotiator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a></td></tr>
-<tr class="memitem:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6836be1ba9e6c104d4e133da0bf3a47a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediator</b> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
+<tr class="memitem:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_ogre_negotiator.html#a6836be1ba9e6c104d4e133da0bf3a47a">notifyMediator</a> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
+<tr class="memdesc:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the mediator with an event to order it an actions.  <a href="#a6836be1ba9e6c104d4e133da0bf3a47a">More...</a><br/></td></tr>
 <tr class="separator:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_keyboard_manager"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_keyboard_manager')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_keyboard_manager.html">KeyboardManager</a></td></tr>
-<tr class="memitem:a9c541dc57b16ac90869ec91e0777dc3c inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c541dc57b16ac90869ec91e0777dc3c"></a>
-OIS::Keyboard *&#160;</td><td class="memItemRight" valign="bottom"><b>mKeyboard</b></td></tr>
+<tr class="memitem:a9c541dc57b16ac90869ec91e0777dc3c inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top">OIS::Keyboard *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#a9c541dc57b16ac90869ec91e0777dc3c">mKeyboard</a></td></tr>
 <tr class="separator:a9c541dc57b16ac90869ec91e0777dc3c inherit pro_attribs_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac71e40a15a2eb84aa2756154b0912206 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac71e40a15a2eb84aa2756154b0912206"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>mStarted</b></td></tr>
+<tr class="memitem:ac71e40a15a2eb84aa2756154b0912206 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#ac71e40a15a2eb84aa2756154b0912206">mStarted</a></td></tr>
 <tr class="separator:ac71e40a15a2eb84aa2756154b0912206 inherit pro_attribs_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca656a9183932c72a2fd8fc5690f18a4 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca656a9183932c72a2fd8fc5690f18a4"></a>
-list&lt; const OIS::KeyCode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mKeyCodes</b></td></tr>
+<tr class="memitem:aca656a9183932c72a2fd8fc5690f18a4 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top">list&lt; const OIS::KeyCode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#aca656a9183932c72a2fd8fc5690f18a4">mKeyCodes</a></td></tr>
 <tr class="separator:aca656a9183932c72a2fd8fc5690f18a4 inherit pro_attribs_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a758456d16f08ba7ee6ab22663bf97f72 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a758456d16f08ba7ee6ab22663bf97f72"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>mTimeSinceLastFrame</b></td></tr>
+<tr class="memitem:a758456d16f08ba7ee6ab22663bf97f72 inherit pro_attribs_class_keyboard_manager"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_keyboard_manager.html#a758456d16f08ba7ee6ab22663bf97f72">mTimeSinceLastFrame</a></td></tr>
 <tr class="separator:a758456d16f08ba7ee6ab22663bf97f72 inherit pro_attribs_class_keyboard_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>Default keyboard used to move the camera on the scene. The keys registered on this keyboard are arrows and 'a', 's', 'd', 'w', 'q', 'e'. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7b4f5ece32653de501c4983735172ed5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DefaultKeyboard::DefaultKeyboard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ogre_mediator.html">OgreMediator</a> *&#160;</td>
+          <td class="paramname"><em>mediator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OIS::Keyboard *&#160;</td>
+          <td class="paramname"><em>keyboard</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor of the keyboard negotiator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mediator</td><td>The mediator attached to this negotiator. </td></tr>
+    <tr><td class="paramname">keyboard</td><td>The phisical keyboard instance with an OIS wrapper. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa0706fb01d551d71d5a95a32ae8d756d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DefaultKeyboard::isCommandKey </td>
+          <td>(</td>
+          <td class="paramtype">const OIS::KeyCode &amp;&#160;</td>
+          <td class="paramname"><em>keyCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>On the concrete keyboards not all the keys are needed. This method must be called to check if the key pressed is really a used key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyCode</td><td>The code of the key to check as a used key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if there is no error. </dd></dl>
+
+<p>Implements <a class="el" href="class_keyboard_manager.html#a5c8cb523f8d7cf5e1ab340f94cca7930">KeyboardManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7be3659797e89517d785854a680ad8d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DefaultKeyboard::keyPressed </td>
+          <td>(</td>
+          <td class="paramtype">const OIS::KeyEvent &amp;&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback that notifies the concrete keyboard that a key on the physical keyboard has been pressed. Adds to the list the pressed key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>The event that contains data about the physical keyboard and the key that has been pressed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if there is no error. </dd></dl>
+
+<p>Implements <a class="el" href="class_keyboard_manager.html#a56a04f7e88b65169d34599ac5f2e60b2">KeyboardManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a73d94654aca539c6f5225bf77ceb8dac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DefaultKeyboard::keyReleased </td>
+          <td>(</td>
+          <td class="paramtype">const OIS::KeyEvent &amp;&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback that notifies the concrete keyboard that a key on the physical keyboard has been released. Release the key from the pressed keys list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>The event that contains data about the physical keyboard and the key that has been released. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if there is no error. </dd></dl>
+
+<p>Implements <a class="el" href="class_keyboard_manager.html#a32dae39d0638ba2d7bf30c4b7fe7de9f">KeyboardManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2fe08727958f346aa804c74f3f6f3b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DefaultKeyboard::onUpdate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_event.html">RenderEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The callback implemented by render listeners. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderEvent</td><td>Event received that has the needed information related to the frame recently rendered. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_keyboard_manager.html#a249b7875fa5a89c9e128a586b9f56087">KeyboardManager</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Project/HCore/include/Input/Keyboard/<a class="el" href="_default_keyboard_8h_source.html">DefaultKeyboard.h</a></li>
 <li>Project/HCore/src/Input/Keyboard/DefaultKeyboard.cpp</li>
 </ul>
@@ -196,7 +381,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>mTimeSinceLastFrame<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_default_keyboard.html">DefaultKeyboard</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -92,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_0x67.html#index_g"><span>g</span></a></li>
       <li><a href="functions_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="functions_0x69.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_0x6b.html#index_k"><span>k</span></a></li>
       <li><a href="functions_0x6c.html#index_l"><span>l</span></a></li>
       <li><a href="functions_0x6d.html#index_m"><span>m</span></a></li>
       <li><a href="functions_0x6e.html#index_n"><span>n</span></a></li>
@@ -104,6 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_0x75.html#index_u"><span>u</span></a></li>
       <li><a href="functions_0x76.html#index_v"><span>v</span></a></li>
       <li><a href="functions_0x78.html#index_x"><span>x</span></a></li>
+      <li><a href="functions_0x79.html#index_y"><span>y</span></a></li>
       <li><a href="functions_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
@@ -158,6 +161,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>addInteractionToNode()
 : <a class="el" href="class_ogre_scene_creator.html#ad50e2bf6e69927f9ad6ef85b7535136a">OgreSceneCreator</a>
 </li>
+<li>addListener()
+: <a class="el" href="class_ogre_render_observer_registry.html#a7a1b322a45f1f2e6a5e12bd8afde4234">OgreRenderObserverRegistry</a>
+</li>
 <li>addNodeToRootNode()
 : <a class="el" href="class_ogre_scene_creator.html#aee4127529a8d62224ba2da8bd37197eb">OgreSceneCreator</a>
 </li>
@@ -165,8 +171,16 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_ogre_scene_creator.html#a1d9b52fc160603d5d78c221bdae4618a">OgreSceneCreator</a>
 </li>
 <li>addRenderListener()
-: <a class="el" href="class_ogre_engine.html#a921d473be863ffb80c50e96bc8ef9eda">OgreEngine</a>
-, <a class="el" href="class_simulator_a_p_i.html#a114a457de47fbe7a39c7d7567c3bdfb5">SimulatorAPI</a>
+: <a class="el" href="class_simulator_a_p_i.html#a114a457de47fbe7a39c7d7567c3bdfb5">SimulatorAPI</a>
+, <a class="el" href="class_ogre_engine.html#a921d473be863ffb80c50e96bc8ef9eda">OgreEngine</a>
+, <a class="el" href="class_ogre_mediator.html#a542bb408e2d29c7d86f2a8a2c4e2c258">OgreMediator</a>
+</li>
+<li>addToViewport()
+: <a class="el" href="class_ogre_camera_manager.html#a480233b14c2818c81e134e586f8af6af">OgreCameraManager</a>
+, <a class="el" href="class_ogre_standard_camera.html#a1e59b9ef83015b8ab21f16fc2b5f47f7">OgreStandardCamera</a>
+</li>
+<li>AddToViewportCommand()
+: <a class="el" href="class_add_to_viewport_command.html#ac2d7afd2a56fa7ab461e89b5e220fec5">AddToViewportCommand</a>
 </li>
 <li>addViewport()
 : <a class="el" href="class_ogre_engine.html#a22503a3347881645eadea1ec881593d8">OgreEngine</a>
@@ -183,7 +197,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu May 30 2013 13:08:44 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:52 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

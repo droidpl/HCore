@@ -39,9 +39,9 @@ using namespace std;
  *
  * Gives flexibility to the simulator by modifying some values without recompiling the source. The documents
  * are formatted as .XML and can be interpreted as:
- * <configuration>
- *		<property key="PROPERTY_NAME">VALUE</property>
- * </configuration>
+ * --configuration--
+ *		--property key="PROPERTY_NAME"--VALUE--property--
+ * --configuration--
  * - PROPERTY_NAME: the name of the property that will be accessed.
  * - VALUE: the value to store.
  * Remember that the XML must be well formated and it will be parsed using the TinyXml2 library.

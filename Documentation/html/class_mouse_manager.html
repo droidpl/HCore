@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -113,6 +114,9 @@ $(document).ready(function(){initNavTree('class_mouse_manager.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Manager that uses its operations to perform movements with the mouse peripheral.  
+ <a href="class_mouse_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_mouse_manager_8h_source.html">MouseManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MouseManager:</div>
@@ -120,79 +124,511 @@ Inheritance diagram for MouseManager:</div>
  <div class="center">
   <img src="class_mouse_manager.png" usemap="#MouseManager_map" alt=""/>
   <map id="MouseManager_map" name="MouseManager_map">
-<area href="class_render_listener.html" alt="RenderListener" shape="rect" coords="0,0,146,24"/>
-<area href="class_abstract_ogre_negotiator.html" alt="AbstractOgreNegotiator" shape="rect" coords="156,0,302,24"/>
-<area href="class_default_mouse.html" alt="DefaultMouse" shape="rect" coords="78,112,224,136"/>
-<area href="class_inverse_mouse.html" alt="InverseMouse" shape="rect" coords="234,112,380,136"/>
+<area href="class_render_listener.html" title="Interface implemented by every class that want to listen for rendered frame. In simulator layer it is..." alt="RenderListener" shape="rect" coords="0,0,146,24"/>
+<area href="class_abstract_ogre_negotiator.html" title="Abstract class that represents the negotiators. Those negotiators saves the instance of a mediator wh..." alt="AbstractOgreNegotiator" shape="rect" coords="156,0,302,24"/>
+<area href="class_default_mouse.html" title="Concrete mouse that uses the movement of the camera on default mode." alt="DefaultMouse" shape="rect" coords="78,112,224,136"/>
+<area href="class_inverse_mouse.html" title="Concrete mouse that uses the movement of the camera on an inverse mode." alt="InverseMouse" shape="rect" coords="234,112,380,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a88fef729192db0b478421b6d23ac10fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88fef729192db0b478421b6d23ac10fe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#a88fef729192db0b478421b6d23ac10fe">~MouseManager</a> ()</td></tr>
+<tr class="memdesc:a88fef729192db0b478421b6d23ac10fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor that releases the memory allocated by the mouse and its subclasses. <br/></td></tr>
+<tr class="separator:a88fef729192db0b478421b6d23ac10fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d6eeff14cf017f2517e2d4dbc427905"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d6eeff14cf017f2517e2d4dbc427905"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>startMouse</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#a7d6eeff14cf017f2517e2d4dbc427905">startMouse</a> ()</td></tr>
+<tr class="memdesc:a7d6eeff14cf017f2517e2d4dbc427905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts receiving inputs from the mouse movements and clicks. <br/></td></tr>
 <tr class="separator:a7d6eeff14cf017f2517e2d4dbc427905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74dcea3f2397cef387c85c7dd35f6bcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74dcea3f2397cef387c85c7dd35f6bcb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stopMouse</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#a74dcea3f2397cef387c85c7dd35f6bcb">stopMouse</a> ()</td></tr>
+<tr class="memdesc:a74dcea3f2397cef387c85c7dd35f6bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops receiving inputs from the mouse movements and clicks. <br/></td></tr>
 <tr class="separator:a74dcea3f2397cef387c85c7dd35f6bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f038c217135e19dbe5bf59518c06d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06f038c217135e19dbe5bf59518c06d9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>onUpdate</b> (<a class="el" href="class_render_event.html">RenderEvent</a> &amp;renderEvent)=0</td></tr>
+<tr class="memitem:a06f038c217135e19dbe5bf59518c06d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#a06f038c217135e19dbe5bf59518c06d9">onUpdate</a> (<a class="el" href="class_render_event.html">RenderEvent</a> &amp;renderEvent)=0</td></tr>
+<tr class="memdesc:a06f038c217135e19dbe5bf59518c06d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback implemented by render listeners.  <a href="#a06f038c217135e19dbe5bf59518c06d9">More...</a><br/></td></tr>
 <tr class="separator:a06f038c217135e19dbe5bf59518c06d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03698c7e8f0f371610356d1df395b92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af03698c7e8f0f371610356d1df395b92"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoved</b> (const OIS::MouseEvent &amp;evt)=0</td></tr>
+<tr class="memitem:af03698c7e8f0f371610356d1df395b92"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#af03698c7e8f0f371610356d1df395b92">mouseMoved</a> (const OIS::MouseEvent &amp;evt)=0</td></tr>
+<tr class="memdesc:af03698c7e8f0f371610356d1df395b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback called when the mouse is moved by the user.  <a href="#af03698c7e8f0f371610356d1df395b92">More...</a><br/></td></tr>
 <tr class="separator:af03698c7e8f0f371610356d1df395b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade38ec2c4483da90e4aecd0a77c6fc59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade38ec2c4483da90e4aecd0a77c6fc59"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressed</b> (const OIS::MouseEvent &amp;evt, OIS::MouseButtonID id)=0</td></tr>
+<tr class="memitem:ade38ec2c4483da90e4aecd0a77c6fc59"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#ade38ec2c4483da90e4aecd0a77c6fc59">mousePressed</a> (const OIS::MouseEvent &amp;evt, OIS::MouseButtonID id)=0</td></tr>
+<tr class="memdesc:ade38ec2c4483da90e4aecd0a77c6fc59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback called when the mouse is clicked by the user.  <a href="#ade38ec2c4483da90e4aecd0a77c6fc59">More...</a><br/></td></tr>
 <tr class="separator:ade38ec2c4483da90e4aecd0a77c6fc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9714625568500d4d2226baa927dd4b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9714625568500d4d2226baa927dd4b3"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleased</b> (const OIS::MouseEvent &amp;evt, OIS::MouseButtonID id)=0</td></tr>
+<tr class="memitem:af9714625568500d4d2226baa927dd4b3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#af9714625568500d4d2226baa927dd4b3">mouseReleased</a> (const OIS::MouseEvent &amp;evt, OIS::MouseButtonID id)=0</td></tr>
+<tr class="memdesc:af9714625568500d4d2226baa927dd4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback called when the mouse is unclicked by the user.  <a href="#af9714625568500d4d2226baa927dd4b3">More...</a><br/></td></tr>
 <tr class="separator:af9714625568500d4d2226baa927dd4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeec490695fe1f0e3ef4f36c42ff5d6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeec490695fe1f0e3ef4f36c42ff5d6a"></a>
-OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><b>getXAxis</b> ()</td></tr>
+<tr class="memitem:afeec490695fe1f0e3ef4f36c42ff5d6a"><td class="memItemLeft" align="right" valign="top">OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#afeec490695fe1f0e3ef4f36c42ff5d6a">getXAxis</a> ()</td></tr>
+<tr class="memdesc:afeec490695fe1f0e3ef4f36c42ff5d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the X axis of the mouse.  <a href="#afeec490695fe1f0e3ef4f36c42ff5d6a">More...</a><br/></td></tr>
 <tr class="separator:afeec490695fe1f0e3ef4f36c42ff5d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25db9732979965ab4d35b57abfd73a0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25db9732979965ab4d35b57abfd73a0b"></a>
-OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><b>getYAxis</b> ()</td></tr>
+<tr class="memitem:a25db9732979965ab4d35b57abfd73a0b"><td class="memItemLeft" align="right" valign="top">OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#a25db9732979965ab4d35b57abfd73a0b">getYAxis</a> ()</td></tr>
+<tr class="memdesc:a25db9732979965ab4d35b57abfd73a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Y axis of the mouse.  <a href="#a25db9732979965ab4d35b57abfd73a0b">More...</a><br/></td></tr>
 <tr class="separator:a25db9732979965ab4d35b57abfd73a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac87a33121505c689c1bdd3ede433373"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac87a33121505c689c1bdd3ede433373"></a>
-OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><b>getZAxis</b> ()</td></tr>
+<tr class="memitem:aac87a33121505c689c1bdd3ede433373"><td class="memItemLeft" align="right" valign="top">OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#aac87a33121505c689c1bdd3ede433373">getZAxis</a> ()</td></tr>
+<tr class="memdesc:aac87a33121505c689c1bdd3ede433373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Z axis of the mouse.  <a href="#aac87a33121505c689c1bdd3ede433373">More...</a><br/></td></tr>
 <tr class="separator:aac87a33121505c689c1bdd3ede433373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b5937d840170c357e10224abde14624"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b5937d840170c357e10224abde14624"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMouseAxis</b> (OIS::Axis xAxis, OIS::Axis yAxis, OIS::Axis zAxis)</td></tr>
+<tr class="memitem:a3b5937d840170c357e10224abde14624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#a3b5937d840170c357e10224abde14624">setMouseAxis</a> (OIS::Axis xAxis, OIS::Axis yAxis, OIS::Axis zAxis)</td></tr>
+<tr class="memdesc:a3b5937d840170c357e10224abde14624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets data related to the axis.  <a href="#a3b5937d840170c357e10224abde14624">More...</a><br/></td></tr>
 <tr class="separator:a3b5937d840170c357e10224abde14624"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cb49a25ff0c89cc725b3b6670b530f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cb49a25ff0c89cc725b3b6670b530f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMouseAxis</b> (const OIS::MouseEvent &amp;evt)</td></tr>
+<tr class="memitem:a4cb49a25ff0c89cc725b3b6670b530f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#a4cb49a25ff0c89cc725b3b6670b530f5">setMouseAxis</a> (const OIS::MouseEvent &amp;evt)</td></tr>
+<tr class="memdesc:a4cb49a25ff0c89cc725b3b6670b530f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the mouse axis.  <a href="#a4cb49a25ff0c89cc725b3b6670b530f5">More...</a><br/></td></tr>
 <tr class="separator:a4cb49a25ff0c89cc725b3b6670b530f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a8077d44fd5f06280ce2f1e21b75c63fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8077d44fd5f06280ce2f1e21b75c63fc"></a>
-OIS::Mouse *&#160;</td><td class="memItemRight" valign="bottom"><b>mMouse</b></td></tr>
+<tr class="memitem:a8077d44fd5f06280ce2f1e21b75c63fc"><td class="memItemLeft" align="right" valign="top">OIS::Mouse *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#a8077d44fd5f06280ce2f1e21b75c63fc">mMouse</a></td></tr>
 <tr class="separator:a8077d44fd5f06280ce2f1e21b75c63fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5ef09dced0e5de5723dcd109f9e9bc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5ef09dced0e5de5723dcd109f9e9bc3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>mStarted</b></td></tr>
+<tr class="memitem:ab5ef09dced0e5de5723dcd109f9e9bc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#ab5ef09dced0e5de5723dcd109f9e9bc3">mStarted</a></td></tr>
 <tr class="separator:ab5ef09dced0e5de5723dcd109f9e9bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf1adb639d061e9d764a22f2ec2dae3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf1adb639d061e9d764a22f2ec2dae3c"></a>
-OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><b>mXAxis</b></td></tr>
+<tr class="memitem:abf1adb639d061e9d764a22f2ec2dae3c"><td class="memItemLeft" align="right" valign="top">OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#abf1adb639d061e9d764a22f2ec2dae3c">mXAxis</a></td></tr>
 <tr class="separator:abf1adb639d061e9d764a22f2ec2dae3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84811121ee66b48d11e23e2b0c53932"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa84811121ee66b48d11e23e2b0c53932"></a>
-OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><b>mYAxis</b></td></tr>
+<tr class="memitem:aa84811121ee66b48d11e23e2b0c53932"><td class="memItemLeft" align="right" valign="top">OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#aa84811121ee66b48d11e23e2b0c53932">mYAxis</a></td></tr>
 <tr class="separator:aa84811121ee66b48d11e23e2b0c53932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e8fed3029acd32781a0e26ec1406ca0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e8fed3029acd32781a0e26ec1406ca0"></a>
-OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><b>mZAxis</b></td></tr>
+<tr class="memitem:a2e8fed3029acd32781a0e26ec1406ca0"><td class="memItemLeft" align="right" valign="top">OIS::Axis&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse_manager.html#a2e8fed3029acd32781a0e26ec1406ca0">mZAxis</a></td></tr>
 <tr class="separator:a2e8fed3029acd32781a0e26ec1406ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_class_abstract_ogre_negotiator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_abstract_ogre_negotiator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a></td></tr>
-<tr class="memitem:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6836be1ba9e6c104d4e133da0bf3a47a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediator</b> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
+<tr class="memitem:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_ogre_negotiator.html#a6836be1ba9e6c104d4e133da0bf3a47a">notifyMediator</a> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
+<tr class="memdesc:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the mediator with an event to order it an actions.  <a href="#a6836be1ba9e6c104d4e133da0bf3a47a">More...</a><br/></td></tr>
 <tr class="separator:a6836be1ba9e6c104d4e133da0bf3a47a inherit pub_methods_class_abstract_ogre_negotiator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>Manager that uses its operations to perform movements with the mouse peripheral. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="afeec490695fe1f0e3ef4f36c42ff5d6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OIS::Axis MouseManager::getXAxis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the X axis of the mouse. </p>
+<dl class="section return"><dt>Returns</dt><dd>The X axis of the mouse. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a25db9732979965ab4d35b57abfd73a0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OIS::Axis MouseManager::getYAxis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the Y axis of the mouse. </p>
+<dl class="section return"><dt>Returns</dt><dd>The Y axis of the mouse. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aac87a33121505c689c1bdd3ede433373"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OIS::Axis MouseManager::getZAxis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the Z axis of the mouse. </p>
+<dl class="section return"><dt>Returns</dt><dd>The Z axis of the mouse. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af03698c7e8f0f371610356d1df395b92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MouseManager::mouseMoved </td>
+          <td>(</td>
+          <td class="paramtype">const OIS::MouseEvent &amp;&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback called when the mouse is moved by the user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>The event received for this movement. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if there is no errors. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_default_mouse.html#aa094fccaf4b9695f4db56f8c91b651ca">DefaultMouse</a>, and <a class="el" href="class_inverse_mouse.html#a4c38341a4af808a5277b24eacd53a499">InverseMouse</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade38ec2c4483da90e4aecd0a77c6fc59"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MouseManager::mousePressed </td>
+          <td>(</td>
+          <td class="paramtype">const OIS::MouseEvent &amp;&#160;</td>
+          <td class="paramname"><em>evt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OIS::MouseButtonID&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback called when the mouse is clicked by the user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>The event received for this click. </td></tr>
+    <tr><td class="paramname">id</td><td>The identifier of he button pressed on the mouse. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if there is no errors. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_default_mouse.html#a075175d4d2d88c117f454ca8c69910c1">DefaultMouse</a>, and <a class="el" href="class_inverse_mouse.html#a75c2736148d89c5fc7cd0a9ce3dc8201">InverseMouse</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9714625568500d4d2226baa927dd4b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool MouseManager::mouseReleased </td>
+          <td>(</td>
+          <td class="paramtype">const OIS::MouseEvent &amp;&#160;</td>
+          <td class="paramname"><em>evt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OIS::MouseButtonID&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callback called when the mouse is unclicked by the user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>The event received for this unclick. </td></tr>
+    <tr><td class="paramname">id</td><td>The identifier of he button pressed on the mouse. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if there is no errors. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_default_mouse.html#ae3b796a2f105bc566c524e1eb7c82802">DefaultMouse</a>, and <a class="el" href="class_inverse_mouse.html#a9c028c310c81a4e45f17577d9031e31b">InverseMouse</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06f038c217135e19dbe5bf59518c06d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MouseManager::onUpdate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_render_event.html">RenderEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The callback implemented by render listeners. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderEvent</td><td>Event received that has the needed information related to the frame recently rendered. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_render_listener.html#a144f5e8241d2ccd013ab57551bfa21ad">RenderListener</a>.</p>
+
+<p>Implemented in <a class="el" href="class_default_mouse.html#ae9b94edea3bc11f7913f9b4b96d7766b">DefaultMouse</a>, and <a class="el" href="class_inverse_mouse.html#a8c0995627eb984d60d64ce68faef6a65">InverseMouse</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b5937d840170c357e10224abde14624"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MouseManager::setMouseAxis </td>
+          <td>(</td>
+          <td class="paramtype">OIS::Axis&#160;</td>
+          <td class="paramname"><em>xAxis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OIS::Axis&#160;</td>
+          <td class="paramname"><em>yAxis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OIS::Axis&#160;</td>
+          <td class="paramname"><em>zAxis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets data related to the axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xAxis</td><td>The X axis. </td></tr>
+    <tr><td class="paramname">yAxis</td><td>The Y axis. </td></tr>
+    <tr><td class="paramname">zAxis</td><td>The Z axis. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4cb49a25ff0c89cc725b3b6670b530f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MouseManager::setMouseAxis </td>
+          <td>(</td>
+          <td class="paramtype">const OIS::MouseEvent &amp;&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the mouse axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>The event that has the data related to axis. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8077d44fd5f06280ce2f1e21b75c63fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OIS::Mouse* MouseManager::mMouse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The mouse OIS input system. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab5ef09dced0e5de5723dcd109f9e9bc3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MouseManager::mStarted</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag that indicates that the mouse system has been set up. </p>
+
+</div>
+</div>
+<a class="anchor" id="abf1adb639d061e9d764a22f2ec2dae3c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OIS::Axis MouseManager::mXAxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>X axis of the mouse. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa84811121ee66b48d11e23e2b0c53932"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OIS::Axis MouseManager::mYAxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Y axis of the mouse. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e8fed3029acd32781a0e26ec1406ca0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OIS::Axis MouseManager::mZAxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Z axis of the mouse. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Project/HCore/include/Input/Mouse/<a class="el" href="_mouse_manager_8h_source.html">MouseManager.h</a></li>
 <li>Project/HCore/src/Input/Mouse/MouseManager.cpp</li>
 </ul>
@@ -202,7 +638,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediato
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_mouse_manager.html">MouseManager</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

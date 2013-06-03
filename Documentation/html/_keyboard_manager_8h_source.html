@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -143,36 +144,36 @@ $(document).ready(function(){initNavTree('_keyboard_manager_8h_source.html','');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;Mediator/AbstractOgreNegotiator.h&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span><a class="code" href="class_ogre_mediator.html">OgreMediator</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span><a class="code" href="class_ogre_mediator.html" title="The mediator class acts as a mediator that can interchange events between all the negotiators attache...">OgreMediator</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_keyboard_manager.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_keyboard_manager.html">KeyboardManager</a> : <span class="keyword">public</span> <a class="code" href="class_render_listener.html">RenderListener</a>, <span class="keyword">protected</span> <a class="code" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a>, <span class="keyword">public</span> OIS::KeyListener {</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_keyboard_manager.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_keyboard_manager.html" title="This class manages the keyboard giving a consistent interface to create as much keyboards as needed...">KeyboardManager</a> : <span class="keyword">public</span> <a class="code" href="class_render_listener.html" title="Interface implemented by every class that want to listen for rendered frame. In simulator layer it is...">RenderListener</a>, <span class="keyword">protected</span> <a class="code" href="class_abstract_ogre_negotiator.html" title="Abstract class that represents the negotiators. Those negotiators saves the instance of a mediator wh...">AbstractOgreNegotiator</a>, <span class="keyword">public</span> OIS::KeyListener {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    OIS::Keyboard*              mKeyboard;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span>                        mStarted;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    list&lt;const OIS::KeyCode&gt;    mKeyCodes;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">float</span>                       mTimeSinceLastFrame;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_keyboard_manager.html#a9c541dc57b16ac90869ec91e0777dc3c">   50</a></span>&#160;    OIS::Keyboard*              <a class="code" href="class_keyboard_manager.html#a9c541dc57b16ac90869ec91e0777dc3c">mKeyboard</a>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="class_keyboard_manager.html#ac71e40a15a2eb84aa2756154b0912206">   51</a></span>&#160;    <span class="keywordtype">bool</span>                        <a class="code" href="class_keyboard_manager.html#ac71e40a15a2eb84aa2756154b0912206">mStarted</a>; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="class_keyboard_manager.html#aca656a9183932c72a2fd8fc5690f18a4">   52</a></span>&#160;    list&lt;const OIS::KeyCode&gt;    <a class="code" href="class_keyboard_manager.html#aca656a9183932c72a2fd8fc5690f18a4">mKeyCodes</a>; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="class_keyboard_manager.html#a758456d16f08ba7ee6ab22663bf97f72">   53</a></span>&#160;    <span class="keywordtype">float</span>                       <a class="code" href="class_keyboard_manager.html#a758456d16f08ba7ee6ab22663bf97f72">mTimeSinceLastFrame</a>; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ~<a class="code" href="class_keyboard_manager.html">KeyboardManager</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> startKeyboard();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> stopKeyboard();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> releaseAllPressedKeys();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> releasePressedKey(<span class="keyword">const</span> OIS::KeyCode&amp; keyCode);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onUpdate (<a class="code" href="class_render_event.html">RenderEvent</a>&amp; renderEvent) = 0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> keyPressed(<span class="keyword">const</span> OIS::KeyEvent &amp;evt) = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> keyReleased(<span class="keyword">const</span> OIS::KeyEvent &amp;evt) = 0;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isCommandKey(<span class="keyword">const</span> OIS::KeyCode&amp; keyCode) = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">inline</span> list&lt;const OIS::KeyCode&gt;* getListOfKeys(){ <span class="keywordflow">return</span> &amp;mKeyCodes;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> getTimeSinceLastFrame(){ <span class="keywordflow">return</span> mTimeSinceLastFrame; }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_keyboard_manager.html#a5321f1327f94403ead6b7fa083ae7cee" title="Destructor that releases needed memory.">~KeyboardManager</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_keyboard_manager.html#ac05f0a3dd233937cd609c859d46172c8" title="Starts the concrete keyboard behaviour.">startKeyboard</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_keyboard_manager.html#a85dc03d688f2af15b1a3284544dc4a8b" title="Stops the concrete keyboard behaviour.">stopKeyboard</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_keyboard_manager.html#ae4bbe67869c2d421731e1a859e2d2690" title="Removes from the key list all pressed keys. After this operation, no events will be sent to the media...">releaseAllPressedKeys</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_keyboard_manager.html#ace7cfb61c6f09c581be82242cd006b06" title="Releases a given key if it is on the list.">releasePressedKey</a>(<span class="keyword">const</span> OIS::KeyCode&amp; keyCode);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_keyboard_manager.html#a249b7875fa5a89c9e128a586b9f56087" title="The callback implemented by render listeners.">onUpdate</a> (<a class="code" href="class_render_event.html" title="Event sent when a frame has been rendered.">RenderEvent</a>&amp; renderEvent) = 0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_keyboard_manager.html#a56a04f7e88b65169d34599ac5f2e60b2" title="Callback that notifies the concrete keyboard that a key on the physical keyboard has been pressed...">keyPressed</a>(<span class="keyword">const</span> OIS::KeyEvent &amp;evt) = 0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_keyboard_manager.html#a32dae39d0638ba2d7bf30c4b7fe7de9f" title="Callback that notifies the concrete keyboard that a key on the physical keyboard has been released...">keyReleased</a>(<span class="keyword">const</span> OIS::KeyEvent &amp;evt) = 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_keyboard_manager.html#a5c8cb523f8d7cf5e1ab340f94cca7930" title="On the concrete keyboards not all the keys are needed. This method must be called to check if the key...">isCommandKey</a>(<span class="keyword">const</span> OIS::KeyCode&amp; keyCode) = 0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="code" href="class_keyboard_manager.html#a1198baa202f0aecbed9fe1d91d58d416">  104</a></span>&#160;    <span class="keyword">inline</span> list&lt;const OIS::KeyCode&gt;* <a class="code" href="class_keyboard_manager.html#a1198baa202f0aecbed9fe1d91d58d416" title="Returns the complete list of used keys.">getListOfKeys</a>(){ <span class="keywordflow">return</span> &amp;<a class="code" href="class_keyboard_manager.html#aca656a9183932c72a2fd8fc5690f18a4">mKeyCodes</a>;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="class_keyboard_manager.html#a7b4494d3e61885b5eac6bef894877f1b">  109</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="class_keyboard_manager.html#a7b4494d3e61885b5eac6bef894877f1b" title="Returns the time since last frame rendered.">getTimeSinceLastFrame</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_keyboard_manager.html#a758456d16f08ba7ee6ab22663bf97f72">mTimeSinceLastFrame</a>; }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><a class="el" href="dir_22d2a9e5e629041c79abdd7385caa366.html">Input</a></li><li class="navelem"><a class="el" href="dir_fc591f2334c20e64ed5916fd09c8456a.html">Keyboard</a></li><li class="navelem"><b>KeyboardManager.h</b></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -28,7 +28,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define _InputTypes_H_
 
 /**
- * @brief
+ * @brief Data types with the output and input elements and its datatypes. They are clasified depending
+ * on the peripheral.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -36,18 +37,27 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class InputTypes {
 public:
+	/**
+	 * Keyboard types.
+	 */
 	struct KeyboardTypes {
 		enum types{
 			DEFAULT,
 			INVERSE
 		};
 	};
+	/**
+	 * Mouse types.
+	 */
 	struct MouseTypes {
 		enum types{
 			DEFAULT,
 			INVERSE
 		};
 	};
+	/**
+	 * Haptic types.
+	 */
 	struct HapticTypes {
 		enum types{
 			DEFAULT

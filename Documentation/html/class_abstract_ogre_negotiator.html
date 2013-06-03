@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -113,6 +114,9 @@ $(document).ready(function(){initNavTree('class_abstract_ogre_negotiator.html','
 </div><!--header-->
 <div class="contents">
 
+<p>Abstract class that represents the negotiators. Those negotiators saves the instance of a mediator which receives messages and performs some predefined actions.  
+ <a href="class_abstract_ogre_negotiator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_abstract_ogre_negotiator_8h_source.html">AbstractOgreNegotiator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AbstractOgreNegotiator:</div>
@@ -120,38 +124,94 @@ Inheritance diagram for AbstractOgreNegotiator:</div>
  <div class="center">
   <img src="class_abstract_ogre_negotiator.png" usemap="#AbstractOgreNegotiator_map" alt=""/>
   <map id="AbstractOgreNegotiator_map" name="AbstractOgreNegotiator_map">
-<area href="class_keyboard_manager.html" alt="KeyboardManager" shape="rect" coords="96,56,278,80"/>
-<area href="class_mouse_manager.html" alt="MouseManager" shape="rect" coords="480,56,662,80"/>
-<area href="class_ogre_camera_manager.html" alt="OgreCameraManager" shape="rect" coords="768,56,950,80"/>
+<area href="class_keyboard_manager.html" title="This class manages the keyboard giving a consistent interface to create as much keyboards as needed..." alt="KeyboardManager" shape="rect" coords="96,56,278,80"/>
+<area href="class_mouse_manager.html" title="Manager that uses its operations to perform movements with the mouse peripheral." alt="MouseManager" shape="rect" coords="480,56,662,80"/>
+<area href="class_ogre_camera_manager.html" title="Negotiator that abstracts all the typical operations with a camera." alt="OgreCameraManager" shape="rect" coords="768,56,950,80"/>
 <area href="class_ogre_engine.html" title="Engine of the application that manages the information related to Root and render." alt="OgreEngine" shape="rect" coords="960,56,1142,80"/>
-<area href="class_ogre_render_observer_registry.html" alt="OgreRenderObserverRegistry" shape="rect" coords="1152,56,1334,80"/>
+<area href="class_ogre_render_observer_registry.html" title="The render registry stores every render observer registered on HCore inside its list. Those observers stored receives the notifications and will be removed when needed." alt="OgreRenderObserverRegistry" shape="rect" coords="1152,56,1334,80"/>
 <area href="class_ogre_resouce_manager.html" title="This class manages the resource loading to get loaded only those that are needed." alt="OgreResouceManager" shape="rect" coords="1344,56,1526,80"/>
 <area href="class_ogre_scene_creator.html" title="Creates all the elements on the scene including it&#39;s physics and haptics." alt="OgreSceneCreator" shape="rect" coords="1536,56,1718,80"/>
-<area href="class_default_keyboard.html" alt="DefaultKeyboard" shape="rect" coords="0,112,182,136"/>
-<area href="class_inverse_keyboard.html" alt="InverseKeyboard" shape="rect" coords="192,112,374,136"/>
-<area href="class_default_mouse.html" alt="DefaultMouse" shape="rect" coords="384,112,566,136"/>
-<area href="class_inverse_mouse.html" alt="InverseMouse" shape="rect" coords="576,112,758,136"/>
-<area href="class_ogre_standard_camera.html" alt="OgreStandardCamera" shape="rect" coords="768,112,950,136"/>
+<area href="class_default_keyboard.html" title="Default keyboard used to move the camera on the scene. The keys registered on this keyboard are arrow..." alt="DefaultKeyboard" shape="rect" coords="0,112,182,136"/>
+<area href="class_inverse_keyboard.html" title="Keyboard that performs the movement using the inverse key move (ex. Right goes to left..." alt="InverseKeyboard" shape="rect" coords="192,112,374,136"/>
+<area href="class_default_mouse.html" title="Concrete mouse that uses the movement of the camera on default mode." alt="DefaultMouse" shape="rect" coords="384,112,566,136"/>
+<area href="class_inverse_mouse.html" title="Concrete mouse that uses the movement of the camera on an inverse mode." alt="InverseMouse" shape="rect" coords="576,112,758,136"/>
+<area href="class_ogre_standard_camera.html" title="Standar camera that moves on a typical way giving all elements necessary to change its position and d..." alt="OgreStandardCamera" shape="rect" coords="768,112,950,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6836be1ba9e6c104d4e133da0bf3a47a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6836be1ba9e6c104d4e133da0bf3a47a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyMediator</b> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
+<tr class="memitem:a6836be1ba9e6c104d4e133da0bf3a47a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_ogre_negotiator.html#a6836be1ba9e6c104d4e133da0bf3a47a">notifyMediator</a> (<a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;mediatorEvent)</td></tr>
+<tr class="memdesc:a6836be1ba9e6c104d4e133da0bf3a47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the mediator with an event to order it an actions.  <a href="#a6836be1ba9e6c104d4e133da0bf3a47a">More...</a><br/></td></tr>
 <tr class="separator:a6836be1ba9e6c104d4e133da0bf3a47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af74292cf0d8ff1d244afa96da10d77fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af74292cf0d8ff1d244afa96da10d77fd"></a>
-<a class="el" href="class_ogre_mediator.html">OgreMediator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mMediator</b></td></tr>
+<tr class="memitem:af74292cf0d8ff1d244afa96da10d77fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ogre_mediator.html">OgreMediator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_ogre_negotiator.html#af74292cf0d8ff1d244afa96da10d77fd">mMediator</a></td></tr>
 <tr class="separator:af74292cf0d8ff1d244afa96da10d77fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
+<div class="textblock"><p>Abstract class that represents the negotiators. Those negotiators saves the instance of a mediator which receives messages and performs some predefined actions. </p>
+<dl class="section author"><dt>Author</dt><dd>Javier de Pedro Lopez </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2013 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6836be1ba9e6c104d4e133da0bf3a47a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractOgreNegotiator::notifyMediator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_negotiator_event.html">NegotiatorEvent</a> &amp;&#160;</td>
+          <td class="paramname"><em>mediatorEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Notifies the mediator with an event to order it an actions. </p>
+<p>Actions sent to the mediator are only needed when multiple negotiators are involved in this action. If the negotiator can perform this action itself or the only implied negotiator is the one that sends the event, then this event might not be sent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mediatorEvent</td><td>The event that will be sent to the mediator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af74292cf0d8ff1d244afa96da10d77fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ogre_mediator.html">OgreMediator</a>* AbstractOgreNegotiator::mMediator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The mediator that receives messages and performs predefined operations. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Project/HCore/include/Mediator/<a class="el" href="_abstract_ogre_negotiator_8h_source.html">AbstractOgreNegotiator.h</a></li>
 <li>Project/HCore/src/Mediator/AbstractOgreNegotiator.cpp</li>
 </ul>
@@ -161,7 +221,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_abstract_ogre_negotiator.html">AbstractOgreNegotiator</a></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

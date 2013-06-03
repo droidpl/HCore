@@ -31,7 +31,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <Input/Keyboard/KeyboardManager.h>
 
 /**
- * @brief
+ * @brief Keyboard that performs the movement using the inverse key move (ex. Right goes to left, left to right...).
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -39,10 +39,20 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class InverseKeyboard : public KeyboardManager {
 public:
+	/**
+	 * @brief Constructor of the keyboard negotiator.
+	 * @param mediator The mediator attached to this negotiator.
+	 * @param keyboard The phisical keyboard instance with an OIS wrapper.
+	 */
 	InverseKeyboard(OgreMediator* mediator, OIS::Keyboard* keyboard);
 	void onUpdate (RenderEvent& renderEvent);
 	bool keyPressed(const OIS::KeyEvent &keyPressed);
     bool keyReleased(const OIS::KeyEvent &keyReleased);
+	/**
+	 * @brief Makes the translation between one code to the inverse.
+	 * @param code The code to translate.
+	 * @return The translated code.
+	 */
 	const OIS::KeyCode translateKey(const OIS::KeyCode& code);
 	bool isCommandKey(const OIS::KeyCode &keyCode);
 };

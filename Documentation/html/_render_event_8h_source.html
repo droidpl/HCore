@@ -28,9 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="HCore.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">HCore
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Game Engine Independent Architecture</div>
   </td>
@@ -134,24 +135,24 @@ $(document).ready(function(){initNavTree('_render_event_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef _RenderEvent_H_</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _RenderEvent_H_</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_render_event.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_render_event.html">RenderEvent</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_render_event.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_render_event.html" title="Event sent when a frame has been rendered.">RenderEvent</a> {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">float</span> mTimeSinceLastEvent;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">float</span> mTimeSinceLastFrame;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">float</span>       mTimeSinceLastEvent; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">float</span>       mTimeSinceLastFrame; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_render_event.html">RenderEvent</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_render_event.html">RenderEvent</a>(<span class="keywordtype">float</span> timeSinceLastEvent, <span class="keywordtype">float</span> timeSinceLastFrame);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> getTimeSinceLastEvent(){ <span class="keywordflow">return</span> mTimeSinceLastEvent; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> getTimeSinceLastFrame(){ <span class="keywordflow">return</span> mTimeSinceLastFrame; }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_render_event.html#aacea7a05980a7b7393985f693f93ed72" title="Constructor of the render event. Initializes elements to default value.">RenderEvent</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_render_event.html#aacea7a05980a7b7393985f693f93ed72" title="Constructor of the render event. Initializes elements to default value.">RenderEvent</a>(<span class="keywordtype">float</span> timeSinceLastEvent, <span class="keywordtype">float</span> timeSinceLastFrame);</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="class_render_event.html#ac8840d6cee7f1e2546755e00aea764ad">   56</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="class_render_event.html#ac8840d6cee7f1e2546755e00aea764ad" title="Returns the time between two consecutive events.">getTimeSinceLastEvent</a>(){ <span class="keywordflow">return</span> mTimeSinceLastEvent; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_render_event.html#a66ff33180ffb750b8b7db17039973fd2">   61</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="class_render_event.html#a66ff33180ffb750b8b7db17039973fd2" title="Returns the time between two consecutive frames.">getTimeSinceLastFrame</a>(){ <span class="keywordflow">return</span> mTimeSinceLastFrame; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ffd1f789ec7bd0a45fc6ad92579c5070.html">Project</a></li><li class="navelem"><a class="el" href="dir_4b0df4e562603420e79b7acfc20e41f2.html">HCore</a></li><li class="navelem"><a class="el" href="dir_f150bf2f399551233d33c2b29d28093b.html">include</a></li><li class="navelem"><a class="el" href="dir_58d80e93dbea32ed999779d199f33d06.html">Listener</a></li><li class="navelem"><b>RenderEvent.h</b></li>
-    <li class="footer">Generated on Thu May 30 2013 13:08:43 for HCore by
+    <li class="footer">Generated on Mon Jun 3 2013 12:11:51 for HCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

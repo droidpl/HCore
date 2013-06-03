@@ -66,7 +66,8 @@ public:
 	static OgreBulletCollisions::TriangleMeshCollisionShape* getTrimesh(Ogre::Entity* entity);
 	/**
 	 * @brief Plays a sound in a place on the scene.
-	 * 
+	 * @param soundId The identifier of the sound element that must be played. This id is the name of the
+	 * document loaded on the resourceManager.
 	 * @param soundResource The resource name for the sound value.
 	 * @param loop True if you want the sound to loop or false either.
 	 * @return The boolean value that specifies if the sound initializes it's state.

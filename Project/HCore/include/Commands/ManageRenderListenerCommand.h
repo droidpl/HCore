@@ -37,7 +37,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 using namespace std;
 
 /**
- * @brief
+ * @brief Command that uses the engine and the observer registry to attach the HCore observer to ogre framework.
  *
  * @author    Javier de Pedro Lopez
  * @version   1.0
@@ -45,10 +45,16 @@ using namespace std;
  */
 class ManageRenderListenerCommand : public IOgreCommand{
 private:
-	OgreRenderObserverRegistry*			mObserverRegistry;
-	OgreEngine*							mEngine;
-	string								mAction;
+	OgreRenderObserverRegistry*			mObserverRegistry; /**< Registry containing all attached observers. */
+	OgreEngine*							mEngine; /**< The engine as a core of the relation between HCore and Ogre. */
+	string								mAction; /**< The action to perform. */
 public:
+	/**
+	 * @brief Constructor that saves the data passed to it.
+	 * @param observerRegistry Registry containing all attached observers.
+	 * @param engine The engine as a core of the relation between HCore and Ogre.
+	 * @param action The action that tells this command what to do. (attach or dettach).
+	 */
 	ManageRenderListenerCommand(OgreRenderObserverRegistry* observerRegistry, OgreEngine* engine, string action="");
 	void execute();
 };
