@@ -10,7 +10,6 @@
 *.[Oo]bj
 *.exe
 *.pdb
-*.user
 *.aps
 *.pch
 *.vspscc
