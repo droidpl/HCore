@@ -20,7 +20,6 @@
 *.[Cc]ache
 *.suo
 *.sln.docstates
-*.vcproj.*.user
 *.tlb
 *.tlh
 *.bak
